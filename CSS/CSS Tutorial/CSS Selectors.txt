@@ -1,0 +1,80 @@
+1.Bộ chọn CSS (CSS Selectors)
+
+Bộ chọn CSS được sử dụng để "tìm" (hoặc chọn) các thành phần HTML mà bạn muốn tạo kiểu. (CSS selectors are used to "find" (or select) the HTML elements you want to style.)
+Chúng tôi có thể chia các bộ chọn CSS thành năm loại: (We can divide CSS selectors into five categories:)
+Bộ chọn đơn giản (chọn thành phần dựa trên tên, id, lớp) (Simple selectors (select elements based on name, id, class))
+Bộ chọn kết hợp (chọn các yếu tố dựa trên mối quan hệ cụ thể giữa chúng) (Combinator selectors (select elements based on a specific relationship between them) (link)
+Bộ chọn lớp giả (chọn các thành phần dựa trên một trạng thái nhất định) (Pseudo-class selectors (select elements based on a certain state) (link)
+Bộ chọn phần tử giả (chọn và định kiểu một phần của phần tử) (Pseudo-elements selectors (select and style a part of an element)) (link)
+Bộ chọn thuộc tính (chọn thành phần dựa trên giá trị thuộc tính hoặc thuộc tính) (Attribute selectors (select elements based on an attribute or attribute value)) (link)
+Trang này sẽ giải thích các bộ chọn CSS cơ bản nhất. (This page will explain the most basic CSS selectors.) (link)
+
+
+2.Bộ chọn phần tử CSS (The CSS element Selector)
+
+Bộ chọn phần tử chọn các phần tử HTML dựa trên tên phần tử. (The element selector selects HTML elements based on the element name.)
+
+Tại đây, tất cả các phần tử <p> trên trang sẽ được căn giữa, với màu văn bản màu đỏ: (Here, all <p> elements on the page will be center-aligned, with a red text color:)
+
+
+3.Bộ chọn id CSS (The CSS id Selector)
+
+Bộ chọn id sử dụng thuộc tính id của một phần tử HTML để chọn một phần tử cụ thể. (The id selector uses the id attribute of an HTML element to select a specific element.)
+Id của một phần tử là duy nhất trong một trang, vì vậy bộ chọn id được sử dụng để chọn một phần tử duy nhất! (The id of an element is unique within a page, so the id selector is used to select one unique element!)
+Để chọn một phần tử có id cụ thể, hãy viết ký tự băm (#), theo sau là id của phần tử. (To select an element with a specific id, write a hash (#) character, followed by the id of the element.)
+
+Ví dụ: (Example)
+
+Lưu ý: Tên id không thể bắt đầu bằng số! (Note: An id name cannot start with a number!)
+
+
+3.Bộ chọn lớp CSS (The CSS class Selector)
+
+Bộ chọn lớp chọn các phần tử HTML với thuộc tính lớp cụ thể. (The class selector selects HTML elements with a specific class attribute.)
+Để chọn các phần tử với một lớp cụ thể, hãy viết một ký tự dấu chấm (.), Theo sau là tên lớp. (To select elements with a specific class, write a period (.) character, followed by the class name.)
+
+Ví dụ: (Example)
+
+Bạn cũng có thể chỉ định rằng chỉ các phần tử HTML cụ thể mới bị ảnh hưởng bởi một lớp. (You can also specify that only specific HTML elements should be affected by a class.)
+
+Cú pháp: <tên phần tử>,... <tên phần tử>.<tên class>
+
+Ví dụ: (Example)
+
+Các phần tử HTML cũng có thể tham chiếu đến nhiều hơn một lớp. (HTML elements can also refer to more than one class.)
+
+Cú pháp: <tên phần tử 1>.<tên class>
+	 <tên phần tử 1>.<tên class khác>
+         ...
+	 <tên phần tử n>.<tên class>
+	 <tên phần tử n>.<tên class khác>
+
+	 và
+	
+	 <tên phần tử = "tên class 1 class tên 2"> ... </tên phần tử>
+
+Ví dụ: (Example)
+
+Lưu ý: Tên lớp không thể bắt đầu bằng số! (Note: A class name cannot start with a number!)
+
+
+4.Bộ chọn phổ quát CSS (The CSS Universal Selector)
+
+Bộ chọn phổ quát (*) chọn tất cả các thành phần HTML trên trang. (The universal selector (*) selects all HTML elements on the page.)
+
+Ví dụ: (Example)
+
+
+5.Bộ chọn nhóm CSS (The CSS Grouping Selector)
+
+Bộ chọn nhóm chọn tất cả các thành phần HTML có cùng định nghĩa kiểu. (The grouping selector selects all the HTML elements with the same style definitions.)
+Nhìn vào mã CSS sau (các phần tử h1, h2 và p có cùng định nghĩa kiểu): (Look at the following CSS code (the h1, h2, and p elements have the same style definitions):)
+
+Sẽ tốt hơn để nhóm các bộ chọn, để giảm thiểu mã. (It will be better to group the selectors, to minimize the code.)
+Để chọn nhóm, tách từng bộ chọn bằng dấu phẩy. (To group selectors, separate each selector with a comma.)
+
+Ví dụ: (Example)
+
+
+
+

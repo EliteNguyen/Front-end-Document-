@@ -1,0 +1,25 @@
+1. Thẻ <script> (The <script> Tag)
+
+Trong HTML, mã JavaScript phải được chèn giữa các thẻ <script> và </ script>.
+(In HTML, JavaScript code must be inserted between <script> and </script> tags.)
+
+Ví dụ: (Example)
+
+Các ví dụ JavaScript cũ có thể sử dụng thuộc tính type: <script type = "text / javascript">.
+(Old JavaScript examples may use a type attribute: <script type="text/javascript">.)
+
+Thuộc tính loại không bắt buộc. JavaScript là ngôn ngữ kịch bản mặc định trong HTML.
+(The type attribute is not required. JavaScript is the default scripting language in HTML.)
+
+
+2. Các chức năng và sự kiện JavaScript (JavaScript Functions and Events)
+
+Hàm JavaScript là một khối mã JavaScript, có thể được thực thi khi "được gọi" cho.
+(A JavaScript function is a block of JavaScript code, that can be executed when "called" for.)
+
+Ví dụ, một chức năng có thể được gọi khi sự kiện xảy ra, như khi người dùng nhấp vào nút.
+(For example, a function can be called when an event occurs, like when the user clicks a button.)
+
+Bạn sẽ tìm hiểu nhiều hơn về các chức năng và sự kiện trong các chương sau.
+(You will learn much more about functions and events in later chapters.)
+

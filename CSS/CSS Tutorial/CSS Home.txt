@@ -1,0 +1,49 @@
+1.Hướng dẫn CSS (CSS Tutorial)
+
+CSS là ngôn ngữ mô tả phong cách của tài liệu HTML. (CSS is a language that describes the style of an HTML document.)
+CSS mô tả cách các phần tử HTML sẽ được hiển thị. (CSS describes how HTML elements should be displayed.)
+Hướng dẫn này sẽ dạy bạn CSS từ cơ bản đến nâng cao. (This tutorial will teach you CSS from basic to advanced.)
+
+
+2.Ví dụ trong mỗi chương (Examples in Each Chapter)
+
+Hướng dẫn CSS này chứa hàng trăm ví dụ CSS. (This CSS tutorial contains hundreds of CSS examples.)
+Với trình chỉnh sửa trực tuyến của chúng tôi, bạn có thể chỉnh sửa CSS và nhấp vào nút để xem kết quả. (With our online editor, you can edit the CSS, and click on a button to view the result.)
+
+Ví dụ: (Example)
+
+Nhấp vào nút "Tự mình thử" để xem nó hoạt động như thế nào. (Click on the "Try it Yourself" button to see how it works.)
+Bắt đầu học CSS ngay! (Start learning CSS now!) (Link)
+
+3.Ví dụ CSS (CSS Examples)
+
+Học hỏi từ hơn 300 ví dụ! Với trình chỉnh sửa của chúng tôi, bạn có thể chỉnh sửa CSS và nhấp vào nút để xem kết quả. (Learn from over 300 examples! With our editor, you can edit the CSS, and click on a button to view the result.)
+Đi đến ví dụ CSS! (Go to CSS Examples!) (Link)
+
+
+4.Mẫu CSS (CSS Templates)
+
+Chúng tôi đã tạo một số mẫu W3.CSS đáp ứng để bạn sử dụng. (We have created some responsive W3.CSS templates for you to use.)
+Bạn có thể tự do sửa đổi, lưu, chia sẻ và sử dụng chúng trong tất cả các dự án của bạn. (You are free to modify, save, share, and use them in all your projects.)
+Mẫu CSS miễn phí! (Free CSS Templates!) (Link)
+
+5.Bài tập CSS và Kiểm tra bài kiểm tra (CSS Exercises and Quiz Test)
+
+Kiểm tra kỹ năng CSS của bạn tại W3Schools! (Test your CSS skills at W3Schools!)
+
+Start CSS Exercises! (Link)
+Start CSS Quiz! (Link)
+
+6.Tài liệu tham khảo CSS (CSS References)
+
+Tại W3Schools, bạn sẽ tìm thấy các tài liệu tham khảo CSS đầy đủ của tất cả các thuộc tính và bộ chọn với cú pháp, ví dụ, hỗ trợ trình duyệt và hơn thế nữa. (At W3Schools you will find complete CSS references of all properties and selectors with syntax, examples, browser support, and more.)
+Tham chiếu thuộc tính CSS (CSS Properties Reference) (Link)
+Tham chiếu bộ chọn CSS (CSS Selectors Reference) (Link)
+Tham chiếu các hàm CSS (CSS Functions Reference) (Link)
+Tài liệu tham khảo hoạt hình CSS (CSS Animatable Reference) (Link)
+Tài liệu tham khảo về âm thanh CSS (CSS Aural Reference) (Link)
+Đơn vị CSS (CSS Units) (Link)
+Tham chiếu màu CSS (CSS Color Reference) (Link)
+Giá trị mặc định CSS (CSS Default Values) (Link)
+Hỗ trợ trình duyệt CSS (CSS Browser Support) (Link)
+

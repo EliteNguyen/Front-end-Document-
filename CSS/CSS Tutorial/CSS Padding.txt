@@ -1,0 +1,171 @@
+Đệm - Khoảng không
+
+1. CSS Padding:
+
+Ví dụ: (Example)
+
+
+2. Đệm CSS (CSS Padding)
+
+Các thuộc tính đệm CSS được sử dụng để tạo không gian xung quanh nội dung của một phần tử, bên trong bất kỳ đường viền xác định nào.
+(The CSS padding properties are used to generate space around an element's content, inside of any defined borders.)
+
+Với CSS, bạn có toàn quyền kiểm soát phần đệm. Có các thuộc tính để thiết lập phần đệm cho mỗi bên của một phần tử (trên cùng, bên phải, dưới cùng và bên trái).
+(With CSS, you have full control over the padding. There are properties for setting the padding for each side of an element (top, right, bottom, and left).)
+
+
+3. Đệm - Các mặt riêng lẻ (Padding - Individual Sides)
+
+CSS có các thuộc tính để chỉ định phần đệm cho mỗi bên của một phần tử:
+(CSS has properties for specifying the padding for each side of an element:)
+
+đệm lót (padding-top)
+đệm-phải (padding-right)
+đệm đáy (padding-bottom)
+đệm trái (padding-left)
+
+Tất cả các thuộc tính đệm có thể có các giá trị sau:
+(All the padding properties can have the following values:)
+
+chiều dài - chỉ định phần đệm trong px, pt, cm, v.v.
+(length - specifies a padding in px, pt, cm, etc.)
+
+% - chỉ định phần đệm theo% chiều rộng của phần tử chứa
+(% - specifies a padding in % of the width of the containing element)
+
+kế thừa - chỉ định rằng phần đệm nên được kế thừa từ phần tử cha
+(inherit - specifies that the padding should be inherited from the parent element)
+
+Lưu ý: Các giá trị âm không được phép.
+(Note: Negative values are not allowed.)
+
+Đặt phần đệm khác nhau cho tất cả bốn mặt của phần tử <div>:
+(Set different padding for all four sides of a <div> element:)
+
+Ví dụ: (Example)
+
+
+3. Khoảng không - Thuộc tính tốc ký (Padding - Shorthand Property)
+
+Để rút ngắn mã, có thể chỉ định tất cả các thuộc tính đệm trong một thuộc tính.
+(To shorten the code, it is possible to specify all the padding properties in one property.)
+
+Thuộc tính đệm là thuộc tính tốc ký cho các thuộc tính đệm riêng lẻ sau:
+(The padding property is a shorthand property for the following individual padding properties:)
+
+đệm lót (padding-top)
+đệm-phải (padding-right)
+đệm đáy (padding-bottom)
+đệm trái (padding-left)
+
+Vì vậy, đây là cách nó hoạt động:
+(So, here is how it works:)
+
+
+Nếu thuộc tính đệm có bốn giá trị:
+(If the padding property has four values:)
+
+.padding: 25px 50px 75px 100px;
+
+top padding is 25px
+right padding is 50px
+bottom padding is 75px
+left padding is 100px
+
+Sử dụng thuộc tính tắc "Khoảng 0" với bốn giá trị:
+(Use the padding shorthand property with four values:)
+
+Ví dụ: (Example)
+
+
+Nếu thuộc tính đệm có ba giá trị:
+(If the padding property has three values:)
+
+.padding: 25px 50px 75px;
+top padding is 25px
+right and left paddings are 50px
+bottom padding is 75px
+
+Sử dụng thuộc tính tốc ký đệm với ba giá trị:
+(Use the padding shorthand property with three values: )
+
+Ví dụ: (Example)
+
+
+Nếu thuộc tính đệm có hai giá trị:
+(If the padding property has two values:)
+
+.padding: 25px 50px;
+top and bottom paddings are 25px
+right and left paddings are 50px
+
+Sử dụng thuộc tính tốc ký đệm với hai giá trị:
+(Use the padding shorthand property with two values: )
+
+Ví dụ: (Example)
+
+
+Nếu thuộc tính đệm có một giá trị:
+(If the padding property has one value:)
+
+.padding: 25px;
+all four paddings are 25px
+
+Sử dụng thuộc tính tốc ký đệm với một giá trị:
+(Use the padding shorthand property with one value: )
+
+Ví dụ: (Example)
+
+
+4. Đệm và chiều rộng phần tử (Padding and Element Width)
+
+Thuộc tính chiều rộng CSS chỉ định chiều rộng của vùng nội dung của phần tử. Vùng nội dung là phần bên trong phần đệm, đường viền và lề của một phần tử (mô hình hộp). (Link)
+(The CSS width property specifies the width of the element's content area. The content area is the portion inside the padding, border, and margin of an element (the box model).)
+
+Vì vậy, nếu một phần tử có chiều rộng được chỉ định, phần đệm được thêm vào phần tử đó sẽ được thêm vào tổng chiều rộng của phần tử. Đây thường là một kết quả không mong muốn.
+(So, if an element has a specified width, the padding added to that element will be added to the total width of the element. This is often an undesirable result.)
+
+Ở đây, phần tử <div> được cho chiều rộng 300px. Tuy nhiên, chiều rộng thực tế của phần tử <div> sẽ là 350px (300px + 25px của phần đệm bên trái + 25px của phần đệm bên phải):
+(Here, the <div> element is given a width of 300px. However, the actual width of the <div> element will be 350px (300px + 25px of left padding + 25px of right padding):)
+
+Ví dụ: (Example)
+
+
+Để giữ chiều rộng ở mức 300px, bất kể số lượng phần đệm, bạn có thể sử dụng thuộc tính kích thước hộp. Điều này làm cho phần tử duy trì chiều rộng của nó; nếu bạn tăng phần đệm, không gian nội dung khả dụng sẽ giảm.
+(To keep the width at 300px, no matter the amount of padding, you can use the box-sizing property. This causes the element to maintain its width; if you increase the padding, the available content space will decrease.)
+
+Sử dụng thuộc tính kích thước hộp để giữ chiều rộng ở 300px, bất kể số lượng phần đệm:
+(Use the box-sizing property to keep the width at 300px, no matter the amount of padding:)
+
+Ví dụ: (Example)
+
+
+5. Thêm ví dụ (More Examples)
+
+
+Đặt phần đệm bên trái (Link)
+(Set the left padding)
+ 
+Ví dụ này trình bày cách đặt phần đệm bên trái của phần tử <p>.
+(This example demonstrates how to set the left padding of a <p> element.)
+
+
+Đặt phần đệm bên phải (Link)
+(Set the right padding)
+
+Ví dụ này trình bày cách đặt phần đệm bên phải của phần tử <p>.
+(This example demonstrates how to set the right padding of a <p> element.)
+
+
+Đặt phần đệm trên cùng (Link)
+(Set the top padding)
+
+Ví dụ này trình bày cách đặt phần đệm trên cùng của phần tử <p>.
+(This example demonstrates how to set the top padding of a <p> element.)
+
+
+Đặt phần đệm dưới cùng (Link)
+(Set the bottom padding)
+
+Ví dụ này trình bày cách đặt phần đệm dưới cùng của phần tử <p>.
+(This example demonstrates how to set the bottom padding of a <p> element.)

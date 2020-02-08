@@ -1,0 +1,148 @@
+1. Lề CSS (CSS Margins)
+
+Các thuộc tính lề CSS được sử dụng để tạo không gian xung quanh các phần tử, bên ngoài bất kỳ đường viền xác định nào.
+(The CSS margin properties are used to create space around elements, outside of any defined borders.)
+
+Với CSS, bạn có toàn quyền kiểm soát lề. Có các thuộc tính để đặt lề cho mỗi bên của một phần tử (trên cùng, bên phải, dưới cùng và bên trái).
+(With CSS, you have full control over the margins. There are properties for setting the margin for each side of an element (top, right, bottom, and left).)
+
+Canh lề cho nội dung (trên dưới trái phải)
+Tạo 1 không gian bao quanh nội dung của thẻ
+
+2. Lề - những mặt riêng biệt (Margin - Individual Sides)
+
+CSS có các thuộc tính để chỉ định lề cho mỗi bên của một phần tử:
+(CSS has properties for specifying the margin for each side of an element:)
+
+đầu lề (margin-top)
+lề phải (margin-right)
+lề dưới (margin-bottom)
+lề trái (margin-left)
+
+
+Tất cả các thuộc tính lề có thể có các giá trị sau:
+(All the margin properties can have the following values:)
+
+tự động - trình duyệt tính toán lề 
+(auto - the browser calculates the margin)
+
+chiều dài - chỉ định lề trong px, pt, cm, v.v. 
+(length - specifies a margin in px, pt, cm, etc.)
+
+% - chỉ định lề theo % chiều rộng của phần tử chứa 
+(% - specifies a margin in % of the width of the containing element)
+
+kế thừa - chỉ định rằng lề phải được kế thừa từ phần tử cha 
+(inherit - specifies that the margin should be inherited from the parent element)
+
+Mẹo: Các giá trị âm được cho phép. 
+(Tip: Negative values are allowed.)
+
+Đặt lề khác nhau cho tất cả bốn mặt của phần tử <p>: 
+(Set different margins for all four sides of a <p> element:)
+
+Ví dụ: (Example)
+
+
+2. Lề - thuộc tính tắt (Margin - Shorthand Property)
+
+Để rút ngắn mã, có thể chỉ định tất cả các thuộc tính lề trong một thuộc tính.
+(To shorten the code, it is possible to specify all the margin properties in one property.)
+
+Thuộc tính lề là thuộc tính tắc cho các thuộc tính lề riêng lẻ sau:
+(The margin property is a shorthand property for the following individual margin properties:)
+
+margin-top
+margin-right
+margin-bottom
+margin-left
+
+
+Vì vậy, đây là cách nó hoạt động:
+(So, here is how it works:)
+
+Nếu thuộc tính lề có bốn giá trị:
+(If the margin property has four values:)
+
+.margin: 25px 50px 75px 100px;
+
+top margin is 25px
+right margin is 50px
+bottom margin is 75px
+left margin is 100px
+
+Ví dụ: (Example) Sử dụng thuộc tính tốc ký lề với bốn giá trị: (Use the margin shorthand property with four values:)
+
+Nếu thuộc tính lề có ba giá trị:
+(If the margin property has three values:)
+
+.margin: 25px 50px 75px;
+
+top margin is 25px
+right and left margins are 50px
+bottom margin is 75px
+
+Ví dụ: (Example) Sử dụng thuộc tính tốc ký lề với ba giá trị: (Use the margin shorthand property with three values: )
+
+Nếu thuộc tính lề có hai giá trị:
+(If the margin property has two values:)
+
+.margin: 25px 50px;
+top and bottom margins are 25px
+right and left margins are 50px
+
+Ví dụ: (Example) Sử dụng thuộc tính tốc ký lề với hai giá trị: (Use the margin shorthand property with two values: )
+
+Nếu thuộc tính lề có một giá trị:
+(If the margin property has one value:)
+
+.margin: 25px;
+all four margins are 25px
+
+Ví dụ: (Example)
+
+
+3. Giá trị tự động (The auto Value)
+
+Bạn có thể đặt thuộc tính lề thành tự động để căn giữa theo chiều ngang phần tử trong vùng chứa của nó.
+(You can set the margin property to auto to horizontally center the element within its container.)
+
+Phần tử sau đó sẽ chiếm chiều rộng được chỉ định và không gian còn lại sẽ được chia đều giữa lề trái và lề phải.
+(The element will then take up the specified width, and the remaining space will be split equally between the left and right margins.)
+
+Ví dụ: (Example)
+
+
+4. Giá trị kế thừa (The inherit Value)
+
+Ví dụ này cho phép lề trái của phần tử <p class = "ex1"> được kế thừa từ phần tử cha (<div>)
+(This example lets the left margin of the <p class="ex1"> element be inherited from the parent element (<div>))
+
+Ví dụ: (Example)
+
+
+5. Giảm lề (Margin Collapse)
+
+Lề trên và dưới của các yếu tố đôi khi được thu gọn thành một lề duy nhất bằng với lề lớn nhất trong hai lề.
+(Top and bottom margins of elements are sometimes collapsed into a single margin that is equal to the largest of the two margins.)
+
+Điều này không xảy ra ở lề trái và phải! Chỉ có lợi nhuận trên và dưới!
+(This does not happen on left and right margins! Only top and bottom margins!)
+
+Nhìn vào ví dụ sau:
+(Look at the following example:)
+
+Trong ví dụ trên, phần tử <h1> có lề dưới là 50px và phần tử <h2> có lề trên được đặt thành 20px.
+(In the example above, the <h1> element has a bottom margin of 50px and the <h2> element has a top margin set to 20px.)
+
+Thông thường dường như sẽ gợi ý rằng lề dọc giữa <h1> và <h2> sẽ có tổng cộng 70px (50px + 20px). Nhưng do sự sụp đổ lề, lề thực tế kết thúc là 50px.
+(Common sense would seem to suggest that the vertical margin between the <h1> and the <h2> would be a total of 70px (50px + 20px). But due to margin collapse, the actual margin ends up being 50px.)
+
+
+6. Tất cả các thuộc tính ký quỹ CSS (All CSS Margin Properties)
+
+margin			Thuộc tính tốc ký để đặt thuộc tính lề trong một khai báo (A shorthand property for setting the margin properties in one declaration) (Link)
+margin-bottom		Canh lề dưới của một phần tử (Sets the bottom margin of an element)
+margin-left		Canh lề trái của một phần tử (Sets the left margin of an element)
+margin-right		Canh lề phải của một phần tử (Sets the right margin of an element)
+margin-top		Canh lề trên của một phần tử (Sets the top margin of an element)

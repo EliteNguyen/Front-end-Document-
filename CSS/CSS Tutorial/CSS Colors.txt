@@ -1,0 +1,185 @@
+1.Màu CSS (CSS Colors)
+
+Màu sắc được chỉ định bằng cách sử dụng tên màu được xác định trước hoặc các giá trị RGB, HEX, HSL, RGBA, HSLA.
+(Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.)
+
+2.Tên màu CSS (CSS Color Names)
+
+Trong CSS, một màu có thể được chỉ định bằng cách sử dụng tên màu:
+(In CSS, a color can be specified by using a color name:)
+
+Ví dụ: (Example)
+
+CSS / HTML hỗ trợ 140 tên màu tiêu chuẩn. (link)
+(CSS/HTML support 140 standard color names.) 
+
+
+3.Màu nền CSS (CSS Background Color)
+
+Bạn có thể đặt màu nền cho các thành phần HTML: 
+(You can set the background color for HTML elements:)
+
+Ví dụ: (Example)
+
+
+4.Màu văn bản CSS: (CSS Text Color)
+
+Bạn có thể đặt màu của văn bản:
+(You can set the color of text:)
+
+Ví dụ: (Example)
+
+
+5.Màu viền CSS (CSS Border Color)
+
+Bạn có thể đặt màu của đường viền:
+(You can set the color of borders:)
+
+Ví dụ: (Example)
+
+
+6.Giá trị màu CSS (CSS Color Values)
+
+Trong CSS, màu sắc cũng có thể được chỉ định bằng các giá trị RGB, giá trị HEX, giá trị HSL, giá trị RGBA và giá trị HSLA:
+(In CSS, colors can also be specified using RGB values, HEX values, HSL values, RGBA values, and HSLA values:)
+
+Giống như tên màu "Cà chua":
+(Same as color name "Tomato":)
+
+Ví dụ: (Example)
+
+
+
+7.Giá trị CSS RGB (CSS RGB Value)
+
+Trong CSS, một màu có thể được chỉ định làm giá trị RGB, sử dụng công thức này:
+(In CSS, a color can be specified as an RGB value, using this formula:)
+
+rgb (đỏ, xanh lá cây, xanh dương)
+(rgb(red, green, blue))
+
+Mỗi tham số (đỏ, xanh lá cây và xanh dương) xác định cường độ của màu trong khoảng từ 0 đến 255.
+(Each parameter (red, green, and blue) defines the intensity of the color between 0 and 255.)
+
+Ví dụ: rgb (255, 0, 0) được hiển thị màu đỏ, vì màu đỏ được đặt thành giá trị cao nhất (255) và các giá trị khác được đặt thành 0.
+(For example, rgb(255, 0, 0) is displayed as red, because red is set to its highest value (255) and the others are set to 0.)
+
+Để hiển thị màu đen, tất cả các tham số màu phải được đặt thành 0, như thế này: rgb (0, 0, 0).
+(To display the color black, all color parameters must be set to 0, like this: rgb(0, 0, 0).)
+
+Để hiển thị màu trắng, tất cả các tham số màu phải được đặt thành 255, như thế này: rgb (255, 255, 255).
+(To display the color white, all color parameters must be set to 255, like this: rgb(255, 255, 255).)
+
+Thử nghiệm bằng cách trộn các giá trị RGB bên dưới:
+(Experiment by mixing the RGB values below:)
+
+Hình: (Image)
+
+Ví dụ: (Example)
+
+Các sắc thái của màu xám thường được xác định bằng các giá trị bằng nhau cho cả 3 nguồn sáng:
+(Shades of gray are often defined using equal values for all the 3 light sources:)
+
+Hình (Image):
+
+Ví dụ: (Example)
+
+ 
+8.Giá trị CSS HEX (CSS HEX Value)
+
+Trong CSS, một màu có thể được chỉ định bằng cách sử dụng giá trị thập lục phân trong biểu mẫu:
+(In CSS, a color can be specified using a hexadecimal value in the form:)
+
+#rrggbb
+
+Trong đó rr (đỏ), gg (xanh lá cây) và bb (xanh lam) là các giá trị thập lục phân trong khoảng từ 00 đến ff (giống như số thập phân 0-255).
+(Where rr (red), gg (green) and bb (blue) are hexadecimal values between 00 and ff (same as decimal 0-255).)
+
+Ví dụ: # ff0000 được hiển thị màu đỏ, vì màu đỏ được đặt thành giá trị cao nhất (ff) và các giá trị khác được đặt thành giá trị thấp nhất (00).
+(For example, #ff0000 is displayed as red, because red is set to its highest value (ff) and the others are set to the lowest value (00).)
+
+Ví dụ: (Example)
+
+Các sắc thái của màu xám thường được xác định bằng các giá trị bằng nhau cho cả 3 nguồn sáng:
+(Shades of gray are often defined using equal values for all the 3 light sources:)
+
+
+9.Giá trị HSL ( HSL Value)
+
+Trong CSS, một màu có thể được chỉ định bằng cách sử dụng màu sắc, độ bão hòa và độ sáng (HSL) ở dạng:
+(In CSS, a color can be specified using hue, saturation, and lightness (HSL) in the form:)
+
+hsl (màu sắc, độ bão hòa, độ sáng)
+(hsl(hue, saturation, lightness))
+
+Hue là một độ trên bánh xe màu từ 0 đến 360. 0 là màu đỏ, 120 là màu xanh lá cây và 240 là màu xanh lam.
+(Hue is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, and 240 is blue.)
+
+Độ bão hòa là một giá trị phần trăm, 0% có nghĩa là màu xám và 100% là màu đầy đủ.
+(Saturation is a percentage value, 0% means a shade of gray, and 100% is the full color.)
+
+Độ sáng cũng là một tỷ lệ phần trăm, 0% là màu đen, 50% không phải là sáng hay tối, 100% là màu trắng
+(Lightness is also a percentage, 0% is black, 50% is neither light or dark, 100% is white)
+
+Ví dụ: (Example)
+
+9.1.Độ bão hòa (Saturation)
+
+Độ bão hòa có thể được mô tả là cường độ của một màu.
+(Saturation can be described as the intensity of a color.)
+
+100% là màu thuần khiết, không có sắc độ xám
+(100% is pure color, no shades of gray)
+
+50% là 50% màu xám, nhưng bạn vẫn có thể nhìn thấy màu.
+(50% is 50% gray, but you can still see the color.)
+
+0% là màu xám hoàn toàn, bạn không thể nhìn thấy màu nữa.
+(0% is completely gray, you can no longer see the color.)
+
+Ví dụ: (Example)
+
+
+9.2.Nhẹ nhàng (Lightness)
+
+Độ sáng của màu sắc có thể được mô tả là bạn muốn cung cấp bao nhiêu ánh sáng, trong đó 0% có nghĩa là không có ánh sáng (đen), 50% có nghĩa là 50% ánh sáng (không tối cũng không sáng) 100% có nghĩa là ánh sáng đầy đủ (trắng). 
+(The lightness of a color can be described as how much light you want to give the color, where 0% means no light (black), 50% means 50% light (neither dark nor light) 100% means full lightness (white).)
+
+Ví dụ: (Example)
+
+Màu xám thường được xác định bằng cách đặt màu sắc và độ bão hòa thành 0 và điều chỉnh độ sáng từ 0% đến 100% để có được màu tối hơn / sáng hơn:
+(Shades of gray are often defined by setting the hue and saturation to 0, and adjust the lightness from 0% to 100% to get darker/lighter shades:)
+
+
+10.Giá trị RGBA (RGBA Value)
+
+Giá trị màu RGBA là phần mở rộng của giá trị màu RGB với kênh alpha - chỉ định độ mờ cho màu.
+(RGBA color values are an extension of RGB color values with an alpha channel - which specifies the opacity for a color.)
+
+Giá trị màu RGBA được chỉ định bằng:
+(An RGBA color value is specified with:)
+
+rgba (đỏ, xanh lá cây, xanh dương, alpha)
+(rgba(red, green, blue, alpha))
+
+Tham số alpha là một số trong khoảng 0,0 (hoàn toàn trong suốt) và 1.0 (hoàn toàn không minh bạch):
+(The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all):)
+
+Ví dụ: (Example)
+
+
+11.Giá trị HSLA (HSLA Value)
+
+Giá trị màu HSLA là phần mở rộng của giá trị màu HSL với kênh alpha - chỉ định độ mờ cho màu.
+(HSLA color values are an extension of HSL color values with an alpha channel - which specifies the opacity for a color.)
+
+Giá trị màu HSLA được chỉ định bằng:
+(An HSLA color value is specified with:)
+
+hsla (màu sắc, độ bão hòa, độ sáng, alpha)
+(hsla(hue, saturation, lightness, alpha))
+
+Tham số alpha là một số trong khoảng 0,0 (hoàn toàn trong suốt) và 1.0 (hoàn toàn không minh bạch):
+(The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (not transparent at all):)
+
+Ví dụ: (Example)

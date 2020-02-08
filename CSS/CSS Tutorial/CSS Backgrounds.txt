@@ -1,0 +1,141 @@
+1.Nền CSS (CSS Backgrounds)
+
+Các thuộc tính nền CSS được sử dụng để xác định hiệu ứng nền cho các phần tử.
+(The CSS background properties are used to define the background effects for elements.)
+
+Thuộc tính nền CSS:
+(CSS background properties:)
+
+màu nền (background-color)
+hình nền (background-image)
+Bối cảnh Lặp lại (background-repeat)
+đính kèm nền (background-attachment)
+vị trí nền (background-position)
+
+
+2.Màu nền CSS (CSS background-color)
+
+Thuộc tính màu nền chỉ định màu nền của một phần tử.
+(The background-color property specifies the background color of an element.)
+
+Ví dụ: (Example)
+
+Với CSS, một màu thường được chỉ định bởi:
+(With CSS, a color is most often specified by:)
+
+một tên màu hợp lệ - như "đỏ"
+(a valid color name - like "red")
+
+một giá trị HEX - như "# ff0000"
+(a HEX value - like "#ff0000")
+
+một giá trị RGB - như "rgb (255,0,0)"
+(an RGB value - like "rgb(255,0,0)")
+
+Nhìn vào Giá trị màu CSS để biết danh sách đầy đủ các giá trị màu có thể. (link)
+(Look at CSS Color Values for a complete list of possible color values.) 
+
+Ví dụ: (Example)
+
+
+2.Hình nền CSS (CSS background-image)
+
+Thuộc tính hình ảnh nền chỉ định một hình ảnh để sử dụng làm nền của một yếu tố.
+(The background-image property specifies an image to use as the background of an element.)
+
+Theo mặc định, hình ảnh được lặp lại để nó bao phủ toàn bộ thành phần.
+(By default, the image is repeated so it covers the entire element.)
+
+Ví dụ này cho thấy một sự kết hợp xấu của văn bản và hình ảnh nền. Các văn bản hầu như không thể đọc được:
+(This example shows a bad combination of text and background image. The text is hardly readable: )
+
+Ví dụ: (Example)
+
+Lưu ý: Khi sử dụng hình nền, hãy sử dụng hình ảnh không làm phiền văn bản.
+(Note: When using a background image, use an image that does not disturb the text.)
+
+
+3.CSS lặp lại nền (CSS background-repeat)
+
+Theo mặc định, thuộc tính hình ảnh nền lặp lại một hình ảnh theo cả chiều ngang và chiều dọc.
+(By default, the background-image property repeats an image both horizontally and vertically.)
+
+Một số hình ảnh chỉ nên được lặp lại theo chiều ngang hoặc chiều dọc, nếu không chúng sẽ trông lạ, như thế này:
+(Some images should be repeated only horizontally or vertically, or they will look strange, like this:)
+
+Nếu hình ảnh trên chỉ được lặp lại theo chiều ngang (lặp lại nền: lặp lại-x;), nền sẽ trông tốt hơn:
+(If the image above is repeated only horizontally (background-repeat: repeat-x;), the background will look better:)
+
+Ví dụ: (Example)
+
+
+Mẹo: Để lặp lại hình ảnh theo chiều dọc, đặt lặp lại nền: repeat-y;
+(Tip: To repeat an image vertically, set background-repeat: repeat-y;)
+
+Chỉ hiển thị hình nền một lần bởi thuộc tính lặp lại nền:
+(Showing the background image only once is also specified by the background-repeat property:)
+
+
+4.Lặp lại nền CSS: không lặp lại (CSS background-repeat: no-repeat)
+
+Chỉ hiển thị hình nền một lần bởi thuộc tính lặp lại nền:
+(Showing the background image only once is also specified by the background-repeat property:)
+
+Ví dụ: (Example)
+
+Trong ví dụ trên, hình nền được đặt ở cùng một nơi với văn bản. Chúng tôi muốn thay đổi vị trí của hình ảnh, để nó không làm phiền văn bản quá nhiều.
+(In the example above, the background image is placed in the same place as the text. We want to change the position of the image, so that it does not disturb the text too much.)
+
+
+5.Vị trí nền CSS (CSS background-position)
+
+Thuộc tính vị trí nền được sử dụng để xác định vị trí của hình nền.
+(The background-position property is used to specify the position of the background image.)
+
+Định vị hình ảnh nền ở góc trên bên phải:
+(Position the background image in the top-right corner: )
+
+Ví dụ: (Example)
+
+
+5.Phần đính kèm nền CSS (CSS background-attachment)
+
+Thuộc tính đính kèm nền xác định xem hình nền sẽ cuộn hay được sửa (sẽ không cuộn với phần còn lại của trang):
+(The background-attachment property specifies whether the background image should scroll or be fixed (will not scroll with the rest of the page):)
+
+Chỉ định rằng hình nền phải được sửa:
+(Specify that the background image should be fixed:)
+
+Ví dụ: (Example)
+
+Chỉ định rằng hình nền sẽ cuộn với phần còn lại của trang:
+(Specify that the background image should scroll with the rest of the page:)
+
+Ví dụ: (Example)
+
+
+6.Nền CSS - Thuộc tính tốc ký (CSS background - Shorthand property)
+
+Để rút ngắn mã, cũng có thể chỉ định tất cả các thuộc tính nền trong một thuộc tính duy nhất. Đây được gọi là một tài sản tốc ký.
+(To shorten the code, it is also possible to specify all the background properties in one single property. This is called a shorthand property.)
+
+Các thuộc tính tốc ký cho nền là nền.
+(The shorthand property for background is background.)
+
+1 thuộc tính mang nhiều giá trị của thuộc tính khác.
+
+Ví dụ: (Example)
+
+7.Tất cả các thuộc tính nền CSS (All CSS Background Properties)
+
+background: Đặt tất cả các thuộc tính nền trong một khai báo (Sets all the background properties in one declaration)
+background-attachment: Đặt xem hình nền có cố định hay cuộn với phần còn lại của trang
+background-clip: Chỉ định vùng vẽ của nền (Specifies the painting area of the background)
+background-color: Đặt màu nền của một phần tử (Sets the background color of an element)
+background-images: Đặt hình nền cho một phần tử (Sets the background image for an element)
+background-origin: Chỉ định vị trí (các) hình nền được định vị (Specifies where the background image(s) is/are positioned)
+background-position: Đặt vị trí bắt đầu của ảnh nền (Sets the starting position of a background image)
+background-repeat: Đặt cách lặp lại một hình ảnh nền (Sets how a background image will be repeated)
+background-size: Chỉ định kích thước của hình ảnh nền (Specifies the size of the background image(s))
+
+

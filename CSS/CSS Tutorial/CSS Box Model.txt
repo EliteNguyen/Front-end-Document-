@@ -1,0 +1,73 @@
+1. Mô hình hộp CSS (The CSS Box Model)
+
+Tất cả các yếu tố HTML có thể được coi là hộp. Trong CSS, thuật ngữ "mô hình hộp" được sử dụng khi nói về thiết kế và bố cục.
+(All HTML elements can be considered as boxes. In CSS, the term "box model" is used when talking about design and layout.)
+
+Mô hình hộp CSS về cơ bản là một hộp bao quanh mọi phần tử HTML. Nó bao gồm: lề, đường viền, phần đệm và nội dung thực tế. Hình ảnh dưới đây minh họa mô hình hộp:
+(The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content. The image below illustrates the box model:)
+
+Hình (Image)
+
+
+Giải thích về các phần khác nhau: 
+(Explanation of the different parts:)
+
+Nội dung - Nội dung của hộp, nơi xuất hiện văn bản và hình ảnh
+(Content - The content of the box, where text and images appear)
+
+Đệm - Xóa một khu vực xung quanh nội dung. Phần đệm trong suốt
+(Padding - Clears an area around the content. The padding is transparent)
+
+Đường viền - Đường viền bao quanh phần đệm và nội dung
+(Border - A border that goes around the padding and content)
+
+Ký quỹ - Xóa một khu vực bên ngoài biên giới. Lề là trong suốt
+(Margin - Clears an area outside the border. The margin is transparent)
+
+Mô hình hộp cho phép chúng ta thêm một đường viền xung quanh các phần tử và để xác định không gian giữa các phần tử.
+(The box model allows us to add a border around elements, and to define space between elements. )
+
+Trình diễn mô hình hộp:
+(Demonstration of the box model:)
+
+Ví dụ: (Example)
+
+
+2. Chiều rộng và chiều cao của một phần tử (Width and Height of an Element)
+
+Để đặt chính xác chiều rộng và chiều cao của một phần tử trong tất cả các trình duyệt, bạn cần biết mô hình hộp hoạt động như thế nào.
+(In order to set the width and height of an element correctly in all browsers, you need to know how the box model works.)
+
+Quan trọng: Khi bạn đặt thuộc tính chiều rộng và chiều cao của một phần tử bằng CSS, bạn chỉ cần đặt chiều rộng và chiều cao của vùng nội dung. Để tính kích thước đầy đủ của một phần tử, bạn cũng phải thêm phần đệm, đường viền và lề.
+(Important: When you set the width and height properties of an element with CSS, you just set the width and height of the content area. To calculate the full size of an element, you must also add padding, borders and margins.)
+
+
+Phần tử <div> này sẽ có tổng chiều rộng 350px:
+(This <div> element will have a total width of 350px:)
+
+
+Ví dụ: (Example)
+
+
+Đây là tính toán:
+(Here is the calculation:)
+
+320px (width)
++ 20px (left + right padding)
++ 10px (left + right border)
++ 0px (left + right margin)
+= 350px
+
+
+Tổng chiều rộng của một phần tử nên được tính như thế này:
+(The total width of an element should be calculated like this:)
+
+Tổng chiều rộng phần tử = chiều rộng + đệm trái + đệm phải + viền trái + viền phải + lề trái + lề phải
+(Total element width = width + left padding + right padding + left border + right border + left margin + right margin)
+
+Tổng chiều cao của một phần tử nên được tính như thế này:
+(The total height of an element should be calculated like this:)
+
+Tổng chiều cao phần tử = chiều cao + phần đệm trên cùng + phần đệm dưới + viền trên + viền dưới + lề trên + lề dưới
+(Total element height = height + top padding + bottom padding + top border + bottom border + top margin + bottom margin)
+

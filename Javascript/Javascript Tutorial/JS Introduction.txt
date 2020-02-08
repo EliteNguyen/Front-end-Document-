@@ -1,0 +1,48 @@
+Trang này chứa một số ví dụ về những gì JavaScript có thể làm.
+(This page contains some examples of what JavaScript can do.)
+
+
+1. JavaScript có thể thay đổi nội dung HTML (JavaScript Can Change HTML Content)
+
+Một trong nhiều phương thức HTML JavaScript là getEuityById ().
+(One of many JavaScript HTML methods is getElementById().)
+
+Ví dụ này sử dụng phương pháp để "tìm" một phần tử HTML (với id = "demo") và thay đổi nội dung phần tử (InternalHTML) thành "Hello JavaScript":
+(This example uses the method to "find" an HTML element (with id="demo") and changes the element content (innerHTML) to "Hello JavaScript":)
+
+Ví dụ: (Example)
+
+JavaScript chấp nhận cả dấu ngoặc kép và dấu ngoặc đơn:
+(JavaScript accepts both double and single quotes:)
+
+Ví dụ: (Example)
+
+
+2. JavaScript có thể thay đổi giá trị thuộc tính HTML (JavaScript Can Change HTML Attribute Values)
+
+Trong ví dụ này, JavaScript thay đổi giá trị của thuộc tính src (nguồn) của thẻ <img>:
+(In this example JavaScript changes the value of the src (source) attribute of an <img> tag:)
+
+
+3. JavaScript có thể thay đổi kiểu HTML (CSS) (JavaScript Can Change HTML Styles (CSS))
+
+Thay đổi kiểu của một phần tử HTML, là một biến thể của việc thay đổi thuộc tính HTML:
+(Changing the style of an HTML element, is a variant of changing an HTML attribute:)
+
+Ví dụ: (Example)
+
+
+4. JavaScript có thể ẩn các phần tử HTML (JavaScript Can Hide HTML Elements)
+
+Ẩn các phần tử HTML có thể được thực hiện bằng cách thay đổi kiểu hiển thị:
+(Hiding HTML elements can be done by changing the display style:)
+
+Ví dụ: (Example)
+
+
+5. JavaScript có thể hiển thị các phần tử HTML (JavaScript Can Show HTML Elements)
+
+Hiển thị các yếu tố HTML ẩn cũng có thể được thực hiện bằng cách thay đổi kiểu hiển thị:
+(Showing hidden HTML elements can also be done by changing the display style:)
+
+Ví dụ: (Example)

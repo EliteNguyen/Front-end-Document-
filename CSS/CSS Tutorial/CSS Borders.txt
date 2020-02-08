@@ -1,0 +1,211 @@
+1. Thuộc tính viền CSS (CSS Border Properties)
+
+Các thuộc tính viền CSS cho phép bạn chỉ định kiểu dáng, chiều rộng và màu sắc của đường viền của một phần tử.
+(The CSS border properties allow you to specify the style, width, and color of an element's border.)
+
+Hình (Image)
+
+
+2. Kiểu viền CSS (CSS Border Style)
+
+Thuộc tính kiểu viền chỉ định loại đường viền sẽ hiển thị. 
+(The border-style property specifies what kind of border to display.)
+
+Các giá trị sau được cho phép:
+(The following values are allowed:)
+
+chấm chấm - Xác định đường viền chấm (dotted - Defines a dotted border)
+nét đứt - Xác định đường viền nét đứt (dashed - Defines a dashed border)
+solid - Xác định đường viền liền mạch (solid - Defines a solid border)
+double - Xác định đường viền đôi (double - Defines a double border)
+rãnh - Xác định đường viền rãnh 3D. Hiệu ứng phụ thuộc vào giá trị màu viền (groove - Defines a 3D grooved border. The effect depends on the border-color value)
+sườn núi - Xác định đường viền có viền 3D. Hiệu ứng phụ thuộc vào giá trị màu viền (ridge - Defines a 3D ridged border. The effect depends on the border-color value)
+hình nhỏ - Xác định đường viền hình 3D. Hiệu ứng phụ thuộc vào giá trị màu viền (inset - Defines a 3D inset border. The effect depends on the border-color value)
+outset - Xác định đường viền đầu 3D. Hiệu ứng phụ thuộc vào giá trị màu viền (outset - Defines a 3D outset border. The effect depends on the border-color value)
+không có - Xác định không có biên giới (none - Defines no border)
+ẩn - Xác định đường viền ẩn (hidden - Defines a hidden border)
+
+Ví dụ: (Example)
+
+Thuộc tính kiểu đường viền có thể có từ một đến bốn giá trị (đối với đường viền trên, đường viền phải, đường viền dưới và đường viền trái).
+(The border-style property can have from one to four values (for the top border, right border, bottom border, and the left border).)
+
+Lưu ý: Không thuộc tính viền CSS KHÁC nào được mô tả bên dưới sẽ có hiệu ứng BẤT K trừ khi thuộc tính kiểu viền được đặt!
+(Note: None of the OTHER CSS border properties described below will have ANY effect unless the border-style property is set!)
+
+
+3. Độ rộng đường viền CSS (CSS Border Width)
+
+Thuộc tính chiều rộng đường viền chỉ định chiều rộng của bốn đường viền.
+(The border-width property specifies the width of the four borders.)
+
+Chiều rộng có thể được đặt thành một kích thước cụ thể (tính bằng px, pt, cm, em, v.v.) hoặc bằng cách sử dụng một trong ba giá trị được xác định trước: mỏng, trung bình hoặc dày.
+(The width can be set as a specific size (in px, pt, cm, em, etc) or by using one of the three pre-defined values: thin, medium, or thick.)
+
+Thuộc tính chiều rộng đường viền có thể có từ một đến bốn giá trị (đối với đường viền trên, đường viền phải, đường viền dưới và đường viền trái).
+(The border-width property can have from one to four values (for the top border, right border, bottom border, and the left border).)
+
+Lưu ý: Thuộc tính "độ rộng đường viền" không hoạt động nếu nó được sử dụng một mình. Luôn chỉ định thuộc tính "kiểu viền" để đặt đường viền trước.
+(Note: The "border-width" property does not work if it is used alone. Always specify the "border-style" property to set the borders first.)
+
+Ví dụ: (Example)
+
+
+4. Màu viền CSS (CSS Border Color)
+
+Thuộc tính màu viền được sử dụng để đặt màu của bốn đường viền.
+(The border-color property is used to set the color of the four borders.)
+
+Màu sắc có thể được thiết lập bởi:
+(The color can be set by:)
+
+Tên - chỉ định tên màu, như "đỏ" (name - specify a color name, like "red")
+Hex - chỉ định giá trị hex, như "# ff0000" (Hex - specify a hex value, like "#ff0000")
+RGB - chỉ định giá trị RGB, như "rgb (255,0,0)" (RGB - specify a RGB value, like "rgb(255,0,0)")
+trong suốt (transparent)
+
+Thuộc tính màu đường viền có thể có từ một đến bốn giá trị (đối với đường viền trên, đường viền phải, đường viền dưới và đường viền trái).
+(The border-color property can have from one to four values (for the top border, right border, bottom border, and the left border).)
+
+Nếu màu đường viền không được đặt, nó sẽ kế thừa màu của phần tử.
+(If border-color is not set, it inherits the color of the element.)
+
+Ví dụ: (Example)
+
+
+Thuộc tính "màu viền" không hoạt động nếu nó được sử dụng một mình. Sử dụng thuộc tính "kiểu viền" để đặt đường viền trước.
+(The "border-color" property does not work if it is used alone. Use the "border-style" property to set the borders first.)
+
+
+5. CSS Border - Các mặt riêng lẻ (CSS Border - Individual Sides)
+
+Từ các ví dụ trên bạn đã thấy rằng có thể chỉ định một đường viền khác nhau cho mỗi bên.
+(From the examples above you have seen that it is possible to specify a different border for each side.)
+
+Trong CSS, cũng có các thuộc tính để chỉ định từng đường viền (trên, phải, dưới và trái):
+(In CSS, there are also properties for specifying each of the borders (top, right, bottom, and left):)
+
+Ví dụ: (Example)
+
+Ví dụ trên cho kết quả tương tự như sau:
+(The example above gives the same result as this:)
+
+
+Vì vậy, đây là cách nó hoạt động:
+(So, here is how it works:)
+
+Nếu thuộc tính kiểu viền có bốn giá trị:
+(If the border-style property has four values:)
+
+border-style: dotted solid double dashed;
+top border is dotted
+right border is solid
+bottom border is double
+left border is dashed
+
+Nếu thuộc tính kiểu viền có ba giá trị: 
+(If the border-style property has three values:)
+
+border-style: dotted solid double;
+top border is dotted
+right and left borders are solid
+bottom border is double
+
+Nếu thuộc tính kiểu viền có hai giá trị:
+(If the border-style property has two values:)
+
+border-style: dotted solid;
+top and bottom borders are dotted
+right and left borders are solid
+
+Nếu thuộc tính kiểu viền có một giá trị:
+(If the border-style property has one value:)
+
+border-style: dotted;
+all four borders are dotted
+
+Thuộc tính kiểu viền được sử dụng trong ví dụ trên. Tuy nhiên, nó cũng hoạt động với chiều rộng đường viền và màu đường viền.
+(The border-style property is used in the example above. However, it also works with border-width and border-color.)
+
+
+6. CSS Border - Thuộc tính tốc ký (CSS Border - Shorthand Property)
+
+Như bạn có thể thấy từ các ví dụ trên, có nhiều thuộc tính cần xem xét khi xử lý đường viền.
+(As you can see from the examples above, there are many properties to consider when dealing with borders.)
+
+Để rút ngắn mã, cũng có thể chỉ định tất cả các thuộc tính viền riêng lẻ trong một thuộc tính.
+(To shorten the code, it is also possible to specify all the individual border properties in one property.)
+
+Thuộc tính biên là một thuộc tính tốc ký cho các thuộc tính biên riêng lẻ sau:
+(The border property is a shorthand property for the following individual border properties:)
+
+border-width
+border-style (required)
+border-color
+
+Ví dụ: (Example)
+
+
+bạn cũng có thể chỉ định tất cả các thuộc tính viền riêng lẻ cho một bên:
+(you can also specify all the individual border properties for just one side:)
+
+Viền trái (Left border) 
+Ví dụ: (Example)
+
+
+Viền dưới (Bottom border) 
+Ví dụ: (Example)
+
+
+Viền phải (Right border) 
+Ví dụ: (Example)
+
+
+Viền trên (Right border) 
+Ví dụ: (Example)
+
+
+7. Biên giới tròn CSS (CSS Rounded Borders)
+
+Thuộc tính bán kính đường viền được sử dụng để thêm viền tròn cho một phần tử:
+(The border-radius property is used to add rounded borders to an element:)
+
+Ví dụ: (Example)
+
+Lưu ý: Thuộc tính bán kính đường viền không được hỗ trợ trong IE8 và các phiên bản trước đó.
+(Note: The border-radius property is not supported in IE8 and earlier versions.)
+
+
+
+8. Thêm ví dụ (More examples) Tất cả đều là link
+
+Tất cả các thuộc tính biên trên cùng trong một khai báo
+(All the top border properties in one declaration)
+
+Ví dụ này cho thấy một thuộc tính tốc ký để thiết lập tất cả các thuộc tính cho đường viền trên cùng trong một khai báo.
+(This example demonstrates a shorthand property for setting all of the properties for the top border in one declaration.)
+
+Đặt kiểu đường viền dưới
+(Set the style of the bottom border)
+
+Ví dụ này cho thấy cách thiết lập kiểu của đường viền dưới cùng.
+(This example demonstrates how to set the style of the bottom border.)
+
+Đặt chiều rộng của đường viền bên trái
+(Set the width of the left border)
+
+Ví dụ này cho thấy cách đặt chiều rộng của đường viền bên trái.
+(This example demonstrates how to set the width of the left border.)
+
+Đặt màu của bốn đường viền
+(Set the color of the four borders)
+
+Ví dụ này cho thấy cách đặt màu của bốn đường viền. Nó có thể có từ một đến bốn màu.
+(This example demonstrates how to set the color of the four borders. It can have from one to four colors.)
+
+Đặt màu của đường viền bên phải
+(Set the color of the right border)
+
+Ví dụ này cho thấy cách đặt màu của đường viền bên phải.
+(This example demonstrates how to set the color of the right border.)
+

@@ -1,0 +1,95 @@
+JavaScript là ngôn ngữ lập trình của HTML và Web.
+(JavaScript is the programming language of HTML and the Web.)
+
+JavaScript rất dễ học.
+(JavaScript is easy to learn.)
+
+Hướng dẫn này sẽ dạy bạn JavaScript từ cơ bản đến nâng cao.
+(This tutorial will teach you JavaScript from basic to advanced.)
+
+1. Ví dụ trong mỗi chương
+(Examples in Each Chapter)
+
+Với trình chỉnh sửa "Tự mình thử" của chúng tôi, bạn có thể chỉnh sửa mã nguồn và xem kết quả.
+(With our "Try it Yourself" editor, you can edit the source code and view the result.)
+
+Ví dụ: (Example)
+
+Chúng tôi khuyên bạn nên đọc hướng dẫn này, theo trình tự được liệt kê trong menu bên trái.
+(We recommend reading this tutorial, in the sequence listed in the left menu.)
+
+
+2. Tìm hiểu bằng các ví dụ (Learn by Examples)
+
+Ví dụ tốt hơn 1000 từ. Các ví dụ thường dễ hiểu hơn giải thích văn bản.
+(Examples are better than 1000 words. Examples are often easier to understand than text explanations.)
+
+Hướng dẫn này bổ sung tất cả các giải thích với việc làm rõ các ví dụ "Tự mình thử".
+(This tutorial supplements all explanations with clarifying "Try it Yourself" examples.)
+
+Ví dụ JavaScript
+(JavaScript Examples) (link)
+
+Nếu bạn thử tất cả các ví dụ, bạn sẽ học được rất nhiều về JavaScript, trong một thời gian rất ngắn!
+(If you try all the examples, you will learn a lot about JavaScript, in a very short time!)
+
+
+3. Tại sao học JavaScript? (Why Study JavaScript?)
+
+JavaScript là một trong 3 ngôn ngữ mà tất cả các nhà phát triển web phải học:
+(JavaScript is one of the 3 languages all web developers must learn:)
+
+   1. HTML để xác định nội dung của các trang web
+   (1. HTML to define the content of web pages)
+
+   2. CSS để chỉ định bố cục của các trang web
+   (2. CSS to specify the layout of web pages)
+
+   3. JavaScript để lập trình hành vi của các trang web
+   (3. JavaScript to program the behavior of web pages)
+
+Các trang web không phải là nơi duy nhất sử dụng JavaScript. Nhiều chương trình máy tính để bàn và máy chủ sử dụng JavaScript. Node.js là nổi tiếng nhất. Một số cơ sở dữ liệu, như MongoDB và CouchDB, cũng sử dụng JavaScript làm ngôn ngữ lập trình của họ.
+(Web pages are not the only place where JavaScript is used. Many desktop and server programs use JavaScript. Node.js is the best known. Some databases, like MongoDB and CouchDB, also use JavaScript as their programming language.)
+
+
+4. Bạn có biết không? (Did You Know?)
+
+JavaScript và Java là các ngôn ngữ hoàn toàn khác nhau, cả về khái niệm và thiết kế.
+(JavaScript and Java are completely different languages, both in concept and design.)
+
+JavaScript được Brendan Eich phát minh vào năm 1995 và trở thành tiêu chuẩn ECMA vào năm 1997. (Link)
+(JavaScript was invented by Brendan Eich in 1995, and became an ECMA standard in 1997.)
+
+ECMA-262 là tên chính thức của tiêu chuẩn. ECMAScript là tên chính thức của ngôn ngữ.
+(ECMA-262 is the official name of the standard. ECMAScript is the official name of the language.)
+
+Bạn có thể đọc thêm về các phiên bản JavaScript khác nhau trong chương Phiên bản JS. (Link)
+(You can read more about the different JavaScript versions in the chapter JS Versions.)
+
+
+5. Tốc độ học tập (Learning Speed)
+
+Trong hướng dẫn này, tốc độ học tập là sự lựa chọn của bạn.
+(In this tutorial, the learning speed is your choice.)
+
+Mọi thứ tùy thuộc vào bạn.
+(Everything is up to you.)
+
+Nếu bạn đang vật lộn, hãy nghỉ ngơi, hoặc đọc lại tài liệu.
+(If you are struggling, take a break, or reread the material.)
+
+Luôn đảm bảo rằng bạn hiểu tất cả các ví dụ "Tự mình thử".
+(Always make sure you understand all the "Try-it-Yourself" examples.)
+
+
+6. Tài liệu tham khảo JavaScript (JavaScript References)
+
+W3Schools duy trì một tài liệu tham khảo JavaScript hoàn chỉnh, bao gồm tất cả các đối tượng trình duyệt và HTML.
+(W3Schools maintains a complete JavaScript reference, including all HTML and browser objects.)
+
+Tham chiếu chứa các ví dụ cho tất cả các thuộc tính, phương thức và sự kiện và được cập nhật liên tục theo các tiêu chuẩn web mới nhất.
+(The reference contains examples for all properties, methods and events, and is continuously updated according to the latest web standards.)
+
+Toàn bộ tài liệu tham khảo JavaScript (Link)
+(Complete JavaScript Reference) 
+

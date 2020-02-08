@@ -1,0 +1,40 @@
+1.CSS là gì? (What is CSS?)
+
+CSS là viết tắt của Cascading Style Sheets (CSS stands for Cascading Style Sheets)
+CSS mô tả cách các phần tử HTML được hiển thị trên màn hình, giấy hoặc trong phương tiện khác (CSS describes how HTML elements are to be displayed on screen, paper, or in other media)
+CSS tiết kiệm rất nhiều công việc. Nó có thể kiểm soát bố cục của nhiều trang web cùng một lúc (CSS saves a lot of work. It can control the layout of multiple web pages all at once)
+Các bảng định kiểu bên ngoài được lưu trữ trong các tệp CSS (External stylesheets are stored in CSS files)
+Được dùng để trang trí, định dạng, bố cục cho trang web, không có ý nghĩa trong việc thể hiện nội dung.
+CSS là một file có phần mở rộng là .css, nhiệm vụ của nó là tách riêng phần định dạng (style) ra khỏi nội dung trang HTML.
+
+=> CSS là file có đuôi .CSS bên trong có các biểu định kiểu, nhờ đó mà CSS có thể: (Các file CSS này nằm ngoài)
++ kiểm soát bố cục nhiều trang web cùng lúc. 
++ Trang trí, định dạng, bố cục cho trang web.
++ Dễ quản lý nội dung trang HTML.
++ Dễ điều khiển phần định dạng.
++ Sẽ tốn ít thời gian khi code hay chỉnh sửa.
+
+Ví dụ: bạn có ~100 file HTML có tiêu đề như nhau, và bạn muốn tất cả các trang HTML này có tiêu đề được thay đổi sang màu xanh, thì CSS sẽ thực hiện việc thay đổi này chỉ với 1 dòng code.
+
+2.CSS Demo - Một trang HTML - Nhiều kiểu! (CSS Demo - One HTML Page - Multiple Styles!)
+
+Ở đây chúng tôi sẽ hiển thị một trang HTML được hiển thị với bốn biểu định kiểu khác nhau. Nhấp vào liên kết "Biểu định kiểu 1", "Biểu định kiểu 2", "Biểu định kiểu 3", "Biểu định kiểu 4" bên dưới để xem các kiểu khác nhau: (Here we will show one HTML page displayed with four different stylesheets. Click on the "Stylesheet 1", "Stylesheet 2", "Stylesheet 3", "Stylesheet 4" links below to see the different styles:)
+
+3.Tại sao nên sử dụng CSS? (Why Use CSS?)
+
+CSS được sử dụng để xác định kiểu cho các trang web của bạn, bao gồm thiết kế, bố cục và các biến thể hiển thị cho các thiết bị và kích thước màn hình khác nhau. (CSS is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes.)
+ 
+4.CSS đã giải quyết một vấn đề lớn (CSS Solved a Big Problem)
+
+HTML KHÔNG BAO GIỜ có ý định chứa các thẻ để định dạng một trang web! (HTML was NEVER intended to contain tags for formatting a web page!)
+HTML được tạo để mô tả nội dung của một trang web, như: (HTML was created to describe the content of a web page, like:)
+<h1> Đây là một tiêu đề </ h1> (<h1>This is a heading</h1>)
+<p> Đây là một đoạn văn. </ p> (<p>This is a paragraph.</p>)
+Khi các thẻ như <font> và các thuộc tính màu được thêm vào đặc tả HTML 3.2, nó đã bắt đầu một cơn ác mộng đối với các nhà phát triển web. Phát triển các trang web lớn, nơi phông chữ và thông tin màu sắc được thêm vào mỗi trang, trở thành một quá trình lâu dài và tốn kém. (When tags like <font>, and color attributes were added to the HTML 3.2 specification, it started a nightmare for web developers. Development of large websites, where fonts and color information were added to every single page, became a long and expensive process.)
+Để giải quyết vấn đề này, World Wide Web Consortium (W3C) đã tạo CSS. (To solve this problem, the World Wide Web Consortium (W3C) created CSS.)
+CSS đã xóa định dạng kiểu từ trang HTML! (CSS removed the style formatting from the HTML page!)
+
+5.CSS tiết kiệm rất nhiều công việc! (CSS Saves a Lot of Work!)
+
+Các định nghĩa kiểu thường được lưu trong các tệp .css bên ngoài. (The style definitions are normally saved in external .css files.)
+Với tệp biểu định kiểu bên ngoài, bạn có thể thay đổi giao diện của toàn bộ trang web bằng cách thay đổi chỉ một tệp! (With an external stylesheet file, you can change the look of an entire website by changing just one file!)

@@ -1,0 +1,30 @@
+1.Cú pháp CSS (CSS Syntax)
+
+Bộ quy tắc CSS bao gồm bộ chọn và khối khai báo: (A CSS rule-set consists of a selector and a declaration block:)
+
+h1 (selector)
+{
+	color (Property): blue (Value); (Declaration)
+	font-size (Property): 12px (Value); (Declaration)
+}
+
+Chú thích:
+
+Bộ chọn trỏ đến phần tử HTML mà bạn muốn tạo kiểu. (The selector points to the HTML element you want to style.)
+Khối khai báo chứa một hoặc nhiều khai báo được phân tách bằng dấu chấm phẩy. (The declaration block contains one or more declarations separated by semicolons.)
+Mỗi khai báo bao gồm tên thuộc tính CSS và một giá trị, được phân tách bằng dấu hai chấm. (Each declaration includes a CSS property name and a value, separated by a colon.)
+Một khai báo CSS luôn kết thúc bằng dấu chấm phẩy và các khối khai báo được bao quanh bởi các dấu ngoặc nhọn. (A CSS declaration always ends with a semicolon, and declaration blocks are surrounded by curly braces.)
+
+Ví dụ: (Example)
+
+Trong ví dụ này, tất cả các phần tử <p> sẽ được căn giữa, với màu văn bản màu đỏ: (In this example all <p> elements will be center-aligned, with a red text color:)
+
+
+2.Nhận xét CSS (CSS Comments)
+
+Nhận xét được sử dụng để giải thích mã và có thể giúp ích khi bạn chỉnh sửa mã nguồn vào một ngày sau đó. (Comments are used to explain the code, and may help when you edit the source code at a later date.)
+Nhận xét bị bỏ qua bởi các trình duyệt. (Comments are ignored by browsers.)
+Nhận xét CSS bắt đầu bằng / * và kết thúc bằng * /. Nhận xét cũng có thể trải dài trên nhiều dòng. (A CSS comment starts with /* and ends with */. Comments can also span multiple lines.)
+
+Ví dụ: (Example)
+
