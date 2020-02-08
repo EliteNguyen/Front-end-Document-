@@ -1,0 +1,186 @@
+1. Di chuyển từ HTML4 sang HTML5 (Migration from HTML4 to HTML5)
+
+Chương này hoàn toàn là về cách di chuyển từ HTML4 sang HTML5.
+(This chapter is entirely about how to migrate from HTML4 to HTML5.)
+
+Chương này trình bày cách chuyển đổi trang HTML4 thành trang HTML5 mà không phá hủy bất kỳ nội dung hoặc cấu trúc gốc nào.
+(This chapter demonstrates how to convert an HTML4 page into an HTML5 page, without destroying anything of the original content or structure.)
+
+Bạn có thể di chuyển từ XHTML sang HTML5, sử dụng cùng một công thức.
+(You can migrate from XHTML to HTML5, using the same recipe.)
+
+Typical HTML4			Typical HTML5
+
+<div id="header">		<header>		
+<div id="menu">			<nav>
+<div id="content">		<section>
+<div class="article">		<article>
+<div id="footer">		<footer>
+
+
+2. Trang HTML4 điển hình (A Typical HTML4 Page)
+
+Ví dụ: (Example)
+
+
+3. Thay đổi thành Tài liệu HTML5 (Change to HTML5 Doctype)
+
+Thay đổi loại tài liệu:
+(Change the doctype:)
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+đến loại tài liệu HTML5:
+(to the HTML5 doctype:)
+
+Ví dụ: (Example)
+
+
+4. Thay đổi thành Mã hóa HTML5 (Change to HTML5 Encoding)
+
+Thay đổi thông tin mã hóa:
+(Change the encoding information:)
+
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+
+sang mã hóa HTML5:
+(to HTML5 encoding:)
+
+Ví dụ: (Example)
+
+
+5. Thêm HTML5Shiv (Add The HTML5Shiv)
+
+Các yếu tố ngữ nghĩa HTML5 mới được hỗ trợ trong tất cả các trình duyệt hiện đại. Ngoài ra, bạn có thể "dạy" các trình duyệt cũ hơn cách xử lý "các phần tử không xác định".
+(The new HTML5 semantic elements are supported in all modern browsers. In addition, you can "teach" older browsers how to handle "unknown elements".)
+
+Tuy nhiên, IE8 trở về trước, không cho phép tạo kiểu cho các phần tử chưa biết. Vì vậy, HTML5Shiv là một giải pháp thay thế JavaScript để cho phép tạo kiểu các phần tử HTML5 trong các phiên bản Internet Explorer trước phiên bản 9.
+(However, IE8 and earlier, does not allow styling of unknown elements. So, the HTML5Shiv is a JavaScript workaround to enable styling of HTML5 elements in versions of Internet Explorer prior to version 9.)
+
+Thêm HTML5Shiv:
+(Add the HTML5Shiv:)
+
+Ví dụ: (Example)
+
+Đọc thêm về HTML5Shiv trong Hỗ trợ trình duyệt HTML5.
+(Read more about the HTML5Shiv in HTML5 Browser Support.)
+
+
+6. Thay đổi thành ngữ nghĩa HTML5 (Change to HTML5 Semantic )
+
+CSS hiện có chứa id và các lớp để tạo kiểu cho các phần tử:
+(The existing CSS contains id's and classes for styling the elements:)
+
+Ví dụ: (Example)
+
+body {
+  font-family: Verdana,sans-serif;
+  font-size: 0.9em;
+}
+
+div#header, div#footer {
+  padding: 10px;
+  color: white;
+  background-color: black;
+}
+
+div#content {
+  margin: 5px;
+  padding: 10px;
+  background-color: lightgrey;
+}
+
+div.article {
+  margin: 5px;
+  padding: 10px;
+  background-color: white;
+}
+
+div#menu ul {
+  padding: 0;
+}
+
+div#menu ul li {
+  display: inline;
+  margin: 5px;
+}
+
+
+
+Thay thế bằng các kiểu CSS bằng nhau cho các yếu tố ngữ nghĩa HTML5:
+(Replace with equal CSS styles for HTML5 semantic elements:)
+
+body {
+  font-family: Verdana,sans-serif;
+  font-size: 0.9em;
+}
+
+header, footer {
+  padding: 10px;
+  color: white;
+  background-color: black;
+}
+
+section {
+  margin: 5px;
+  padding: 10px;
+  background-color: lightgrey;
+}
+
+article {
+  margin: 5px;
+  padding: 10px;
+  background-color: white;
+}
+
+nav ul {
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 5px;
+}
+
+
+Cuối cùng, thay đổi các thành phần thành các yếu tố ngữ nghĩa HTML5:
+(Finally, change the elements to HTML5 semantic elements:)
+
+Ví dụ: (Example)
+
+
+7. Sự khác biệt giữa <article> <phần> và <div> (The Difference Between <article> <section> and <div>)
+
+Có một sự khác biệt (thiếu) khó hiểu trong tiêu chuẩn HTML5, giữa <article> <phần> và <div>.
+(There is a confusing (lack of) difference in the HTML5 standard, between <article> <section> and <div>.)
+
+Trong tiêu chuẩn HTML5, phần tử <phần> được xác định là một khối các phần tử liên quan.
+(In the HTML5 standard, the <section> element is defined as a block of related elements.)
+
+Phần tử <article> được định nghĩa là một khối hoàn chỉnh, khép kín gồm các phần tử liên quan.
+(The <article> element is defined as a complete, self-contained block of related elements.)
+
+Phần tử <div> được định nghĩa là một khối các phần tử con.
+(The <div> element is defined as a block of children elements.)
+
+Làm thế nào để giải thích điều đó?
+(How to interpret that?)
+
+Trong ví dụ trên, chúng tôi đã sử dụng <phần> làm vùng chứa cho <article> có liên quan.
+(In the example above, we have used <section> as a container for related <article>.)
+
+Nhưng, chúng tôi có thể đã sử dụng <article> làm nơi chứa các bài viết.
+(But, we could have used <article> as a container for articles as well.)
+
+Dưới đây là một số ví dụ khác nhau:
+(Here are some different examples:)
+
+<article> in <article>:
+Ví dụ: (Example)
+
+<div> in <article>:
+Ví dụ: (Example)
+
+<div> in <section> in <article>:
+Ví dụ: (Example)
+

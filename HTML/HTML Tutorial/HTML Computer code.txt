@@ -1,0 +1,39 @@
+1.Các yếu tố mã máy tính HTML (HTML Computer Code Elements)
+
+Ví dụ: (Example)
+
+
+2.HTML <kbd> Dành cho nhập bàn phím (HTML <kbd> For Keyboard Input)
+
+Phần tử <kbd> HTML đại diện cho đầu vào của người dùng, như đầu vào bàn phím hoặc lệnh thoại. (The HTML <kbd> element represents user input, like keyboard input or voice commands.)
+Văn bản được bao quanh bởi các thẻ <kbd> thường được hiển thị trong phông chữ đơn cách: (Text surrounded by <kbd> tags is typically displayed in a monospace font:)
+
+Ví dụ: (Example)
+
+3.HTML <samp> cho đầu ra chương trình (HTML <samp> For Program Output)
+
+Phần tử <samp> HTML biểu thị đầu ra từ một chương trình hoặc hệ thống máy tính. (The HTML <samp> element represents output from a program or computing system.)
+Văn bản được bao quanh bởi các thẻ <samp> thường được hiển thị trong phông chữ đơn cách: (Text surrounded by <samp> tags is typically displayed in a monospace font:)
+
+Ví dụ: (Example)
+
+4.HTML <code> cho mã máy tính (HTML <code> For Computer Code)
+
+Phần tử <code> HTML xác định một đoạn mã máy tính. (The HTML <code> element defines a fragment of computer code.)
+Văn bản được bao quanh bởi các thẻ <code> thường được hiển thị trong phông chữ đơn cách: (Text surrounded by <code> tags is typically displayed in a monospace font:)
+
+Ví dụ: (Example)
+
+
+Lưu ý rằng phần tử <code> không bảo toàn khoảng trắng và ngắt dòng bổ sung. (Notice that the <code> element does not preserve extra whitespace and line-breaks.)
+Để khắc phục điều này, bạn có thể đặt phần tử <code> bên trong phần tử <pre>: (To fix this, you can put the <code> element inside a <pre> element:)
+
+Ví dụ: (Example)
+
+5.HTML <var> cho các biến (HTML <var> For Variables)
+
+Phần tử <var> HTML xác định một biến. (The HTML <var> element defines a variable.)
+Biến có thể là biến trong biểu thức toán học hoặc biến trong bối cảnh lập trình. (The variable could be a variable in a mathematical expression or a variable in programming contex)
+
+Ví dụ: (Example)
+

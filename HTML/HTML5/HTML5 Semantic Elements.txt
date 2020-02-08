@@ -1,0 +1,222 @@
+Các yếu tố ngữ nghĩa HTML5 (HTML5 Semantic Elements)
+
+Ngữ nghĩa là nghiên cứu về ý nghĩa của các từ và cụm từ trong một ngôn ngữ.
+(Semantics is the study of the meanings of words and phrases in a language.)
+
+Các yếu tố ngữ nghĩa = các yếu tố có ý nghĩa.
+(Semantic elements = elements with a meaning.)
+
+
+
+1. Các yếu tố ngữ nghĩa là gì? (What are Semantic Elements?)
+
+Một yếu tố ngữ nghĩa mô tả rõ ràng ý nghĩa của nó đối với cả trình duyệt và nhà phát triển.
+(A semantic element clearly describes its meaning to both the browser and the developer.)
+
+Ví dụ về các yếu tố phi ngữ nghĩa: <div> và <span> - Không cho biết gì về nội dung của nó.
+(Examples of non-semantic elements: <div> and <span> - Tells nothing about its content.)
+
+Ví dụ về các yếu tố ngữ nghĩa: <form>, <bảng> và <article> - Xác định rõ ràng nội dung của nó.
+(Examples of semantic elements: <form>, <table>, and <article> - Clearly defines its content.)
+
+Nhìn vào tên thẻ là biết dc công dụng và nội dung bên trong thẻ.
+
+2. Hỗ trợ trình duyệt (Browser Support)
+
+Các yếu tố ngữ nghĩa HTML5 được hỗ trợ trong tất cả các trình duyệt hiện đại.
+(HTML5 semantic elements are supported in all modern browsers.)
+
+Ngoài ra, bạn có thể "dạy" các trình duyệt cũ hơn cách xử lý "các phần tử không xác định".
+(In addition, you can "teach" older browsers how to handle "unknown elements".)
+
+Đọc về nó trong Hỗ trợ trình duyệt HTML5. (Link)
+(Read about it in HTML5 Browser Support.)
+
+
+3. Các yếu tố ngữ nghĩa mới trong HTML5 (New Semantic Elements in HTML5)
+
+Nhiều trang web chứa mã HTML như: <div id = "nav"> <div class = "header"> <div id = "footer"> để chỉ ra điều hướng, tiêu đề và chân trang. 
+(Many web sites contain HTML code like: <div id="nav"> <div class="header"> <div id="footer"> to indicate navigation, header, and footer.)
+
+HTML5 cung cấp các yếu tố ngữ nghĩa mới để xác định các phần khác nhau của trang web:
+(HTML5 offers new semantic elements to define different parts of a web page:)
+
+<article>
+<aside>
+<details>
+<figcaption>
+<figure>
+<footer>
+<header>
+<main>
+<mark>
+<nav>
+<section>
+<summary>
+<time>
+
+ 
+4. Phần tử <phần> HTML5 (HTML5 <section> Element)
+
+Phần tử <phần> xác định một phần trong tài liệu.
+(The <section> element defines a section in a document.)
+
+Theo tài liệu HTML5 của W3C: "Một phần là một nhóm nội dung theo chủ đề, thường có tiêu đề."
+(According to W3C's HTML5 documentation: "A section is a thematic grouping of content, typically with a heading.")
+
+Một trang chủ thường có thể được chia thành các phần để giới thiệu, nội dung và thông tin liên lạc.
+(A home page could normally be split into sections for introduction, content, and contact information.)
+
+Ví dụ: (Example)
+
+
+5. Phần tử <bài viết> HTML5 (HTML5 <article> Element)
+
+Phần tử <article> chỉ định nội dung độc lập, độc lập.
+(The <article> element specifies independent, self-contained content.)
+
+Một bài viết nên có ý nghĩa riêng của nó, và nó có thể đọc nó độc lập với phần còn lại của trang web.
+(An article should make sense on its own, and it should be possible to read it independently from the rest of the web site.)
+
+Ví dụ về nơi có thể sử dụng phần tử <article>:
+(Examples of where an <article> element can be used:)
+
+Diễn đàn bài (Forum post)
+Bài viết trên blog (Blog post)
+Bài viết trên báo (Newspaper article)
+
+
+6. Làm tổ <bài viết> trong <phần> hoặc Phó Versa? (Lồng thẻ) (Nesting <article> in <section> or Vice Versa?) 
+
+Phần tử <article> chỉ định nội dung độc lập, độc lập.
+(The<article> element specifies independent, self-contained content.)
+
+Phần tử <phần> xác định phần trong tài liệu.
+(The <section> element defines section in a document.)
+
+Chúng ta có thể sử dụng các định nghĩa để quyết định làm thế nào để lồng các phần tử đó không? Không chúng tôi không thể!
+(Can we use the definitions to decide how to nest those elements? No, we cannot!)
+
+Vì vậy, trên Internet, bạn sẽ tìm thấy các trang HTML có các phần tử <phần> chứa các phần tử <article> và các phần tử <article> chứa các phần tử <phần>.
+(So, on the Internet, you will find HTML pages with <section> elements containing <article> elements, and <article> elements containing <section> elements.)
+
+Bạn cũng sẽ tìm thấy các trang có phần tử <phần> chứa phần tử <phần> và phần tử <article> có chứa phần tử <article>.
+(You will also find pages with <section> elements containing <section> elements, and <article> elements containing <article> elements.)
+
+
+Ví dụ cho một tờ báo: Thể thao <article> trong phần thể thao, có thể có một phần kỹ thuật trong mỗi <article>.
+(Example for a newspaper: The sport <article> in the sport section, may have a technical section in each <article>.)
+
+
+7. Phần tử <tiêu đề> HTML5 (HTML5 <header> Element)
+
+Phần tử <header> chỉ định tiêu đề cho tài liệu hoặc phần.
+(The <header> element specifies a header for a document or section.)
+
+Phần tử <title> nên được sử dụng làm vùng chứa cho nội dung giới thiệu.
+(The <header> element should be used as a container for introductory content.)
+
+Bạn có thể có một số phần tử <tiêu đề> trong một tài liệu.
+(You can have several <header> elements in one document.)
+
+Ví dụ sau định nghĩa một tiêu đề cho một bài viết:
+(The following example defines a header for an article:)
+
+
+8. Phần tử <footer> HTML5 (HTML5 <footer> Element)
+
+Phần tử <footer> chỉ định chân trang cho tài liệu hoặc phần.
+(The <footer> element specifies a footer for a document or section.)
+
+Một phần tử <footer> nên chứa thông tin về phần tử chứa nó.
+(A <footer> element should contain information about its containing element.)
+
+Một chân trang thường chứa tác giả của tài liệu, thông tin bản quyền, liên kết đến các điều khoản sử dụng, thông tin liên hệ, v.v.
+(A footer typically contains the author of the document, copyright information, links to terms of use, contact information, etc.)
+
+Bạn có thể có một số phần tử <footer> trong một tài liệu.
+(You may have several <footer> elements in one document.)
+
+Thẻ này bao gồm nhiều thẻ khác bên trong nó.
+
+
+
+9. Phần tử <nav> HTML5 (HTML5 <nav> Element)
+
+Phần tử <nav> xác định một tập hợp các liên kết điều hướng.
+(The <nav> element defines a set of navigation links.)
+
+Lưu ý rằng KHÔNG phải tất cả các liên kết của tài liệu phải nằm trong phần tử <nav>. Phần tử <nav> chỉ dành cho khối liên kết điều hướng chính.
+(Notice that NOT all links of a document should be inside a <nav> element. The <nav> element is intended only for major block of navigation links.)
+
+Ví dụ: (Example)
+
+Tập hợp các link trên thanh điều hướng.
+
+
+
+10. thẻ <aside> (<aside> element)
+
+Tag <aside> định nghĩa nội dung bên ngoài nội dung chính (thường là phần sidebar).
+Tag <aside> nên có nội dung liên quan tới phần nội dung chính.
+Tag <aside> có thể chứa tất cả các tag định dạng khác.
+
+Ví dụ: (Example)
+
+
+11. Các phần tử <hình> và <figcaption> (HTML5 <figure> and <figcaption> Elements)
+
+Mục đích của chú thích hình là để thêm một lời giải thích trực quan cho hình ảnh.
+(The purpose of a figure caption is to add a visual explanation to an image.)
+
+Trong HTML5, một hình ảnh và chú thích có thể được nhóm lại với nhau trong phần tử <hình>:
+(In HTML5, an image and a caption can be grouped together in a <figure> element:)
+
+Ví dụ: (Example)
+
+Phần tử <img> xác định hình ảnh, phần tử <figcaption> xác định chú thích.
+(The <img> element defines the image, the <figcaption> element defines the caption.)
+
+ 
+12. Tại sao các yếu tố ngữ nghĩa? (Why Semantic Elements?)
+
+Với HTML4, các nhà phát triển đã sử dụng tên id / class của riêng họ để tạo thành phần kiểu: tiêu đề, đầu, cuối, chân trang, menu, điều hướng, chính, thùng chứa, nội dung, bài viết, thanh bên, topnav, v.v.
+(With HTML4, developers used their own id/class names to style elements: header, top, bottom, footer, menu, navigation, main, container, content, article, sidebar, topnav, etc.)
+
+Điều này khiến các công cụ tìm kiếm không thể xác định chính xác nội dung trang web.
+(This made it impossible for search engines to identify the correct web page content.)
+
+Với các thành phần HTML5 mới (<tiêu đề> <chân trang> <nav> <phần> <bài viết>), điều này sẽ trở nên dễ dàng hơn.
+(With the new HTML5 elements (<header> <footer> <nav> <section> <article>), this will become easier.)
+
+Theo W3C, một Semantic Web: "Cho phép dữ liệu được chia sẻ và sử dụng lại trên các ứng dụng, doanh nghiệp và cộng đồng."
+(According to the W3C, a Semantic Web: "Allows data to be shared and reused across applications, enterprises, and communities.")
+
+
+13. Các yếu tố ngữ nghĩa trong HTML5 (Semantic Elements in HTML5)
+
+Dưới đây là danh sách theo thứ tự chữ cái của các yếu tố ngữ nghĩa mới trong HTML5.
+(Below is an alphabetical list of the new semantic elements in HTML5.)
+
+Các liên kết đến Tham chiếu HTML5 hoàn chỉnh của chúng tôi
+(The links go to our complete HTML5 Reference.)
+
+Bảng: 
+
+Tag			Description
+
+<article>		Xác định một bài viết (Defines an article) (Link)
+<aside>			Xác định nội dung ngoài nội dung trang (Defines content aside from the page content) (Link)
+<details>		Xác định các chi tiết bổ sung mà người dùng có thể xem hoặc ẩn (Defines additional details that the user can view or hide) (Link)
+<figcaption>		Xác định chú thích cho phần tử <hình> (Defines a caption for a <figure> element) (Link)
+<figure>		Chỉ định nội dung độc lập, như minh họa, sơ đồ, ảnh, danh sách mã, v.v. (Specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.) (Link)
+<footer>		Xác định chân trang cho tài liệu hoặc phần (Defines a footer for a document or section) (Link)
+<header> 		Chỉ định tiêu đề cho tài liệu hoặc phần (Specifies a header for a document or section) (Link)
+<main>			Chỉ định nội dung chính của tài liệu (Specifies the main content of a document) (Link)
+<mark>			Xác định văn bản được đánh dấu / đánh dấu (Defines marked/highlighted text) (Link)
+<nav>			Xác định các liên kết điều hướng (Defines navigation links) (Link)
+<section>		Xác định một phần trong tài liệu (Defines a section in a document) (Link)
+<summary>		Xác định tiêu đề hiển thị cho phần tử <chi tiết> (Defines a visible heading for a <details> element) (Link)
+<time>			Xác định ngày / giờ (Defines a date/time) (Link)
+
+

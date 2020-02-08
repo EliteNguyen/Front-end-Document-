@@ -1,0 +1,146 @@
+1. Các yếu tố mới trong HTML5 (New Elements in HTML5)
+
+Dưới đây là danh sách các yếu tố HTML5 mới và mô tả về những gì chúng được sử dụng cho.
+(Below is a list of the new HTML5 elements, and a description of what they are used for.)
+
+
+2. Các yếu tố cấu trúc / ngữ nghĩa mới (New Semantic/Structural Elements)
+
+HTML5 cung cấp các yếu tố mới cho cấu trúc tài liệu tốt hơn:
+(HTML5 offers new elements for better document structure:)
+
+Tag			Description
+
+<article>		Xác định một bài viết trong một tài liệu (Defines an article in a document) (Link)
+<aside>			Xác định nội dung ngoài nội dung trang (Defines content aside from the page content) (Link)
+<bdi>			Cô lập một phần văn bản có thể được định dạng theo hướng khác với văn bản khác bên ngoài văn bản (Isolates a part of text that might be formatted in a different direction from other text outside it) (Link)
+<details>		Xác định các chi tiết bổ sung mà người dùng có thể xem hoặc ẩn (Defines additional details that the user can view or hide) (Link)
+<dialog>		Xác định hộp thoại hoặc cửa sổ (Defines a dialog box or window) (Link)
+<figcaption>		Xác định chú thích cho phần tử <hình> (Defines a caption for a <figure> element) (Link)
+<figure>		Xác định nội dung độc lập (Defines self-contained content) (Link)
+<footer>		Xác định chân trang cho tài liệu hoặc phần (Defines a footer for a document or section) (Link)
+<header>		Xác định tiêu đề cho tài liệu hoặc phần (Defines a header for a document or section) (Link)
+<main>			Xác định nội dung chính của tài liệu (Defines the main content of a document) (Link)
+<mark>			Xác định văn bản được đánh dấu / đánh dấu (Defines marked/highlighted text) (Link)
+<meter>			Xác định phép đo vô hướng trong phạm vi đã biết (thước đo) (Defines a scalar measurement within a known range (a gauge)) (Link)
+<nav>			Xác định các liên kết điều hướng (Defines navigation links) (Link)
+<progress>		Thể hiện tiến trình của một nhiệm vụ (Represents the progress of a task) (Link)
+<rp>			Xác định nội dung hiển thị trong trình duyệt không hỗ trợ chú thích ruby (Defines what to show in browsers that do not support ruby annotations) (Link)
+<rt>			Xác định một lời giải thích / phát âm của các ký tự (cho kiểu chữ Đông Á) (Defines an explanation/pronunciation of characters (for East Asian typography)) (Link)
+<ruby>			Xác định một chú thích ruby ​​(cho kiểu chữ Đông Á) (Defines a ruby annotation (for East Asian typography)) (Link)
+<section>		Xác định một phần trong tài liệu (Defines a section in a document) (Link)
+<summary>		Xác định tiêu đề hiển thị cho phần tử <chi tiết> (Defines a visible heading for a <details> element)
+<time>			Xác định ngày / giờ (Defines a date/time) (Link)
+<wbr>			Xác định ngắt dòng có thể (Defines a possible line-break) (Link)
+
+Đọc thêm về ngữ nghĩa HTML5. (Read more about HTML5 Semantics.) (Link)
+
+2. Thẻ form mới (New Form Elements)
+
+Tag			Description
+
+<datalist>		Chỉ định danh sách các tùy chọn được xác định trước cho các điều khiển đầu vào (Specifies a list of pre-defined options for input controls) (Link)
+<output>		Xác định kết quả tính toán (Defines the result of a calculation) (Link)
+
+Đọc tất cả về các thành phần biểu mẫu cũ và mới trong Các phần tử biểu mẫu HTML. (Link)
+
+
+3. Kiểu đầu vào mới (New Input Types)
+
+
+New Input Types:
+
+color
+date
+datetime
+datetime-local
+email
+month
+number
+range
+search
+tel
+time
+url
+week
+
+
+New Input Attributes
+
+autocomplete
+autofocus
+form
+formaction
+formenctype
+formmethod
+formnovalidate
+formtarget
+height and width
+list
+min and max
+multiple
+pattern (regexp)
+placeholder
+required
+step
+
+
+Tìm hiểu tất cả về các loại đầu vào cũ và mới trong Các loại đầu vào HTML.
+(Learn all about old and new input types in HTML Input Types.)
+
+Tìm hiểu tất cả về các thuộc tính đầu vào trong Thuộc tính đầu vào HTML.
+(Learn all about input attributes in HTML Input Attributes.)
+
+
+4. HTML5 - Cú pháp thuộc tính mới (HTML5 - New Attribute Syntax)
+
+HTML5 cho phép bốn cú pháp khác nhau cho các thuộc tính.
+(HTML5 allows four different syntaxes for attributes.)
+
+Ví dụ này cho thấy các cú pháp khác nhau được sử dụng trong thẻ <input>:
+(This example demonstrates the different syntaxes used in an <input> tag:)
+
+Type			Example
+
+Empty			<input type="text" value="John" disabled>
+Unquoted		<input type="text" value=John>
+Double-quoted		<input type="text" value="John Doe">
+Single-quoted		<input type="text" value='John Doe'>
+
+
+Trong HTML5, tất cả bốn cú pháp có thể được sử dụng, tùy thuộc vào những gì cần thiết cho thuộc tính.
+(In HTML5, all four syntaxes may be used, depending on what is needed for the attribute.)
+
+
+5. Đồ họa HTML5 (HTML5 Graphics)
+
+Tag			Description
+
+<canvas>		Vẽ đồ họa, nhanh chóng, thông qua kịch bản (thường là JavaScript) (Draw graphics, on the fly, via scripting (usually JavaScript)) (Link)
+<picture>		Xác định một vùng chứa cho nhiều tài nguyên hình ảnh (Defines a container for multiple image resources) (Link)
+<svg>			Vẽ đồ họa vector có thể mở rộng (Draw scalable vector graphics) (Link)
+
+
+Read more about HTML5 Canvas. (Link)
+(Read more about HTML5 Canvas.)
+
+Read more about HTML5 SVG. (Link)
+(Read more about HTML5 SVG.)
+
+
+6. Yếu tố truyền thông mới (New Media Elements)
+
+Tag			Description
+
+<audio>			Xác định nội dung âm thanh (Defines sound content) (Link)
+<embed>			Xác định vùng chứa cho ứng dụng bên ngoài (không phải HTML) (Defines a container for an external (non-HTML) application) (Link)
+<picture>		Xác định một vùng chứa cho nhiều tài nguyên hình ảnh (Defines a container for multiple image resources) (Link)
+<source>		Xác định nhiều tài nguyên phương tiện cho các thành phần phương tiện (<video> và <audio>) (Defines multiple media resources for media elements (<video> and <audio>)) (Link)
+<track>			Xác định các rãnh văn bản cho các thành phần phương tiện (<video> và <audio>) (Defines text tracks for media elements (<video> and <audio>))
+<video>			Xác định video hoặc phim (Defines video or movie) (Link)
+
+Đọc thêm về Video HTML5. (Link)
+(Read more about HTML5 Video.)
+	
+Đọc thêm về Âm thanh HTML5. (Link)
+(Read more about HTML5 Audio.)

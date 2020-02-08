@@ -1,0 +1,58 @@
+1.Bộ định vị tài nguyên thống nhất HTML (HTML Uniform Resource Locators)
+
+URL là một từ khác cho một địa chỉ web. (A URL is another word for a web address.)
+Một URL có thể bao gồm các từ (w3schools.com) hoặc địa chỉ Giao thức Internet (IP) (192,68.20.50). (A URL can be composed of words (w3schools.com), or an Internet Protocol (IP) address (192.68.20.50).)
+Hầu hết mọi người nhập tên khi lướt web, vì tên dễ nhớ hơn số. (Most people enter the name when surfing, because names are easier to remember than numbers.)
+
+2.URL - Bộ định vị tài nguyên thống nhất (URL - Uniform Resource Locator)
+
+Trình duyệt web yêu cầu các trang từ máy chủ web bằng cách sử dụng URL. (Web browsers request pages from web servers by using a URL.)
+Bộ định vị tài nguyên thống nhất (URL) được sử dụng để giải quyết một tài liệu (hoặc dữ liệu khác) trên web. (A Uniform Resource Locator (URL) is used to address a document (or other data) on the web.)
+Một địa chỉ web như https://www.w3schools.com/html/default.asp tuân theo các quy tắc cú pháp sau: (A web address like https://www.w3schools.com/html/default.asp follows these syntax rules:)
+
+scheme://prefix.domain:port/path/filename
+
+Giải thích: (Explanation)
+
+lược đồ - xác định loại dịch vụ Internet (phổ biến nhất là http hoặc https) (scheme - defines the type of Internet service (most common is http or https))
+tiền tố - xác định tiền tố tên miền (mặc định cho http là www) (prefix - defines a domain prefix (default for http is www))
+tên miền - xác định tên miền Internet (như w3schools.com) (domain - defines the Internet domain name (like w3schools.com))
+cổng - xác định số cổng tại máy chủ (mặc định cho http là 80) (port - defines the port number at the host (default for http is 80))
+đường dẫn - xác định đường dẫn tại máy chủ (Nếu bị bỏ qua: thư mục gốc của trang web) (path - defines a path at the server (If omitted: the root directory of the site))
+tên tệp - xác định tên của tài liệu hoặc tài nguyên (filename - defines the name of a document or resource)
+
+Ví dụ: (Example)
+
+https://www.w3schools.com/html/html_urlencode.asp
+
+3.Lược đồ URL phổ biến (Common URL Schemes)
+
+Bảng dưới đây liệt kê một số sơ đồ phổ biến: (The table below lists some common schemes:)
+
+http - Giao thức truyền tải siêu văn bản - Các trang web phổ biến. Không được mã hóa (http - HyperText Transfer Protocol - Common web pages. Not encrypted)
+https - Giao thức truyền siêu văn bản an toàn - Các trang web an toàn. Được mã hóa (https - Secure HyperText Transfer Protocol - Secure web pages. Encrypted)
+ftp - Giao thức truyền tập tin - Tải xuống hoặc tải lên tập tin (ftp - File Transfer Protocol - Downloading or uploading files)
+tập tin - Một tập tin trên máy tính của bạn (file - A file on your computer)
+
+
+
+4.Mã hóa URL (URL Encoding)
+
+URL chỉ có thể được gửi qua Internet bằng cách sử dụng bộ ký tự ASCII. Nếu một URL chứa các ký tự bên ngoài bộ ASCII, URL phải được chuyển đổi. (URLs can only be sent over the Internet using the ASCII character-set. If a URL contains characters outside the ASCII set, the URL has to be converted.)
+Mã hóa URL chuyển đổi các ký tự không phải ASCII thành định dạng có thể được truyền qua Internet. (URL encoding converts non-ASCII characters into a format that can be transmitted over the Internet.)
+Mã hóa URL thay thế các ký tự không phải ASCII bằng "%" theo sau là các chữ số thập lục phân. (URL encoding replaces non-ASCII characters with a "%" followed by hexadecimal digits.)
+URL không thể chứa dấu cách. Mã hóa URL thường thay thế khoảng trắng bằng dấu cộng (+) hoặc% 20. (URLs cannot contain spaces. URL encoding normally replaces a space with a plus (+) sign, or %20.)
+
+Ví dụ: (Example)
+
+Nếu bạn nhấp vào "Gửi", trình duyệt sẽ mã hóa URL đầu vào trước khi được gửi đến máy chủ. (If you click "Submit", the browser will URL encode the input before it is sent to the server.)
+Một trang tại máy chủ sẽ hiển thị đầu vào nhận được.  (A page at the server will display the received input.)
+Hãy thử một số đầu vào khác và bấm Gửi lại. (Try some other input and click Submit again.)
+
+5.Ví dụ mã hóa ASCII (ASCII Encoding Examples)
+
+Trình duyệt của bạn sẽ mã hóa đầu vào, theo bộ ký tự được sử dụng trong trang của bạn. (Your browser will encode input, according to the character-set used in your page.)
+Bộ ký tự mặc định trong HTML5 là UTF-8. (The default character-set in HTML5 is UTF-8.)
+
+Bảng: (Table)
+

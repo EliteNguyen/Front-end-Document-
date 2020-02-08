@@ -1,0 +1,46 @@
+1.Đường dẫn tệp HTML (HTML File Paths)
+
+<img src = "Picture.jpg"> image.jpg nằm trong cùng thư mục với trang hiện tại (<img src="picture.jpg">	picture.jpg is located in the same folder as the current page)
+<img src = "hình ảnh / hình ảnh" "> hình ảnh nằm trong thư mục hình ảnh trong thư mục hiện tại (<img src="images/picture.jpg">	picture.jpg is located in the images folder in the current folder)
+<img src = "/ hình ảnh / hình ảnh" "> hình ảnh nằm trong thư mục hình ảnh ở thư mục gốc của trang web hiện tại (<img src="/images/picture.jpg">	picture.jpg is located in the images folder at the root of the current web)
+<img src = "../ image.jpg"> image.jpg nằm trong thư mục tăng một cấp so với thư mục hiện tại (<img src="../picture.jpg">	picture.jpg is located in the folder one level up from the current folder) 
+
+
+2.Đường dẫn tệp HTML (HTML File Paths)
+
+Đường dẫn tệp mô tả vị trí của tệp trong cấu trúc thư mục của trang web. (A file path describes the location of a file in a web site's folder structure.)
+Đường dẫn tệp được sử dụng khi liên kết với các tệp bên ngoài như: (File paths are used when linking to external files like:)
+
+trang web (Web pages)
+Hình ảnh (Images)
+Tấm phong cách (Style sheets)
+JavaScripts (JavaScripts)
+
+3.Đường dẫn tệp tuyệt đối (Absolute File Paths)
+
+Đường dẫn tệp tuyệt đối là URL đầy đủ tới tệp internet: (An absolute file path is the full URL to an internet file:)
+
+Ví dụ: (Example)
+
+
+Thẻ <img> được giải thích trong chương về Hình ảnh HTML. (The <img> tag is explained in the chapter about HTML Images.)
+
+4.Đường dẫn tệp tương đối (Relative File Paths)
+
+Đường dẫn tệp tương đối trỏ đến một tệp liên quan đến trang hiện tại. (A relative file path points to a file relative to the current page.)
+Trong ví dụ này, đường dẫn tệp trỏ đến một tệp trong thư mục hình ảnh nằm ở thư mục gốc của web hiện tại: (In this example, the file path points to a file in the images folder located at the root of the current web:)
+
+Ví dụ: (Example)
+
+Trong ví dụ này, đường dẫn tệp trỏ đến một tệp trong thư mục hình ảnh nằm trong thư mục hiện tại: (In this example, the file path points to a file in the images folder located in the current folder:)
+
+Ví dụ: (Example)
+
+Trong ví dụ này, đường dẫn tệp trỏ đến một tệp trong thư mục hình ảnh nằm trong thư mục một cấp trên thư mục hiện tại: (In this example, the file path points to a file in the images folder located in the folder one level above the current folder:)
+
+Ví dụ: (Example)
+
+5.Thực hành tốt nhất (Best Practice)
+
+Cách tốt nhất là sử dụng đường dẫn tệp tương đối (nếu có thể). (It is best practice to use relative file paths (if possible).)
+Khi sử dụng đường dẫn tệp tương đối, các trang web của bạn sẽ không bị ràng buộc với URL cơ sở hiện tại của bạn. Tất cả các liên kết sẽ hoạt động trên máy tính của riêng bạn (localhost) cũng như trên miền công cộng hiện tại và các miền công cộng trong tương lai của bạn. (When using relative file paths, your web pages will not be bound to your current base URL. All links will work on your own computer (localhost) as well as on your current public domain and your future public domains.)

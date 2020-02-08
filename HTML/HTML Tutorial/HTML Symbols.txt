@@ -1,0 +1,15 @@
+1.Các thực thể biểu tượng HTML (HTML Symbol Entities)
+
+Các thực thể HTML đã được mô tả trong chương trước. (HTML entities were described in the previous chapter.)
+Nhiều ký hiệu toán học, kỹ thuật và tiền tệ, không có trên bàn phím thông thường. (Many mathematical, technical, and currency symbols, are not present on a normal keyboard.)
+Để thêm các ký hiệu như vậy vào trang HTML, bạn có thể sử dụng tên thực thể HTML. (To add such symbols to an HTML page, you can use an HTML entity name.)
+Nếu không có tên thực thể tồn tại, bạn có thể sử dụng số thực thể, tham chiếu thập phân hoặc thập lục phân. (If no entity name exists, you can use an entity number, a decimal, or hexadecimal reference.)
+
+Ví dụ: (Example)
+
+Một số biểu tượng toán học được hỗ trợ bởi HTML (Some Mathematical Symbols Supported by HTML)
+
+Một số chữ cái Hy Lạp được hỗ trợ bởi HTML (Some Greek Letters Supported by HTML)
+
+Một số thực thể khác được HTML hỗ trợ (Some Other Entities Supported by HTML)
+

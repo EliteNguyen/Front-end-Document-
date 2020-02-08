@@ -1,0 +1,304 @@
+1.Các kiểu nhập HTML (HTML Input Types)
+
+2.Các kiểu nhập HTML: (HTML Input Types)
+
+Dưới đây là các loại đầu vào khác nhau mà bạn có thể sử dụng trong HTML:
+(Here are the different input types you can use in HTML:)
+
+<input type="button">
+<input type="checkbox">
+<input type="color">
+<input type="date">
+<input type="datetime-local">
+<input type="email">
+<input type="file">
+<input type="hidden">
+<input type="image">
+<input type="month">
+<input type="number">
+<input type="password">
+<input type="radio">
+<input type="range">
+<input type="reset">
+<input type="search">
+<input type="submit">
+<input type="tel">
+<input type="text">
+<input type="time">
+<input type="url">
+<input type="week">
+
+3.Kiểu nhập văn bản (Input Type Text)
+
+<input type = "text"> xác định trường nhập văn bản một dòng:
+(<input type="text"> defines a one-line text input field:)
+
+Ví dụ: (Example)
+
+
+4.Mật khẩu loại đầu vào (Input Type Password)
+
+<input type = "password"> xác định trường mật khẩu: (<input type="password"> defines a password field:)
+
+Ví dụ: (Example)
+
+Các ký tự trong trường mật khẩu được che dấu (hiển thị dưới dạng dấu hoa thị hoặc vòng tròn).
+(The characters in a password field are masked (shown as asterisks or circles).)
+
+
+5.Kiểu đầu vào Gửi (Input Type Submit)
+
+<input type = "submit"> xác định nút để gửi dữ liệu biểu mẫu đến trình xử lý biểu mẫu.
+(<input type="submit"> defines a button for submitting form data to a form-handler.)
+
+Trình xử lý biểu mẫu thường là một trang máy chủ có tập lệnh để xử lý dữ liệu đầu vào.
+(The form-handler is typically a server page with a script for processing input data.)
+
+Trình xử lý biểu mẫu được chỉ định trong thuộc tính hành động của biểu mẫu:
+(The form-handler is specified in the form's action attribute:)
+
+Ví dụ: (Example)
+
+Đây là cách mã HTML ở trên sẽ được hiển thị trong trình duyệt:
+(This is how the HTML code above will be displayed in a browser:)
+
+
+6.Đặt lại kiểu đầu vào (Input Type Reset)
+
+<input type = "reset"> xác định nút đặt lại sẽ đặt lại tất cả các giá trị biểu mẫu về giá trị mặc định của chúng:
+(<input type="reset"> defines a reset button that will reset all form values to their default values:)
+
+Ví dụ: (Example)
+
+Đây là cách mã HTML ở trên sẽ được hiển thị trong trình duyệt:
+(This is how the HTML code above will be displayed in a browser:)
+
+
+7.Hộp kiểm kiểu đầu vào (Input Type Checkbox)
+
+<input type = "hộp kiểm"> xác định hộp kiểm.
+(<input type="checkbox"> defines a checkbox.)
+
+Các hộp kiểm cho phép người dùng chọn các tùy chọn KHÔNG hoặc THÊM với số lượng lựa chọn hạn chế.
+(Checkboxes let a user select ZERO or MORE options of a limited number of choices.)
+
+Ví dụ: (Example)
+
+
+8.Nút loại đầu vào (Input Type Button)
+
+<input type = "button"> xác định nút: 
+(<input type="button"> defines a button:)
+
+Ví dụ: (Example)
+
+
+9.Các kiểu nhập HTML5 (HTML5 Input Types)
+
+HTML5 đã thêm một số loại đầu vào mới:
+(HTML5 added several new input types:)
+
+color
+date
+datetime-local
+email
+month
+number
+range
+search
+tel
+time
+url
+week
+
+Các loại đầu vào mới không được hỗ trợ bởi các trình duyệt web cũ hơn, sẽ hoạt động như <input type = "text">.
+(New input types that are not supported by older web browsers, will behave as <input type="text">.)
+
+
+10.Màu đầu vào (Input Type Color)
+
+<Input type = "color"> được sử dụng cho các trường đầu vào nên chứa màu.
+(The <input type="color"> is used for input fields that should contain a color.)
+
+Tùy thuộc vào hỗ trợ trình duyệt, bộ chọn màu có thể hiển thị trong trường nhập.
+(Depending on browser support, a color picker can show up in the input field.)
+
+Ví dụ: (Example)
+
+
+11.Kiểu nhập ngày (Input Type Date)
+
+<Input type = "date"> được sử dụng cho các trường đầu vào nên chứa ngày.
+(The <input type="date"> is used for input fields that should contain a date.)
+
+Tùy thuộc vào hỗ trợ trình duyệt, trình chọn ngày có thể hiển thị trong trường nhập.
+(Depending on browser support, a date picker can show up in the input field.)
+
+Ví dụ: (Example)
+
+Bạn cũng có thể sử dụng các thuộc tính tối thiểu và tối đa để thêm các hạn chế cho ngày:
+(You can also use the min and max attributes to add restrictions to dates:)
+
+Ví dụ: (Example)
+
+
+12.Kiểu đầu vào Datetime-local (Input Type Datetime-local)
+
+<Input type = "datetime-local"> chỉ định trường nhập ngày và giờ, không có múi giờ.
+(The <input type="datetime-local"> specifies a date and time input field, with no time zone.)
+
+Tùy thuộc vào hỗ trợ trình duyệt, trình chọn ngày có thể hiển thị trong trường nhập.
+(Depending on browser support, a date picker can show up in the input field.)
+
+Ví dụ: (Example)
+
+
+13.Email loại đầu vào (Input Type Email)
+
+<Input type = "email"> được sử dụng cho các trường đầu vào có chứa địa chỉ email.
+(The <input type="email"> is used for input fields that should contain an e-mail address.)
+
+Tùy thuộc vào hỗ trợ trình duyệt, địa chỉ email có thể được xác nhận tự động khi gửi.
+(Depending on browser support, the e-mail address can be automatically validated when submitted.)
+
+Một số điện thoại thông minh nhận ra loại email và thêm ".com" vào bàn phím để khớp với đầu vào email.
+(Some smartphones recognize the email type, and add ".com" to the keyboard to match email input.)
+
+Ví dụ: (Example)
+
+
+14.Kiểu tệp nhập (Input Type File)
+
+<Input type = "file"> xác định trường chọn tệp và nút "Duyệt" để tải tệp lên.
+(The <input type="file"> defines a file-select field and a "Browse" button for file uploads.)
+
+Ví dụ: (Example)
+
+
+15.Kiểu đầu vào Tháng (Input Type Month)
+
+<Input type = "tháng"> cho phép người dùng chọn một tháng và năm.
+(The <input type="month"> allows the user to select a month and year.)
+
+Tùy thuộc vào hỗ trợ trình duyệt, trình chọn ngày có thể hiển thị trong trường nhập.
+(Depending on browser support, a date picker can show up in the input field.)
+
+Ví dụ: (Example)
+
+
+16.Số loại đầu vào (Input Type Number)
+
+<Input type = "number"> xác định trường nhập số.
+(The <input type="number"> defines a numeric input field.)
+
+Bạn cũng có thể đặt các hạn chế về những con số được chấp nhận.
+(You can also set restrictions on what numbers are accepted.)
+
+Ví dụ sau hiển thị trường nhập số, trong đó bạn có thể nhập giá trị từ 1 đến 5:
+(The following example displays a numeric input field, where you can enter a value from 1 to 5:)
+
+Bạn có thể sử dụng các thuộc tính tối thiểu và tối đa để thêm các hạn chế số trong trường đầu vào:
+(You can use the min and max attributes to add numeric restrictions in the input field:)
+
+
+17.Giới hạn đầu vào (Input Restrictions)
+
+Dưới đây là danh sách một số hạn chế đầu vào phổ biến:
+(Here is a list of some common input restrictions:)
+
+checked - Chỉ định rằng trường đầu vào phải được chọn trước khi tải trang (đối với loại = "hộp kiểm" hoặc loại = "radio")
+(checked - Specifies that an input field should be pre-selected when the page loads (for type="checkbox" or type="radio"))
+
+disable - Chỉ định rằng một trường đầu vào sẽ bị vô hiệu hóa
+(disable - Specifies that an input field should be disabled)
+
+max - Chỉ định giá trị tối đa cho trường đầu vào
+(Max - Specifies the maximum value for an input field)
+
+maxlength - Chỉ định số lượng ký tự tối đa cho trường đầu vào
+(Maxlength - Specifies the maximum number of character for an input field)
+
+min - Chỉ định giá trị tối thiểu cho trường đầu vào
+(Min - Specifies the minimum value for an input field)
+
+pattern - Chỉ định biểu thức chính quy để kiểm tra giá trị đầu vào
+(Pattern - Specifies a regular expression to check the input value against)
+
+readonly - Chỉ định rằng một trường đầu vào chỉ được đọc (không thể thay đổi)
+(Readonly - Specifies that an input field is read only (cannot be changed))
+
+size - Chỉ định chiều rộng (tính bằng ký tự) của trường đầu vào
+(size - Specifies the width (in characters) of an input field)
+
+step - Chỉ định các khoảng số hợp pháp cho trường đầu vào
+(step - Specifies the legal number intervals for an input field)
+
+value - Chỉ định giá trị mặc định cho trường đầu vào
+(value - Specifies the default value for an input field)
+
+Bạn sẽ tìm hiểu thêm về các hạn chế đầu vào trong chương tiếp theo.
+(You will learn more about input restrictions in the next chapter.)
+
+Ví dụ sau hiển thị trường nhập số, trong đó bạn có thể nhập giá trị từ 0 đến 100, trong các bước của 10. Giá trị mặc định là 30:
+(The following example displays a numeric input field, where you can enter a value from 0 to 100, in steps of 10. The default value is 30:)
+
+
+18.Phạm vi loại đầu vào (Input Type Range)
+
+<Input type = "phạm vi"> xác định một điều khiển để nhập một số có giá trị chính xác không quan trọng (như điều khiển thanh trượt). Phạm vi mặc định là 0 đến 100. Tuy nhiên, bạn có thể đặt các hạn chế về số nào được chấp nhận với các thuộc tính tối thiểu, tối đa và bước:
+(The <input type="range"> defines a control for entering a number whose exact value is not important (like a slider control). Default range is 0 to 100. However, you can set restrictions on what numbers are accepted with the min, max, and step attributes:)
+
+Ví dụ: (Example)
+
+
+19.Tìm kiếm kiểu nhập (Input Type Search)
+
+<Input type = "search"> được sử dụng cho các trường tìm kiếm (trường tìm kiếm hoạt động giống như trường văn bản thông thường).
+(The <input type="search"> is used for search fields (a search field behaves like a regular text field).)
+
+Ví dụ: (Example)
+
+
+20.Kiểu đầu vào Tel (Input Type Tel)
+
+<Input type = "tel"> được sử dụng cho các trường đầu vào có chứa số điện thoại.
+(The <input type="tel"> is used for input fields that should contain a telephone number.)
+
+Ví dụ: (Example)
+
+
+21.Kiểu đầu vào Thời gian (Input Type Time)
+
+<Input type = "time"> cho phép người dùng chọn thời gian (không có múi giờ).
+(The <input type="time"> allows the user to select a time (no time zone).)
+
+Tùy thuộc vào hỗ trợ trình duyệt, bộ chọn thời gian có thể hiển thị trong trường đầu vào.
+(Depending on browser support, a time picker can show up in the input field.)
+
+Ví dụ: (Example)
+
+
+22.Url loại đầu vào (Input Type Url)
+
+<Input type = "url"> được sử dụng cho các trường đầu vào nên chứa địa chỉ URL.
+(The <input type="url"> is used for input fields that should contain a URL address.)
+
+Tùy thuộc vào hỗ trợ trình duyệt, trường url có thể được xác nhận tự động khi gửi.
+(Depending on browser support, the url field can be automatically validated when submitted.)
+
+Một số điện thoại thông minh nhận ra loại url và thêm ".com" vào bàn phím để khớp với đầu vào url.
+(Some smartphones recognize the url type, and adds ".com" to the keyboard to match url input.)
+
+Ví dụ: (Example)
+
+
+23.Tuần đầu vào (Input Type Week)
+
+<Input type = "week"> cho phép người dùng chọn một tuần và năm.
+(The <input type="week"> allows the user to select a week and year.)
+
+Tùy thuộc vào hỗ trợ trình duyệt, trình chọn ngày có thể hiển thị trong trường nhập.
+(Depending on browser support, a date picker can show up in the input field.)
+
+Ví dụ: (Example)
+

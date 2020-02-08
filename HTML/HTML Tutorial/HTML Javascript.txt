@@ -1,0 +1,39 @@
+1.HTML JavaScript
+
+JavaScript làm cho các trang HTML năng động và tương tác hơn. (JavaScript makes HTML pages more dynamic and interactive.)
+
+Ví dụ: (Example)
+
+2.Thẻ <script> HTML (The HTML <script> Tag)
+
+Thẻ <script> được sử dụng để xác định tập lệnh phía máy khách (JavaScript). (The <script> tag is used to define a client-side script (JavaScript).)
+Phần tử <script> chứa các câu lệnh script hoặc nó trỏ đến tệp script bên ngoài thông qua thuộc tính src. (The <script> element either contains script statements, or it points to an external script file through the src attribute.)
+Sử dụng phổ biến cho JavaScript là thao tác hình ảnh, xác thực mẫu và thay đổi động của nội dung. (Common uses for JavaScript are image manipulation, form validation, and dynamic changes of content.)
+Để chọn một phần tử HTML, JavaScript thường sử dụng phương thức document.getEuityById (). (To select an HTML element, JavaScript most often uses the document.getElementById() method.)
+Ví dụ JavaScript này viết "Xin chào JavaScript!" thành một phần tử HTML với id = "demo": (This JavaScript example writes "Hello JavaScript!" into an HTML element with id="demo":)
+
+Ví dụ: (Example)
+
+Mẹo: Bạn có thể tìm hiểu thêm về JavaScript trong Hướng dẫn JavaScript của chúng tôi. (Tip: You can learn much more about JavaScript in our JavaScript Tutorial.)
+
+3.Hương vị của JavaScript (A Taste of JavaScript)
+
+Dưới đây là một số ví dụ về những gì JavaScript có thể làm: (Here are some examples of what JavaScript can do:)
+JavaScript có thể thay đổi nội dung HTML (JavaScript can change HTML content)
+
+Ví dụ: (Example)
+
+JavaScript có thể thay đổi kiểu HTML (JavaScript can change HTML styles)
+
+Ví dụ: (Example)
+
+JavaScript có thể thay đổi các thuộc tính HTML (JavaScript can change HTML attributes)
+
+Ví dụ: (Example)
+
+
+3.Thẻ <noscript> HTML (The HTML <noscript> Tag)
+
+Thẻ <noscript> được sử dụng để cung cấp nội dung thay thế cho người dùng đã tắt tập lệnh trong trình duyệt của họ hoặc có trình duyệt không hỗ trợ tập lệnh phía máy khách: (The <noscript> tag is used to provide an alternate content for users that have disabled scripts in their browser or have a browser that doesn't support client-side scripts:)
+
+Ví dụ: (Example)

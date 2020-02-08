@@ -1,0 +1,63 @@
+1.Mã hóa HTML (Bộ ký tự) (HTML Encoding (Character Sets))
+
+Để hiển thị trang HTML chính xác, trình duyệt web phải biết sử dụng ký tự nào. (To display an HTML page correctly, a web browser must know which character set to use.)
+
+2.Mã hóa ký tự là gì? (What is Character Encoding?)
+
+ASCII là tiêu chuẩn mã hóa ký tự đầu tiên (còn được gọi là bộ ký tự). ASCII đã xác định 128 ký tự chữ và số khác nhau có thể được sử dụng trên internet: số (0-9), chữ cái tiếng Anh (A-Z) và một số ký tự đặc biệt như! $ + - () @ <>. (ASCII was the first character encoding standard (also called character set). ASCII defined 128 different alphanumeric characters that could be used on the internet: numbers (0-9), English letters (A-Z), and some special characters like ! $ + - ( ) @ < > .)
+ISO-8859-1 là bộ ký tự mặc định cho HTML 4. Bộ ký tự này hỗ trợ 256 mã ký tự khác nhau. (ISO-8859-1 was the default character set for HTML 4. This character set supported 256 different character codes.)\
+ANSI (Windows-1252) là bộ ký tự Windows gốc. ANSI giống hệt với ISO-8859-1, ngoại trừ ANSI có thêm 32 ký tự. (ANSI (Windows-1252) was the original Windows character set. ANSI is identical to ISO-8859-1, except that ANSI has 32 extra characters.)
+Do ANSI và ISO-8859-1 rất hạn chế, HTML 4 cũng hỗ trợ UTF-8. (Because ANSI and ISO-8859-1 were so limited, HTML 4 also supported UTF-8.)
+
+UTF-8 (Unicode) bao gồm hầu hết tất cả các ký tự và ký hiệu trên thế giới. (UTF-8 (Unicode) covers almost all of the characters and symbols in the world.)
+Bộ ký tự mặc định cho HTML5 là UTF-8. (The default character set for HTML5 is UTF-8.)
+
+3.Thuộc tính bộ ký tự HTML (The HTML charset Attribute)
+
+Để hiển thị trang HTML chính xác, trình duyệt web phải biết bộ ký tự được sử dụng trong trang. (To display an HTML page correctly, a web browser must know the character set used in the page.)
+Điều này được chỉ định trong thẻ <meta>: (This is specified in the <meta> tag:)
+
+<meta charset="UTF-8">
+
+Nếu một trình duyệt phát hiện ISO-8859-1 trong một trang web, nó sẽ mặc định là ANSI. (If a browser detects ISO-8859-1 in a web page, it defaults to ANSI.)
+
+4.Sự khác biệt giữa các bộ ký tự (Differences Between Character Sets)
+
+Bảng sau đây hiển thị sự khác biệt giữa các bộ ký tự được mô tả ở trên: (The following table displays the differences between the character sets described above:)
+
+5.Bộ ký tự ASCII (The ASCII Character Set)
+
+ASCII sử dụng các giá trị từ 0 đến 31 (và 127) cho các ký tự điều khiển. (ASCII uses the values from 0 to 31 (and 127) for control characters.)
+ASCII không sử dụng các giá trị từ 128 đến 255. (ASCII does not use the values from 128 to 255.)
+
+6.Bộ ký tự ANSI (Windows-1252) (The ANSI Character Set (Windows-1252))
+
+ANSI giống hệt ASCII cho các giá trị từ 0 đến 127. (ANSI is identical to ASCII for the values from 0 to 127.)
+ANSI có một bộ ký tự độc quyền cho các giá trị từ 128 đến 159. (ANSI has a proprietary set of characters for the values from 128 to 159.)
+ANSI giống hệt UTF-8 cho các giá trị từ 160 đến 255. (ANSI is identical to UTF-8 for the values from 160 to 255.)
+
+7.Bộ ký tự ISO-8859-1 (The ISO-8859-1 Character Set)
+
+8859-1 giống hệt ASCII cho các giá trị từ 0 đến 127. (8859-1 is identical to ASCII for the values from 0 to 127.)
+8859-1 không sử dụng các giá trị từ 128 đến 159. (8859-1 does not use the values from 128 to 159.)
+8859-1 giống hệt UTF-8 cho các giá trị từ 160 đến 255. (8859-1 is identical to UTF-8 for the values from 160 to 255.)
+
+8.Bộ ký tự UTF-8: (The UTF-8 Character Set)
+
+UTF-8 giống hệt ASCII cho các giá trị từ 0 đến 127. (UTF-8 is identical to ASCII for the values from 0 to 127.)
+UTF-8 không sử dụng các giá trị từ 128 đến 159. (UTF-8 does not use the values from 128 to 159.)
+UTF-8 giống hệt với cả ANSI và 8859-1 cho các giá trị từ 160 đến 255. (UTF-8 is identical to both ANSI and 8859-1 for the values from 160 to 255.)
+UTF-8 tiếp tục từ giá trị 256 với hơn 10 000 ký tự khác nhau. (UTF-8 continues from the value 256 with more than 10 000 different characters.)
+Để xem kỹ hơn, hãy nghiên cứu Tham khảo bộ ký tự HTML hoàn chỉnh của chúng tôi. (For a closer look, study our Complete HTML Character Set Reference.)
+
+9.Quy tắc CSS @charset (The @charset CSS Rule)
+
+Bạn có thể sử dụng quy tắc CSS @charset để chỉ định mã hóa ký tự được sử dụng trong biểu định kiểu: (You can use the CSS @charset rule to specify the character encoding used in a style sheet:)
+
+Ví dụ: (Example)
+Đặt mã hóa của biểu định kiểu thành Unicode UTF-8: (Set the encoding of the style sheet to Unicode UTF-8:)
+
+@charset "UTF-8";
+
+Đọc thêm về Quy tắc CSS @charset trong Tài liệu tham khảo CSS của chúng tôi. (Read more about the CSS @charset Rule in our CSS Reference.)
+

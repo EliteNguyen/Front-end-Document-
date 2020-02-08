@@ -1,0 +1,549 @@
+Hướng dẫn về Phong cách HTML5 và Quy ước mã hóa
+(HTML5 Style Guide and Coding Conventions)
+
+1. Các quy ước mã hóa HTML (HTML Coding Conventions)
+
+Các nhà phát triển web thường không chắc chắn về kiểu mã hóa và cú pháp sử dụng trong HTML.
+(Web developers are often uncertain about the coding style and syntax to use in HTML.)
+
+Từ năm 2000 đến 2010, nhiều nhà phát triển web đã chuyển đổi từ HTML sang XHTML.
+(Between 2000 and 2010, many web developers converted from HTML to XHTML.)
+
+Với XHTML, các nhà phát triển đã buộc phải viết mã hợp lệ và "được định dạng tốt".
+(With XHTML, developers were forced to write valid and "well-formed" code.)
+
+HTML5 cẩu thả hơn một chút khi xác thực mã.
+(HTML5 is a bit more sloppy when it comes to code validation.)
+
+
+2. Hãy thông minh và bằng chứng trong tương lai (Be Smart and Future Proof)
+
+Việc sử dụng nhất quán về phong cách giúp người khác dễ hiểu HTML của bạn hơn.
+(A consistent use of style makes it easier for others to understand your HTML.)
+
+Trong tương lai, các chương trình như trình đọc XML có thể muốn đọc HTML của bạn.
+(In the future, programs like XML readers may want to read your HTML.)
+
+Sử dụng cú pháp "gần với XHTML" được định dạng tốt có thể thông minh.
+(Using a well-formed-"close to XHTML" syntax can be smart.)
+
+Luôn giữ mã của bạn gọn gàng, sạch sẽ và được hình thành tốt.
+(Always keep your code tidy, clean and well-formed.)
+
+
+3. Sử dụng đúng loại tài liệu (Use Correct Document Type)
+
+Luôn khai báo loại tài liệu là dòng đầu tiên trong tài liệu của bạn:
+(Always declare the document type as the first line in your document:)
+
+<!DOCTYPE html>
+
+
+Nếu bạn muốn thống nhất với các thẻ chữ thường, bạn có thể sử dụng:
+(If you want consistency with lower case tags, you can use:)
+
+<!doctype html>
+
+
+4. Sử dụng tên phần tử chữ thường (Use Lower Case Element Names)
+
+HTML5 cho phép trộn chữ hoa và chữ thường trong tên thành phần.
+(HTML5 allows mixing uppercase and lowercase letters in element names.)
+
+
+Chúng tôi khuyên bạn nên sử dụng tên thành phần chữ thường vì:
+(We recommend using lowercase element names because:)
+
+Trộn tên viết hoa và viết thường là xấu
+(Mixing uppercase and lowercase names is bad)
+
+Các nhà phát triển thường sử dụng tên viết thường (như trong XHTML)
+(Developers normally use lowercase names (as in XHTML))
+
+Chữ thường trông sạch sẽ hơn
+(Lowercase look cleaner)
+
+Chữ thường dễ viết hơn
+(Lowercase are easier to write)
+
+
+Bad:
+
+<SECTION>
+  <p>This is a paragraph.</p>
+</SECTION>
+
+Very Bad:
+
+<Section>
+  <p>This is a paragraph.</p>
+</SECTION>
+
+Good:
+
+<section>
+  <p>This is a paragraph.</p>
+</section>
+
+
+5. Đóng tất cả các thành phần HTML (Close All HTML Elements)
+
+Trong HTML5, bạn không phải đóng tất cả các phần tử (ví dụ: phần tử <p>).
+(In HTML5, you don't have to close all elements (for example the <p> element).)
+
+Chúng tôi khuyên bạn nên đóng tất cả các yếu tố HTML.
+(We recommend closing all HTML elements.)
+
+
+Bad:
+
+<section>
+  <p>This is a paragraph.
+  <p>This is a paragraph.
+</section>
+
+Good:
+
+<section>
+  <p>This is a paragraph.</p>
+  <p>This is a paragraph.</p>
+</section>
+
+
+6. Đóng các thành phần HTML trống (Close Empty HTML Elements)
+
+Trong HTML5, nó là tùy chọn để đóng các phần tử trống.
+(In HTML5, it is optional to close empty elements.)
+
+
+Allowed:
+
+<meta charset="utf-8">
+
+Also Allowed:
+
+<meta charset="utf-8" />
+
+
+Tuy nhiên, dấu gạch chéo (/) bị BẮT BUỘC trong XHTML và XML.
+(However, the closing slash (/) is REQUIRED in XHTML and XML.)
+
+Nếu bạn mong đợi phần mềm XML truy cập vào trang của mình, thì nên giữ dấu gạch chéo!
+(If you expect XML software to access your page, it is a good idea to keep the closing slash!)
+
+
+7. Sử dụng tên thuộc tính chữ thường (Use Lower Case Attribute Names)
+
+HTML5 cho phép trộn chữ hoa và chữ thường trong tên thuộc tính.
+(HTML5 allows mixing uppercase and lowercase letters in attribute names.)
+
+
+Chúng tôi khuyên bạn nên sử dụng tên thuộc tính chữ thường vì:
+(We recommend using lowercase attribute names because:)
+
+Trộn tên viết hoa và viết thường là xấu
+(Mixing uppercase and lowercase names is bad)
+
+Các nhà phát triển thường sử dụng tên viết thường (như trong XHTML)
+(Developers normally use lowercase names (as in XHTML))
+
+Chữ thường trông sạch sẽ hơn
+(Lowercase look cleaner)
+
+Chữ thường dễ viết hơn
+(Lowercase are easier to write)
+
+
+Bad:
+
+<div CLASS="menu">
+
+Good:
+
+<div class="menu">
+
+
+8. Trích dẫn giá trị thuộc tính (Quote Attribute Values)
+
+Trích dẫn = dùng dấu ngoặc kép
+
+HTML5 cho phép các giá trị thuộc tính mà không có dấu ngoặc kép.
+(HTML5 allows attribute values without quotes.)
+
+
+Chúng tôi khuyên bạn nên trích dẫn các giá trị thuộc tính vì:
+(We recommend quoting attribute values because:)
+
+Các nhà phát triển thường trích dẫn các giá trị thuộc tính (như trong XHTML)
+(Developers normally quote attribute values (as in XHTML))
+
+Các giá trị được trích dẫn dễ đọc hơn
+(Quoted values are easier to read)
+
+Bạn PHẢI sử dụng dấu ngoặc kép nếu giá trị chứa khoảng trắng
+(You MUST use quotes if the value contains spaces)
+
+
+Very bad:
+
+This will not work, because the value contains spaces:
+
+<table class=table striped>
+
+Bad:
+
+<table class=striped>
+
+Good:
+
+<table class="striped">
+
+
+9. Thuộc tính hình ảnh (Image Attributes)
+
+Luôn thêm thuộc tính alt cho hình ảnh. Thuộc tính này rất quan trọng khi hình ảnh vì một số lý do không thể được hiển thị. Ngoài ra, luôn luôn xác định chiều rộng và chiều cao hình ảnh. Nó giảm nhấp nháy vì trình duyệt có thể dành không gian cho hình ảnh trước khi tải.
+(Always add the alt attribute to images. This attribute is important when the image for some reason cannot be displayed. Also, always define image width and height. It reduces flickering because the browser can reserve space for the image before loading.)
+
+
+Bad:
+
+<img src="html5.gif">
+
+Good:
+
+<img src="html5.gif" alt="HTML5" style="width:128px;height:128px">
+
+
+10. Dấu cách và dấu bằng (Spaces and Equal Signs)
+
+HTML5 cho phép không gian xung quanh các dấu bằng. Nhưng không gian ít dễ đọc hơn và nhóm các thực thể tốt hơn với nhau.
+(HTML5 allows spaces around equal signs. But space-less is easier to read and groups entities better together.)
+
+Bad:
+
+<link rel = "stylesheet" href = "styles.css">
+
+Good:
+
+<link rel="stylesheet" href="styles.css">
+
+
+11. Tránh các dòng mã dài (Avoid Long Code Lines)
+
+Khi sử dụng trình soạn thảo HTML, thật bất tiện khi cuộn sang phải và trái để đọc mã HTML.
+(When using an HTML editor, it is inconvenient to scroll right and left to read the HTML code.)
+
+Cố gắng tránh các dòng mã dài hơn 80 ký tự.
+(Try to avoid code lines longer than 80 characters.)
+
+
+12. Dòng trống và thụt lề (Blank Lines and Indentation)
+
+Không thêm dòng trống mà không có lý do.
+(Do not add blank lines without a reason.)
+
+Để dễ đọc, hãy thêm các dòng trống để tách các khối mã lớn hoặc logic.
+(For readability, add blank lines to separate large or logical code blocks.)
+
+Để dễ đọc, thêm hai khoảng cách thụt. Không sử dụng phím tab.
+(For readability, add two spaces of indentation. Do not use the tab key.)
+
+Không sử dụng các dòng trống và thụt đầu dòng không cần thiết. Không cần thiết phải thụt lề mọi phần tử:
+(Do not use unnecessary blank lines and indentation. It is not necessary to indent every element:)
+
+
+Unnecessary:
+
+<body>
+
+  <h1>Famous Cities</h1>
+
+  <h2>Tokyo</h2>
+
+  <p>
+    Tokyo is the capital of Japan, the center of the Greater Tokyo Area,
+    and the most populous metropolitan area in the world.
+    It is the seat of the Japanese government and the Imperial Palace,
+    and the home of the Japanese Imperial Family.
+  </p>
+
+</body>
+
+Better:
+<body>
+
+<h1>Famous Cities</h1>
+
+<h2>Tokyo</h2>
+<p>Tokyo is the capital of Japan, the center of the Greater Tokyo Area,
+and the most populous metropolitan area in the world.
+It is the seat of the Japanese government and the Imperial Palace,
+and the home of the Japanese Imperial Family.</p>
+
+</body>
+
+
+Table Example:
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>A</td>
+    <td>Description of A</td>
+  </tr>
+  <tr>
+    <td>B</td>
+    <td>Description of B</td>
+  </tr>
+</table>
+
+
+List Example:
+<ul>
+  <li>London</li>
+  <li>Paris</li>
+  <li>Tokyo</li>
+</ul>
+
+
+13. Bỏ qua <html> và <body>? (Omitting <html> and <body>?)
+
+Trong HTML5, thẻ <html> và thẻ <body> có thể được bỏ qua.
+(In HTML5, the <html> tag and the <body> tag can be omitted.)
+
+Đoạn mã sau sẽ xác thực là HTML5:
+(The following code will validate as HTML5:)
+
+Ví dụ: (Example)
+
+
+Tuy nhiên, chúng tôi không khuyên bạn nên bỏ qua thẻ <html> và thẻ <body>.
+(However, we do not recommend omitting the <html> and the <body> tag.)
+
+Phần tử <html> là gốc tài liệu. Đây là nơi được đề xuất để chỉ định ngôn ngữ trang:
+(The <html> element is the document root. It is the recommended place for specifying the page language:)
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+Khai báo một ngôn ngữ rất quan trọng đối với các ứng dụng trợ năng (trình đọc màn hình) và các công cụ tìm kiếm.
+(Declaring a language is important for accessibility applications (screen readers) and search engines.)
+
+Việc bỏ qua <html> hoặc <body> có thể làm sập phần mềm DOM và XML.
+(Omitting <html> or <body> can crash DOM and XML software.)
+
+Bỏ qua <body> có thể tạo ra lỗi trong các trình duyệt cũ hơn (IE9).
+(Omitting <body> can produce errors in older browsers (IE9).)
+
+
+14. Bỏ qua <đầu>? (Omitting <head>?)
+
+Trong HTML5, thẻ <head> cũng có thể được bỏ qua.
+(In HTML5, the <head> tag can also be omitted.)
+
+Theo mặc định, trình duyệt sẽ thêm tất cả các thành phần trước <body> vào thành phần <head> mặc định.
+(By default, browsers will add all elements before <body> to a default <head> element.)
+
+Bạn có thể giảm độ phức tạp của HTML bằng cách bỏ qua thẻ <head>:
+(You can reduce the complexity of HTML by omitting the <head> tag:)
+
+Ví dụ: (Example)
+
+
+Tuy nhiên, chúng tôi không khuyên bạn nên bỏ qua thẻ <head>.
+(However, we do not recommend omitting the <head> tag.)
+
+Bỏ qua các thẻ không quen thuộc với các nhà phát triển web. Nó cần thời gian để được thiết lập như một hướng dẫn.
+(Omitting tags is unfamiliar to web developers. It needs time to be established as a guideline.)
+
+
+15. Metadata
+
+Phần tử <title> là bắt buộc trong HTML5. Làm cho tiêu đề có ý nghĩa nhất có thể:
+(The <title> element is required in HTML5. Make the title as meaningful as possible:)
+
+<title>HTML5 Syntax and Coding Style</title>
+
+Để đảm bảo giải thích chính xác và lập chỉ mục công cụ tìm kiếm chính xác, cả ngôn ngữ và mã hóa ký tự phải được xác định càng sớm càng tốt trong tài liệu:
+(To ensure proper interpretation and correct search engine indexing, both the language and the character encoding should be defined as early as possible in a document:)
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML5 Syntax and Coding Style</title>
+</head>
+
+
+16. Đặt Chế độ xem (Setting The Viewport)
+
+HTML5 đã giới thiệu một phương pháp để cho phép các nhà thiết kế web kiểm soát chế độ xem, thông qua thẻ <meta>.
+(HTML5 introduced a method to let web designers take control over the viewport, through the <meta> tag.)
+
+Khung nhìn là khu vực hiển thị của người dùng trên trang web. Nó thay đổi theo thiết bị và sẽ nhỏ hơn trên điện thoại di động so với trên màn hình máy tính.
+(The viewport is the user's visible area of a web page. It varies with the device, and will be smaller on a mobile phone than on a computer screen.)
+
+Bạn nên bao gồm yếu tố chế độ xem <meta> sau trong tất cả các trang web của mình:
+(You should include the following <meta> viewport element in all your web pages:)
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+Phần tử chế độ xem <meta> cung cấp cho hướng dẫn trình duyệt về cách kiểm soát kích thước và tỷ lệ của trang.
+(A <meta> viewport element gives the browser instructions on how to control the page's dimensions and scaling.)
+
+Phần width = width-width thiết lập chiều rộng của trang để theo chiều rộng màn hình của thiết bị (sẽ thay đổi tùy theo thiết bị).
+(The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).)
+
+Phần scale-scale = 1.0 đặt mức thu phóng ban đầu khi trang được trình duyệt tải lần đầu tiên.
+(The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser.)
+
+Dưới đây là ví dụ về một trang web không có thẻ meta chế độ xem và cùng một trang web có thẻ meta chế độ xem:
+(Here is an example of a web page without the viewport meta tag, and the same web page with the viewport meta tag:)
+
+Mẹo: Nếu bạn đang duyệt trang này bằng điện thoại hoặc máy tính bảng, bạn có thể nhấp vào hai liên kết bên dưới để thấy sự khác biệt.
+(Tip: If you are browsing this page with a phone or a tablet, you can click on the two links below to see the difference.)
+
+Link								Link
+
+
+17. Nhận xét HTML (HTML Comments)
+
+Bình luận ngắn nên được viết trên một dòng, như thế này:
+(Short comments should be written on one line, like this:)
+
+<!-- This is a comment -->
+
+Nhận xét kéo dài hơn một dòng, nên được viết như thế này:
+(Comments that spans more than one line, should be written like this:)
+
+<!--
+  This is a long comment example. This is a long comment example.
+  This is a long comment example. This is a long comment example.
+-->
+
+Nhận xét dài sẽ dễ quan sát hơn nếu chúng được thụt vào hai khoảng trắng.
+(Long comments are easier to observe if they are indented two spaces.)
+
+
+18. Tấm phong cách (Style Sheets)
+
+Sử dụng cú pháp đơn giản để liên kết đến các biểu định kiểu (thuộc tính loại không cần thiết):
+(Use simple syntax for linking to style sheets (the type attribute is not necessary):)
+
+<link rel="stylesheet" href="styles.css">
+
+
+Quy tắc ngắn có thể được viết nén, như thế này:
+(Short rules can be written compressed, like this:)
+
+p.intro {font-family: Verdana; font-size: 16em;}
+
+
+Các quy tắc dài nên được viết trên nhiều dòng:
+(Long rules should be written over multiple lines:)
+
+body {
+  background-color: lightgrey;
+  font-family: "Arial Black", Helvetica, sans-serif;
+  font-size: 16em;
+  color: black;
+}
+
+Đặt khung mở trên cùng một dòng với bộ chọn
+Sử dụng một khoảng trắng trước dấu ngoặc mở
+Sử dụng hai không gian thụt
+Sử dụng dấu chấm phẩy sau mỗi cặp giá trị thuộc tính, bao gồm cả cặp cuối cùng
+Chỉ sử dụng dấu ngoặc kép quanh các giá trị nếu giá trị chứa khoảng trắng
+Đặt khung đóng trên một dòng mới, không có khoảng trắng ở đầu
+Tránh các dòng trên 80 ký tự
+
+
+19. Đang tải JavaScript bằng HTML (Loading JavaScript in HTML)
+
+Sử dụng cú pháp đơn giản để tải tập lệnh bên ngoài (thuộc tính loại không cần thiết):
+(Use simple syntax for loading external scripts (the type attribute is not necessary):)
+
+<script src="myscript.js">
+
+
+20. Truy cập các phần tử HTML bằng JavaScript (Accessing HTML Elements with JavaScript)
+
+Hậu quả của việc sử dụng các kiểu HTML "không gọn gàng" có thể dẫn đến lỗi JavaScript.
+(A consequence of using "untidy" HTML styles can result in JavaScript errors.)
+
+Hai câu lệnh JavaScript này sẽ tạo ra các kết quả khác nhau:
+(These two JavaScript statements will produce different results:)
+
+Ví dụ: (Example)
+
+Chỉ đoạn 2 sẽ được ghi đè
+(Only paragraph 2 will be overwritten)
+
+Truy cập Hướng dẫn về kiểu JavaScript.
+(Visit the JavaScript Style Guide.)
+
+Truy cập Hướng dẫn về kiểu JavaScript.
+(Visit the JavaScript Style Guide.)
+
+
+21. Sử dụng tên tệp chữ thường (Use Lower Case File Names)
+
+Một số máy chủ web (Apache, Unix) phân biệt chữ hoa chữ thường về tên tệp: "london.jpg" không thể được truy cập là "London.jpg".
+(Some web servers (Apache, Unix) are case sensitive about file names: "london.jpg" cannot be accessed as "London.jpg".)
+
+Các máy chủ web khác (Microsoft, IIS) không phân biệt chữ hoa chữ thường: "london.jpg" có thể được truy cập là "London.jpg" hoặc "london.jpg".
+(Other web servers (Microsoft, IIS) are not case sensitive: "london.jpg" can be accessed as "London.jpg" or "london.jpg".)
+
+Nếu bạn sử dụng kết hợp chữ hoa và chữ thường, bạn phải cực kỳ nhất quán.
+(If you use a mix of upper and lower case, you have to be extremely consistent.)
+
+Nếu bạn chuyển từ một trường hợp không nhạy cảm sang một máy chủ phân biệt chữ hoa chữ thường, ngay cả những lỗi nhỏ cũng sẽ phá vỡ web của bạn!
+(If you move from a case insensitive to a case sensitive server, even small errors will break your web!)
+
+Để tránh những vấn đề này, luôn luôn sử dụng tên tệp chữ thường.
+(To avoid these problems, always use lower case file names.)
+
+
+22. Phần mở rộng tập tin (File Extensions)
+
+Các tệp HTML phải có phần mở rộng .html hoặc .htm.
+(HTML files should have a .html or .htm extension.)
+
+Các tệp CSS nên có phần mở rộng .css.
+(CSS files should have a .css extension.)
+
+Các tệp JavaScript nên có phần mở rộng .js.
+(JavaScript files should have a .js extension.)
+
+
+23. Sự khác nhau giữa .htm và .html (Differences Between .htm and .html)
+
+Không có sự khác biệt giữa các phần mở rộng .htm và .html. Cả hai sẽ được coi là HTML bởi bất kỳ trình duyệt web hoặc máy chủ web.
+(There is no difference between the .htm and .html extensions. Both will be treated as HTML by any web browser or web server.)
+
+Sự khác biệt là văn hóa:
+(The differences are cultural:)
+
+.htm "ngửi" các hệ thống DOS đầu tiên trong đó hệ thống giới hạn các phần mở rộng chỉ còn 3 ký tự.
+(.htm "smells" of early DOS systems where the system limited the extensions to 3 characters.)
+
+.html "ngửi" các hệ điều hành Unix không có giới hạn này.
+(.html "smells" of Unix operating systems that did not have this limitation.)
+
+
+24. Sự khác biệt kỹ thuật (Technical Differences)
+
+Khi một URL không chỉ định tên tệp (như https://www.w3schools.com/css/), máy chủ sẽ trả về một tên tệp mặc định. Tên tệp mặc định phổ biến là index.html, index.htmlm, default.html và default.htmlm.
+(When a URL does not specify a filename (like https://www.w3schools.com/css/), the server returns a default filename. Common default filenames are index.html, index.htm, default.html and default.htm.)
+
+Nếu máy chủ của bạn chỉ được định cấu hình với "index.html" làm tên tệp mặc định, tệp của bạn phải được đặt tên là "index.html", chứ không phải "index.htmlm."
+(If your server is configured only with "index.html" as default filename, your file must be named "index.html", not "index.htm.")
+
+Tuy nhiên, các máy chủ có thể được cấu hình với nhiều tên tệp mặc định và thông thường bạn có thể thiết lập bao nhiêu tên tệp mặc định nếu cần.
+(However, servers can be configured with more than one default filename, and normally you can set up as many default filenames as needed.)
+
+Dù sao, phần mở rộng đầy đủ cho các tệp HTML là .html và không có lý do gì nó không nên được sử dụng.
+(Anyway, the full extension for HTML files is .html, and there's no reason it should not be used.)

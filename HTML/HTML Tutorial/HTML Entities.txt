@@ -1,0 +1,40 @@
+Các ký tự dành riêng trong HTML phải được thay thế bằng các thực thể ký tự. (Reserved characters in HTML must be replaced with character entities.)
+Các ký tự không có trên bàn phím của bạn cũng có thể được thay thế bằng các thực thể. (Characters that are not present on your keyboard can also be replaced by entities.)
+
+1.Các thực thể HTML (HTML Entities)
+
+Một số ký tự được bảo lưu trong HTML. (Some characters are reserved in HTML.)
+Nếu bạn sử dụng các dấu nhỏ hơn (<) hoặc lớn hơn (>) trong văn bản của mình, trình duyệt có thể trộn chúng với các thẻ. (If you use the less than (<) or greater than (>) signs in your text, the browser might mix them with tags.)
+Các thực thể ký tự được sử dụng để hiển thị các ký tự dành riêng trong HTML. (Character entities are used to display reserved characters in HTML.)
+Một thực thể nhân vật trông như thế này. (A character entity looks like this:)
+
+
+Để hiển thị một dấu nhỏ hơn (<), chúng ta phải viết: & lt; hoặc & # 60; (To display a less than sign (<) we must write: &lt; or &#60;)
+
+Ưu điểm của việc sử dụng tên thực thể: Tên thực thể rất dễ nhớ. (Advantage of using an entity name: An entity name is easy to remember.)
+Nhược điểm của việc sử dụng tên thực thể: Trình duyệt có thể không hỗ trợ tất cả các tên thực thể, nhưng hỗ trợ cho các số là tốt. (Disadvantage of using an entity name: Browsers may not support all entity names, but the support for numbers is good.)
+
+2.Không gian phá vỡ (Non-breaking Space)
+
+Một thực thể ký tự phổ biến được sử dụng trong HTML là không gian không phá vỡ: & nbsp; (A common character entity used in HTML is the non-breaking space: &nbsp;)
+Một không gian không phá vỡ là một không gian sẽ không xâm nhập vào một dòng mới. (A non-breaking space is a space that will not break into a new line.)
+Hai từ cách nhau bởi một khoảng trắng không ngắt sẽ dính vào nhau (không ngắt thành một dòng mới). Điều này rất hữu ích khi phá vỡ các từ có thể gây rối. (Two words separated by a non-breaking space will stick together (not break into a new line). This is handy when breaking the words might be disruptive.)
+
+Ví dụ: (Example)
+
+Một cách sử dụng phổ biến khác của không gian không phá vỡ là để ngăn các trình duyệt cắt bớt khoảng trắng trong các trang HTML. (Another common use of the non-breaking space is to prevent browsers from truncating spaces in HTML pages.)
+Nếu bạn viết 10 khoảng trắng trong văn bản của mình, trình duyệt sẽ xóa 9 khoảng trắng. Để thêm không gian thực vào văn bản của bạn, bạn có thể sử dụng & nbsp; thực thể nhân vật. (If you write 10 spaces in your text, the browser will remove 9 of them. To add real spaces to your text, you can use the &nbsp; character entity.)
+
+Bảng:
+
+3.Kết hợp dấu phụ (Combining Diacritical Marks)
+
+Một dấu phụ là "glyph" được thêm vào một chữ cái. (A diacritical mark is a "glyph" added to a letter.)
+Một số dấu phụ, như grave (̀) và cấp tính (́) được gọi là dấu. (Some diacritical marks, like grave (  ̀) and acute (  ́) are called accents.)
+Dấu phụ có thể xuất hiện cả trên và dưới một chữ cái, bên trong một chữ cái và giữa hai chữ cái. (Diacritical marks can appear both above and below a letter, inside a letter, and between two letters.)
+Dấu phụ có thể được sử dụng kết hợp với các ký tự chữ và số để tạo ra một ký tự không có trong bộ ký tự (mã hóa) được sử dụng trong trang. (Diacritical marks can be used in combination with alphanumeric characters to produce a character that is not present in the character set (encoding) used in the page.)
+
+Dưới đây là một số ví dụ: (Here are some examples:)
+
+
+

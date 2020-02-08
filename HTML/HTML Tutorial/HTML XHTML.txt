@@ -1,0 +1,118 @@
+1.HTML và XHTML (HTML and XHTML)
+
+XHTML là HTML được viết dưới dạng XML. (XHTML is HTML written as XML.)
+
+2.XHTML là gì? (What Is XHTML?)
+
+XHTML là viết tắt của EXtensible (XHTML stands for EXtensible)
+Ngôn ngữ đánh dấu siêu văn bản (HyperText Markup Language)
+XHTML gần giống với HTML (XHTML is almost identical to HTML)
+XHTML chặt chẽ hơn HTML (XHTML is stricter than HTML)
+XHTML là HTML được định nghĩa là một ứng dụng XML (XHTML is HTML defined as an XML application)
+XHTML được hỗ trợ bởi tất cả các trình duyệt chính (XHTML is supported by all major browsers)
+
+
+3.Tại sao XHTML? (Why XHTML?)
+
+Nhiều trang trên internet chứa HTML "xấu". (Many pages on the internet contain "bad" HTML.)
+Mã HTML này hoạt động tốt trong hầu hết các trình duyệt (ngay cả khi nó không tuân theo các quy tắc HTML): (This HTML code works fine in most browsers (even if it does not follow the HTML rules):)
+
+Ví dụ: (Example)
+
+Thị trường ngày nay bao gồm các công nghệ trình duyệt khác nhau. Một số trình duyệt chạy trên máy tính và một số trình duyệt chạy trên điện thoại di động hoặc các thiết bị nhỏ khác. Các thiết bị nhỏ hơn thường thiếu tài nguyên hoặc sức mạnh để diễn giải đánh dấu "xấu". (Today's market consists of different browser technologies. Some browsers run on computers, and some browsers run on mobile phones or other small devices. Smaller devices often lack the resources or power to interpret "bad" markup.)
+XML là một ngôn ngữ đánh dấu trong đó các tài liệu phải được đánh dấu chính xác (là "được định dạng tốt"). (XML is a markup language where documents must be marked up correctly (be "well-formed").)
+Nếu bạn muốn nghiên cứu XML, vui lòng đọc hướng dẫn XML của chúng tôi. (If you want to study XML, please read our XML tutorial.)
+XHTML được phát triển bằng cách kết hợp các thế mạnh của HTML và XML. (XHTML was developed by combining the strengths of HTML and XML.)
+XHTML được HTML thiết kế lại dưới dạng XML. (XHTML is HTML redesigned as XML.)
+
+4.Sự khác biệt quan trọng nhất từ ​​HTML: (The Most Important Differences from HTML:)
+
+Cấu trúc tài liệu (Document Structure)
+
+DOCTPE XHTML là bắt buộc (XHTML DOCTYPE is mandatory)
+Thuộc tính xmlns trong <html> là bắt buộc (The xmlns attribute in <html> is mandatory)
+<html>, <head>, <title> và <body> là bắt buộc (<html>, <head>, <title>, and <body> are mandatory)
+
+
+5.Các yếu tố XHTML (XHTML Elements)
+
+Các phần tử XHTML phải được lồng đúng cách (XHTML elements must be properly nested)
+Các phần tử XHTML phải luôn được đóng (XHTML elements must always be closed)
+Các phần tử XHTML phải được viết thường (XHTML elements must be in lowercase)
+Tài liệu XHTML phải có một phần tử gốc (XHTML documents must have one root element)
+
+6.Thuộc tính XHTML (XHTML Attributes)
+
+Tên thuộc tính phải viết thường (Attribute names must be in lower case)
+Giá trị thuộc tính phải có ngoặc kép (Attribute values must be quoted)
+Giảm thiểu thuộc tính bị cấm (Attribute minimization is forbidden)
+
+
+7.<! DOCTYPE ....> là bắt buộc (<!DOCTYPE ....> Is Mandatory)
+
+Tài liệu XHTML phải có khai báo XHTML DOCTYPE. (An XHTML document must have an XHTML DOCTYPE declaration.)
+Một danh sách đầy đủ của tất cả các loại tài liệu XHTML (Link) được tìm thấy trong Tài liệu tham khảo thẻ HTML của chúng tôi. (A complete list of all the XHTML Doctypes is found in our HTML Tags Reference.)
+Các phần tử <html>, <head>, <title> và <body> cũng phải có mặt và thuộc tính xmlns trong <html> phải chỉ định không gian tên xml cho tài liệu. (The <html>, <head>, <title>, and <body> elements must also be present, and the xmlns attribute in <html> must specify the xml namespace for the document.)
+Ví dụ này hiển thị một tài liệu XHTML với tối thiểu các thẻ bắt buộc: (This example shows an XHTML document with a minimum of required tags:)
+
+Ví dụ: (Example)
+
+
+8.Các yếu tố XHTML phải được lồng đúng cách (XHTML Elements Must Be Properly Nested)
+
+Trong HTML, một số phần tử có thể được lồng vào nhau không chính xác, như thế này: (In HTML, some elements can be improperly nested within each other, like this:)
+
+Ví dụ: (Example)
+
+Trong XHTML, tất cả các yếu tố phải được lồng chính xác vào nhau, như thế này: (In XHTML, all elements must be properly nested within each other, like this:)
+
+9.Các yếu tố XHTML phải luôn luôn đóng cửa (XHTML Elements Must Always Be Closed)
+
+Cái này sai: (This is wrong:)
+
+Chính xác: (This is correct:)
+
+
+10.Các yếu tố trống cũng phải được đóng lại: (Empty Elements Must Also Be Closed)
+
+Cái này sai: (This is wrong:)
+
+Chính xác: (This is correct:)
+
+11.Các yếu tố XHTML phải ở dạng chữ thường (XHTML Elements Must Be In Lower Case)
+
+Cái này sai: (This is wrong:)
+
+Chính xác: (This is correct:)
+
+12.Tên thuộc tính XHTML phải viết thường (XHTML Attribute Names Must Be In Lower Case)
+
+Cái này sai: (This is wrong:)
+
+Chính xác: (This is correct:)
+
+13.Giá trị thuộc tính phải được trích dẫn (Attribute Values Must Be Quoted)
+
+Cái này sai: (This is wrong:)
+
+Chính xác: (This is correct:)
+
+14.Tối thiểu hóa thuộc tính bị cấm (Attribute Minimization Is Forbidden)
+
+Sai (Wrong)
+
+Đúng (Correct)
+
+Sai (Wrong)
+
+Đúng (Correct)
+
+15.Cách chuyển đổi từ HTML sang XHTML (How to Convert from HTML to XHTML)
+
+Thêm một XHTML <! DOCTYPE> vào dòng đầu tiên của mỗi trang (Add an XHTML <!DOCTYPE> to the first line of every page)
+Thêm một thuộc tính xmlns cho phần tử html của mỗi trang (Add an xmlns attribute to the html element of every page)
+Thay đổi tất cả các tên thành phần chữ thường (Change all element names to lowercase)
+Đóng tất cả các yếu tố trống (Close all empty elements)
+Thay đổi tất cả tên thuộc tính thành chữ thường (Change all attribute names to lowercase)
+Trích dẫn tất cả các giá trị thuộc tính (Quote all attribute values)
+

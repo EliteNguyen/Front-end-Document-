@@ -1,0 +1,39 @@
+1.HTML iframe
+
+Một iframe được sử dụng để hiển thị một trang web trong một trang web. (An iframe is used to display a web page within a web page.)
+
+
+2.Cú pháp khung nội tuyến (Iframe Syntax)
+
+Một iframe HTML được xác định bằng thẻ <iframe>: (An HTML iframe is defined with the <iframe> tag:)
+
+Thuộc tính src chỉ định URL (địa chỉ web) của trang khung nội tuyến. (The src attribute specifies the URL (web address) of the inline frame page.)
+
+3.Khung nội tuyến - Đặt chiều cao và chiều rộng (Iframe - Set Height and Width)
+
+Sử dụng các thuộc tính chiều cao và chiều rộng để chỉ định kích thước của iframe. (Use the height and width attributes to specify the size of the iframe.)
+Chiều cao và chiều rộng được chỉ định bằng pixel theo mặc định: (The height and width are specified in pixels by default:)
+
+Ví dụ (Example)
+
+Hoặc bạn có thể sử dụng CSS để đặt chiều cao và chiều rộng của iframe: (Or you can use CSS to set the height and width of the iframe:)
+
+Ví dụ: (Example)
+
+
+Khung nội tuyến - Xóa đường viền. (Iframe - Remove the Border)
+Theo mặc định, iframe có viền xung quanh nó. (By default, an iframe has a border around it.)
+Để xóa đường viền, thêm thuộc tính style và sử dụng thuộc tính viền CSS: (To remove the border, add the style attribute and use the CSS border property:)
+
+Ví dụ: (Example)
+
+Với CSS, bạn cũng có thể thay đổi kích thước, kiểu và màu của đường viền của iframe: (With CSS, you can also change the size, style and color of the iframe's border:)
+
+
+4.Iframe - Nhắm mục tiêu cho một Liên kết (Iframe - Target for a Link)
+
+Một iframe có thể được sử dụng làm khung đích cho một liên kết. (An iframe can be used as the target frame for a link.)
+Thuộc tính đích của liên kết phải tham chiếu đến thuộc tính tên của iframe: (The target attribute of the link must refer to the name attribute of the iframe:)
+
+Ví dụ: (Example)
+

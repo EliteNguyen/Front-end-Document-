@@ -1,0 +1,94 @@
+1.Phần tử <input> (The <input> Element)
+
+Phần tử biểu mẫu quan trọng nhất là phần tử <input>. (The most important form element is the <input> element.)
+Phần tử <input> có thể được hiển thị theo nhiều cách, tùy thuộc vào loại thuộc tính. (The <input> element can be displayed in several ways, depending on the type attribute.)
+
+Ví dụ: (Example)
+
+Nếu thuộc tính type bị bỏ qua, trường đầu vào sẽ có kiểu mặc định: "text". (If the type attribute is omitted, the input field gets the default type: "text".)
+Tất cả các loại đầu vào khác nhau được đề cập trong chương tiếp theo. (All the different input types are covered in the next chapter.)
+
+2.Phần tử <select> (The <select> Element)
+
+Phần tử <select> xác định danh sách thả xuống: (The <select> element defines a drop-down list:)
+
+Ví dụ: (Example)
+
+Các phần tử <tùy chọn> xác định một tùy chọn có thể được chọn. (The <option> elements defines an option that can be selected.)
+Theo mặc định, mục đầu tiên trong danh sách thả xuống được chọn. (By default, the first item in the drop-down list is selected.)
+Để xác định tùy chọn được chọn trước, hãy thêm thuộc tính được chọn vào tùy chọn: (To define a pre-selected option, add the selected attribute to the option:)
+
+Ví dụ: (Example)
+
+
+3.Giá trị hữu hình: (Visible Values:)
+
+Sử dụng thuộc tính kích thước để chỉ định số lượng giá trị hiển thị: (Use the size attribute to specify the number of visible values:)
+
+Ví dụ: (Example)
+
+
+4.Cho phép nhiều lựa chọn: (Allow Multiple Selections:)
+
+Sử dụng nhiều thuộc tính để cho phép người dùng chọn nhiều hơn một giá trị: (Use the multiple attribute to allow the user to select more than one value:)
+
+Ví dụ: (Example)
+
+Nhấn và giữ nút Ctrl (windows) / Command (Mac) để chọn nhiều tùy chọn. (Hold down the Ctrl (windows) / Command (Mac) button to select multiple options.)
+
+
+
+5.Phần tử <textarea> (The <textarea> Element)
+
+Phần tử <textarea> xác định trường nhập nhiều dòng (vùng văn bản): (The <textarea> element defines a multi-line input field (a text area):)
+
+Ví dụ: (Example)
+
+Thuộc tính hàng chỉ định số dòng có thể nhìn thấy trong một vùng văn bản. (The rows attribute specifies the visible number of lines in a text area.)
+Thuộc tính cols chỉ định chiều rộng hiển thị của vùng văn bản. (The cols attribute specifies the visible width of a text area.)
+Đây là cách mã HTML ở trên sẽ được hiển thị trong trình duyệt: (This is how the HTML code above will be displayed in a browser:)
+Bạn cũng có thể xác định kích thước của vùng văn bản bằng cách sử dụng CSS: (You can also define the size of the text area by using CSS:)
+
+Ví dụ: (Example)
+
+
+6.Phần tử <nút> (The <button> Element)
+
+Phần tử <button> xác định nút có thể nhấp: (The <button> element defines a clickable button:)
+
+Ví dụ: (Example)
+
+Thuộc tính "onclick": Script chạy khi click chuột
+onclick="..."
+
+Lưu ý: Luôn chỉ định thuộc tính loại cho thành phần nút. Các trình duyệt khác nhau có thể sử dụng các loại mặc định khác nhau cho thành phần nút. (Note: Always specify the type attribute for the button element. Different browsers may use different default types for the button element.)
+
+
+7.Những thẻ trong "Biểu mẫu của HTML5": (HTML5 Form Elements)
+
+HTML5 đã thêm các thành phần biểu mẫu sau: (HTML5 added the following form elements:)
+
+<datalist>
+<output>
+
+Lưu ý: Trình duyệt không hiển thị các yếu tố không xác định. Các yếu tố mới không được hỗ trợ trong các trình duyệt cũ hơn sẽ không "phá hủy" trang web của bạn. (Note: Browsers do not display unknown elements. New elements that are not supported in older browsers will not "destroy" your web page.)
+
+
+8.Phần tử <datalist> HTML5 (The HTML5 <datalist> element)
+
+Phần tử <datalist> chỉ định danh sách các tùy chọn được xác định trước cho phần tử <input>. (The <datalist> element specifies a list of predefined options for the <input> element.)
+Người dùng sẽ thấy một danh sách thả xuống của các tùy chọn được xác định trước khi họ nhập dữ liệu. (Users will see a drop-down list of options defined before they enter data.)
+Thuộc tính danh sách của phần tử <input>, phải tham chiếu đến thuộc tính id của phần tử <datalist>. (The list attribute of the <input> element, must refer to the id attribute of the <datalist> element.)
+
+Ví dụ: (Example)
+
+Lưu ý: Thẻ datalist không được hỗ trợ trong Safari hoặc IE9 (và trước đó). (Note: The datalist tag is not supported in Safari or IE9 (and earlier).)
+
+9.Thẻ output: (HTML5 <output> Element)
+
+Phần tử <output> biểu thị kết quả của phép tính (giống như phần tử được thực hiện bởi tập lệnh). (The <output> element represents the result of a calculation (like one performed by a script).)
+
+Ví dụ: (Example)
+
+Lưu ý: Phần tử đầu ra không được hỗ trợ trong Edge 12 hoặc Internet Explorer và các phiên bản trước đó. (Note: The output element is not supported in Edge 12 or Internet Explorer and earlier versions.)
+

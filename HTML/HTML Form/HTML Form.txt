@@ -1,0 +1,135 @@
+1.Biểu mẫu HTML (HTML Forms)
+
+Ví dụ: (Example)
+
+2.Phần tử <form> (The <form> Element)
+
+Phần tử <form> HTML xác định một biểu mẫu được sử dụng để thu thập dữ liệu nhập của người dùng: (The HTML <form> element defines a form that is used to collect user input:)
+Một biểu mẫu HTML chứa các thành phần biểu mẫu. (An HTML form contains form elements.)
+Các phần tử biểu mẫu là các loại phần tử đầu vào khác nhau, như trường văn bản, hộp kiểm, nút radio, nút gửi, v.v. (Form elements are different types of input elements, like text fields, checkboxes, radio buttons, submit buttons, and more.)
+Tag <form> được dùng để truyền dữ liệu lên máy chủ.
+Tag <form> không nên dùng để điều khiển layout.
+
+3.Phần tử <input> (The <input> Element)
+
+Phần tử <input> là phần tử biểu mẫu quan trọng nhất. (The <input> element is the most important form element.)
+Phần tử <input> có thể được hiển thị theo nhiều cách, tùy thuộc vào loại thuộc tính. (The <input> element can be displayed in several ways, depending on the type attribute.)
+
+Bảng: (Table)
+
+<kiểu nhập = "văn bản"> (<input type="text">)
+=> Xác định trường nhập văn bản một dòng (Defines a one-line text input field)
+
+<kiểu đầu vào = "radio"> (<input type="radio">)
+=> Xác định nút radio (để chọn một trong nhiều lựa chọn) (Defines a radio button (for selecting one of many choices))
+
+<kiểu nhập = "gửi"> (<input type="submit">)
+=> Xác định nút gửi (để gửi biểu mẫu) (Defines a submit button (for submitting the form))
+
+Bạn sẽ tìm hiểu thêm rất nhiều về các kiểu đầu vào sau trong hướng dẫn này. (You will learn a lot more about input types later in this tutorial.)
+
+
+4.Nhập văn bản (Text Input)
+
+<input type = "text"> xác định trường nhập một dòng cho nhập văn bản: (<input type="text"> defines a one-line input field for text input:)
+
+Ví dụ: (Example)
+
+Lưu ý rằng bản thân hình thức không thể nhìn thấy. (Note that the form itself is not visible.)
+Cũng lưu ý rằng độ rộng mặc định của trường nhập văn bản là 20 ký tự. (Also note that the default width of a text input field is 20 characters.)
+
+
+5.Đầu vào nút radio (Radio Button Input)
+
+<input type = "radio"> xác định nút radio. (<input type="radio"> defines a radio button.)
+Các nút radio cho phép người dùng chọn MỘT trong số các lựa chọn giới hạn: (Radio buttons let a user select ONE of a limited number of choices:)
+
+Ví dụ: (Example)
+
+
+6.Nút gửi (The Submit Button)
+
+<input type = "submit"> xác định nút gửi dữ liệu biểu mẫu đến trình xử lý biểu mẫu. (<input type="submit"> defines a button for submitting the form data to a form-handler.)
+Trình xử lý biểu mẫu thường là một trang máy chủ có tập lệnh để xử lý dữ liệu đầu vào. (The form-handler is typically a server page with a script for processing input data.)
+Trình xử lý biểu mẫu được chỉ định trong thuộc tính hành động của biểu mẫu: (The form-handler is specified in the form's action attribute:)
+
+Ví dụ: (Example)
+
+Nếu bạn nhấp vào nút "Gửi", dữ liệu biểu mẫu sẽ được gửi đến một trang có tên "/action_page.php". (If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".)
+
+7.Thuộc tính hành động (The Action Attribute)
+
+Thuộc tính hành động xác định hành động sẽ được thực hiện khi biểu mẫu được gửi. (The action attribute defines the action to be performed when the form is submitted.)
+Thông thường, dữ liệu biểu mẫu được gửi đến một trang web trên máy chủ khi người dùng nhấp vào nút gửi. (Normally, the form data is sent to a web page on the server when the user clicks on the submit button.)
+Trong ví dụ trên, dữ liệu biểu mẫu được gửi đến một trang trên máy chủ có tên "/action_page.php". Trang này chứa tập lệnh phía máy chủ xử lý dữ liệu biểu mẫu: (In the example above, the form data is sent to a page on the server called "/action_page.php". This page contains a server-side script that handles the form data:)
+
+<form action="/action_page.php">
+
+Nếu thuộc tính hành động bị bỏ qua, hành động được đặt thành trang hiện tại. (If the action attribute is omitted, the action is set to the current page.)
+
+
+8.Thuộc tính mục tiêu (The Target Attribute)
+
+Thuộc tính đích chỉ định nếu kết quả được gửi sẽ mở trong tab trình duyệt mới, khung hoặc trong cửa sổ hiện tại. (The target attribute specifies if the submitted result will open in a new browser tab, a frame, or in the current window.)
+Giá trị mặc định là "_elf", có nghĩa là biểu mẫu sẽ được gửi trong cửa sổ hiện tại. (The default value is "_self" which means the form will be submitted in the current window.)
+Để làm cho kết quả biểu mẫu mở trong tab trình duyệt mới, hãy sử dụng giá trị "_blank": (To make the form result open in a new browser tab, use the value "_blank":)
+Các giá trị pháp lý khác là "_parent", "_top" hoặc tên đại diện cho tên của iframe.
+
+Ví dụ: (Example)
+
+9.Thuộc tính Phương thức (The Method Attribute)
+
+Thuộc tính phương thức chỉ định phương thức HTTP (GET hoặc POST) sẽ được sử dụng khi gửi dữ liệu biểu mẫu: (The method attribute specifies the HTTP method (GET or POST) to be used when submitting the form data:)
+
+Ví dụ: (Example)
+
+Sau khi bạn gửi, lưu ý rằng các giá trị biểu mẫu được hiển thị trong thanh địa chỉ của tab trình duyệt mới. (After you submit, notice that the form values is visible in the address bar of the new browser tab.)
+Hoặc: (or)
+
+Ví dụ: (Example)
+
+Sau khi bạn gửi, lưu ý rằng, không giống như phương thức GET, các giá trị biểu mẫu KHÔNG hiển thị trong thanh địa chỉ của tab trình duyệt mới. (After you submit, notice that, unlike the GET method, the form values is NOT visible in the address bar of the new browser tab.)
+
+
+10.Khi nào nên sử dụng GET? (When to Use GET?)
+
+Phương thức mặc định khi gửi dữ liệu biểu mẫu là GET. (The default method when submitting form data is GET.)
+Tuy nhiên, khi GET được sử dụng, dữ liệu biểu mẫu đã gửi sẽ hiển thị trong trường địa chỉ trang: (However, when GET is used, the submitted form data will be visible in the page address field:)
+
+/action_page.php?firstname=Mickey&lastname=Mouse
+
+Nối dữ liệu biểu mẫu vào URL theo cặp tên / giá trị (Appends form-data into the URL in name/value pairs)
+Độ dài của URL bị giới hạn (2048 ký tự) (The length of a URL is limited (2048 characters))
+Không bao giờ sử dụng GET để gửi dữ liệu nhạy cảm! (sẽ hiển thị trong URL) (Never use GET to send sensitive data! (will be visible in the URL))
+Hữu ích cho việc gửi biểu mẫu trong đó người dùng muốn đánh dấu kết quả (Useful for form submissions where a user wants to bookmark the result)
+GET tốt hơn cho dữ liệu không an toàn, như chuỗi truy vấn trong Google (GET is better for non-secure data, like query strings in Google)
+
+11.Khi nào nên sử dụng POST? (When to Use POST?)
+
+Luôn sử dụng POST nếu dữ liệu biểu mẫu chứa thông tin nhạy cảm hoặc thông tin cá nhân. Phương thức POST không hiển thị dữ liệu biểu mẫu đã gửi trong trường địa chỉ trang. (Always use POST if the form data contains sensitive or personal information. The POST method does not display the submitted form data in the page address field.)
+
+Ghi chú trên POST: (Notes on POST:)
+
+POST không có giới hạn kích thước và có thể được sử dụng để gửi một lượng lớn dữ liệu. (POST has no size limitations, and can be used to send large amounts of data.)
+Gửi mẫu với POST không thể được đánh dấu. (Form submissions with POST cannot be bookmarked)
+
+12.Tên thuộc tính (The Name Attribute)
+
+Mỗi trường đầu vào phải có một thuộc tính tên được gửi. (Each input field must have a name attribute to be submitted.)
+Nếu thuộc tính name bị bỏ qua, dữ liệu của trường đầu vào đó sẽ không được gửi đi. (If the name attribute is omitted, the data of that input field will not be sent at all.)
+
+Ví dụ này sẽ chỉ gửi trường nhập "Họ" (This example will only submit the "Last name" input field:)
+
+Nếu bạn nhấp vào nút "Gửi", dữ liệu biểu mẫu sẽ được gửi đến một trang có tên "/action_page.php". (If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".)
+Lưu ý rằng giá trị của trường "Tên" sẽ không được gửi, vì phần tử đầu vào không có thuộc tính tên. (Notice that the value of the "First name" field will not be submitted, because the input element does not have a name attribute.)
+
+
+13.Nhóm dữ liệu biểu mẫu với <fieldset> (Grouping Form Data with <fieldset>)
+
+Phần tử <fieldset> (Tạo khung cho biểu mẫu) được sử dụng để nhóm dữ liệu liên quan trong một biểu mẫu. (The <fieldset> element is used to group related data in a form.)
+Phần tử <Legend> xác định chú thích cho phần tử <fieldset>. (The <legend> element defines a caption for the <fieldset> element.)
+
+Ví dụ: (Example)
+
+
+ 

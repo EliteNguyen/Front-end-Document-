@@ -1,0 +1,66 @@
+1.Có gì mới trong HTML5? (What is New in HTML5?)
+
+Khai báo DOCTYPE cho HTML5 rất đơn giản:
+(The DOCTYPE declaration for HTML5 is very simple:)
+
+Hình (Image)
+
+Khai báo mã hóa ký tự (bộ ký tự) cũng rất đơn giản:
+(The character encoding (charset) declaration is also very simple:)
+
+Hình (Image)
+
+Ví dụ: (Example)
+
+Mã hóa ký tự mặc định trong HTML5 là UTF-8.
+(The default character encoding in HTML5 is UTF-8.)
+
+
+2.Các yếu tố HTML5 mới (New HTML5 Elements)
+
+Các yếu tố HTML5 mới thú vị nhất là:
+(The most interesting new HTML5 elements are: )
+
+Các yếu tố ngữ nghĩa mới như <tiêu đề>, <chân trang>, <bài viết> và <phần>.
+(New semantic elements like <header>, <footer>, <article>, and <section>.)
+
+Các thuộc tính mới của các thành phần biểu mẫu như số, ngày, thời gian, lịch và phạm vi.
+(New attributes of form elements like number, date, time, calendar, and range.)
+
+Các yếu tố đồ họa mới: <svg> và <canvas>.
+(New graphic elements: <svg> and <canvas>.)
+
+Các yếu tố đa phương tiện mới: <audio> và <video>.
+(New multimedia elements: <audio> and <video>.)
+
+Trong chương tiếp theo, Hỗ trợ HTML5, bạn sẽ tìm hiểu cách "dạy" các trình duyệt cũ hơn để xử lý các phần tử HTML "không xác định" (mới).
+(In the next chapter, HTML5 Support, you will learn how to "teach" older browsers to handle "unknown" (new) HTML elements.)
+
+Mẹo: Lưu trữ cục bộ HTML là sự thay thế mạnh mẽ cho cookie.
+(Tip: HTML Local storage is a powerful replacement for cookies.)
+
+
+3.Các phần tử bị xóa trong HTML5 (Removed Elements in HTML5)
+
+Các phần tử HTML4 sau đây đã bị xóa trong HTML5:
+(The following HTML4 elements have been removed in HTML5:)
+
+Thẻ bị xóa		Thẻ thay thế
+
+<acronym>		<abbr>
+<applet>		<object>
+<basefront>		CSS
+<big>			CSS
+<center>		CSS
+<dir>			<ul>
+<font>			CSS
+<frame>			
+<frameset>
+<noframes>
+<strike>		CSS, <s> or <del>
+<tt>			CSS
+
+Trong chương Di chuyển HTML5, bạn sẽ tìm hiểu cách dễ dàng di chuyển từ HTML4 sang HTML5.	(Link)
+(In the chapter HTML5 Migration, you will learn how to easily migrate from HTML4 to HTML5.)
+
+

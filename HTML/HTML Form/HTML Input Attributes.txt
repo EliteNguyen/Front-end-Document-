@@ -1,0 +1,305 @@
+1.Giá trị thuộc tính (The value Attribute)
+
+Thuộc tính value chỉ định giá trị ban đầu cho trường đầu vào:
+(The value attribute specifies the initial value for an input field:)
+
+Ví dụ: (Example)
+
+
+2.Thuộc tính chỉ đọc (The readonly Attribute)
+
+Thuộc tính readonly chỉ định rằng trường đầu vào chỉ đọc (không thể thay đổi):
+(The readonly attribute specifies that the input field is read only (cannot be changed):)
+
+Ví dụ: (Example)
+
+
+3.Thuộc tính bị vô hiệu hóa (The disabled Attribute)
+
+Thuộc tính bị vô hiệu hóa xác định rằng trường đầu vào bị vô hiệu hóa.
+(The disabled attribute specifies that the input field is disabled.)
+
+Trường nhập bị vô hiệu hóa không thể sử dụng và không thể nhấp được và giá trị của nó sẽ không được gửi khi gửi biểu mẫu:
+(A disabled input field is unusable and un-clickable, and its value will not be sent when submitting the form:)
+
+Ví dụ: (Example)
+
+
+4.Kích thước thuộc tính (The size Attribute)
+
+Thuộc tính kích thước chỉ định kích thước (tính bằng ký tự) cho trường đầu vào:
+(The size attribute specifies the size (in characters) for the input field:)
+
+Ví dụ: (Example)
+
+
+5.Thuộc tính maxlength (The maxlength Attribute)
+
+Thuộc tính maxlength chỉ định độ dài tối đa được phép cho trường đầu vào:
+(The maxlength attribute specifies the maximum allowed length for the input field:)
+
+Ví dụ: (Example)
+
+Với thuộc tính maxlength, trường đầu vào sẽ không chấp nhận nhiều hơn số lượng ký tự được phép.
+(With a maxlength attribute, the input field will not accept more than the allowed number of characters.)
+
+Thuộc tính maxlength không cung cấp bất kỳ phản hồi nào. Nếu bạn muốn cảnh báo người dùng, bạn phải viết mã JavaScript.
+(The maxlength attribute does not provide any feedback. If you want to alert the user, you must write JavaScript code.)
+
+Lưu ý: Các hạn chế đầu vào không thể đánh lừa được và JavaScript cung cấp nhiều cách để thêm đầu vào bất hợp pháp. Để hạn chế đầu vào một cách an toàn, nó cũng phải được kiểm tra bởi người nhận (máy chủ)!
+(Note: Input restrictions are not foolproof, and JavaScript provides many ways to add illegal input. To safely restrict input, it must be checked by the receiver (the server) as well!)
+
+
+6.Thuộc tính HTML5 (HTML5 Attributes)
+
+HTML5 đã thêm các thuộc tính sau cho <input>:
+(HTML5 added the following attributes for <input>:)
+
+autocomplete
+autofocus
+form
+formaction
+formenctype
+formmethod
+formnovalidate
+formtarget
+height and width
+list
+min and max
+multiple
+pattern (regexp)
+placeholder
+required
+step
+
+và các thuộc tính sau cho <form>:
+(and the following attributes for <form>:)
+
+autocomplete
+novalidate
+
+
+6.1.Thuộc tính tự động hoàn thành (The autocomplete Attribute)
+
+Thuộc tính tự động hoàn thành chỉ định xem một biểu mẫu hoặc trường đầu vào nên tự động hoàn thành bật hay tắt.
+(The autocomplete attribute specifies whether a form or input field should have autocomplete on or off.)
+
+Khi tự động hoàn tất được bật, trình duyệt sẽ tự động hoàn thành các giá trị đầu vào dựa trên các giá trị mà người dùng đã nhập trước đó.
+(When autocomplete is on, the browser automatically completes the input values based on values that the user has entered before.)
+
+Mẹo: Có thể tự động hoàn thành "bật" cho biểu mẫu và "tắt" cho các trường nhập cụ thể hoặc ngược lại.
+(Tip: It is possible to have autocomplete "on" for the form, and "off" for specific input fields, or vice versa.)
+
+Thuộc tính tự động hoàn thành hoạt động với <form> và các loại <input> sau: văn bản, tìm kiếm, url, tel, email, mật khẩu, bảng ngày, phạm vi và màu.
+(The autocomplete attribute works with <form> and the following <input> types: text, search, url, tel, email, password, datepickers, range, and color.)
+
+Ví dụ: (Example)
+
+
+Mẹo: Trong một số trình duyệt, bạn có thể cần kích hoạt chức năng tự động hoàn tất để điều này hoạt động.
+(Tip: In some browsers you may need to activate the autocomplete function for this to work.)
+
+
+
+6.2.Thuộc tính novalidate (The novalidate Attribute)
+
+Thuộc tính novalidate là thuộc tính <form>.
+(The novalidate attribute is a <form> attribute.)
+
+Khi có mặt, novalidate chỉ định rằng dữ liệu biểu mẫu không nên được xác thực khi gửi.
+(When present, novalidate specifies that the form data should not be validated when submitted.)
+
+Ví dụ: (Example)
+
+
+6.3.Thuộc tính tự động lấy nét (The autofocus Attribute)
+
+Thuộc tính tự động lấy nét xác định rằng trường đầu vào sẽ tự động lấy nét khi tải trang.
+(The autofocus attribute specifies that the input field should automatically get focus when the page loads.)
+
+Ví dụ: (Example)
+
+
+6.4.Các thuộc tính mẫu (The form Attribute)
+
+Thuộc tính biểu mẫu chỉ định một hoặc nhiều biểu mẫu thuộc về phần tử <input>.
+(The form attribute specifies one or more forms an <input> element belongs to.)
+
+1 thuộc tính form này ngoài form nhưng vẫn là 1 phần của form.
+
+Ví dụ: (Example)
+
+
+6.5.Thuộc tính định dạng (The formaction Attribute)
+
+Thuộc tính định dạng chỉ định URL của tệp sẽ xử lý kiểm soát đầu vào khi biểu mẫu được gửi.
+(The formaction attribute specifies the URL of a file that will process the input control when the form is submitted.)
+
+Thuộc tính formaction ghi đè thuộc tính hành động của phần tử <form>.
+(The formaction attribute overrides the action attribute of the <form> element.)
+
+Thuộc tính formaction được sử dụng với type = "submit" và type = "image".
+(The formaction attribute is used with type="submit" and type="image".)
+
+Ví dụ: (Example)
+
+chỉ định 1 URL để form gửi data đến trang đó.
+
+
+6.6.Thuộc tính formenctype (The formenctype Attribute)
+
+Thuộc tính formenctype chỉ định cách mã hóa dữ liệu biểu mẫu khi được gửi (chỉ dành cho biểu mẫu có phương thức = "bài").
+(The formenctype attribute specifies how the form data should be encoded when submitted (only for forms with method="post").)
+
+Thuộc tính formenctype ghi đè thuộc tính enctype của phần tử <form>.
+(The formenctype attribute overrides the enctype attribute of the <form> element.)
+
+Thuộc tính formenctype được sử dụng với type = "submit" và type = "image".
+(The formenctype attribute is used with type="submit" and type="image".)
+
+Ví dụ: (Example)
+
+
+6.7.Thuộc tính formmethod (The formmethod Attribute)
+
+Thuộc tính formmethod xác định phương thức HTTP để gửi dữ liệu biểu mẫu đến URL hành động.
+(The formmethod attribute defines the HTTP method for sending form-data to the action URL.)
+
+Thuộc tính formmethod ghi đè thuộc tính phương thức của phần tử <form>.
+(The formmethod attribute overrides the method attribute of the <form> element.)
+
+Thuộc tính formmethod có thể được sử dụng với type = "submit" và type = "image".
+(The formmethod attribute can be used with type="submit" and type="image".)
+
+Ví dụ: (Example)
+
+
+6.8.Thuộc tính formnovalidate (The formnovalidate Attribute)
+
+Thuộc tính formnovalidate ghi đè thuộc tính novalidate của phần tử <form>.
+(The formnovalidate attribute overrides the novalidate attribute of the <form> element.)
+
+Thuộc tính formnovalidate có thể được sử dụng với type = "submit".
+(The formnovalidate attribute can be used with type="submit".)
+
+Ví dụ: (Example)
+
+
+6.9.Thuộc tính formtarget (The formtarget Attribute)
+
+Thuộc tính formtarget chỉ định tên hoặc từ khóa cho biết nơi hiển thị phản hồi nhận được sau khi gửi biểu mẫu.
+(The formtarget attribute specifies a name or a keyword that indicates where to display the response that is received after submitting the form.)
+
+Thuộc tính formtarget ghi đè thuộc tính đích của phần tử <form>.
+(The formtarget attribute overrides the target attribute of the <form> element.)
+
+Thuộc tính formtarget có thể được sử dụng với type = "submit" và type = "image".
+(The formtarget attribute can be used with type="submit" and type="image".)
+
+Ví dụ: (Example)
+
+
+6.10.Các thuộc tính chiều cao và chiều rộng (The height and width Attributes)
+ 
+Các thuộc tính chiều cao và chiều rộng chỉ định chiều cao và chiều rộng của phần tử <input type = "image">.
+(The height and width attributes specify the height and width of an <input type="image"> element.)
+
+Luôn chỉ định kích thước của hình ảnh. Nếu trình duyệt không biết kích thước, trang sẽ nhấp nháy trong khi tải hình ảnh.
+(Always specify the size of images. If the browser does not know the size, the page will flicker while images load.)
+
+Xác định hình ảnh làm nút gửi, với các thuộc tính chiều cao và chiều rộng:
+(Define an image as the submit button, with height and width attributes:)
+
+Ví dụ: (Example)
+
+
+6.11.Danh sách thuộc tính (The list Attribute)
+
+Thuộc tính danh sách đề cập đến một phần tử <datalist> có chứa các tùy chọn được xác định trước cho một phần tử <input>.
+(The list attribute refers to a <datalist> element that contains pre-defined options for an <input> element.)
+
+Ví dụ: (Example)
+
+
+6.12.Các thuộc tính tối thiểu và tối đa (The min and max Attributes)
+
+Các thuộc tính tối thiểu và tối đa chỉ định giá trị tối thiểu và tối đa cho phần tử <input>.
+(The min and max attributes specify the minimum and maximum values for an <input> element.)
+
+Các thuộc tính tối thiểu và tối đa hoạt động với các loại đầu vào sau: số, phạm vi, ngày, datetime-local, tháng, thời gian và tuần.
+(The min and max attributes work with the following input types: number, range, date, datetime-local, month, time and week.)
+
+Ví dụ: (Example)
+
+
+6.13.Nhiều thuộc tính (The multiple Attribute)
+
+Thuộc tính nhiều chỉ định rằng người dùng được phép nhập nhiều hơn một giá trị trong phần tử <input>.
+(The multiple attribute specifies that the user is allowed to enter more than one value in the <input> element.)
+
+Nhiều thuộc tính hoạt động với các loại đầu vào sau: email và tệp.
+(The multiple attribute works with the following input types: email, and file.)
+
+Ví dụ: (Example)
+
+
+6.14.Thuộc tính mẫu (The pattern Attribute)
+
+Thuộc tính mẫu xác định biểu thức chính quy mà giá trị của phần tử <input> được kiểm tra.
+(The pattern attribute specifies a regular expression that the <input> element's value is checked against.)
+
+Thuộc tính mẫu hoạt động với các loại đầu vào sau: văn bản, tìm kiếm, url, tel, email và mật khẩu.
+(The pattern attribute works with the following input types: text, search, url, tel, email, and password.)
+
+Mẹo: Sử dụng thuộc tính tiêu đề toàn cầu để mô tả mẫu để giúp người dùng. (link)
+(Tip: Use the global title attribute to describe the pattern to help the user.)
+
+Mẹo: Tìm hiểu thêm về các biểu thức thông thường trong hướng dẫn JavaScript của chúng tôi. (link)
+(Tip: Learn more about regular expressions in our JavaScript tutorial.)
+
+Ví dụ: (Example)
+
+
+6.15.Thuộc tính giữ chỗ (The placeholder Attribute)
+
+Thuộc tính giữ chỗ chỉ định một gợi ý mô tả giá trị dự kiến ​​của trường đầu vào (giá trị mẫu hoặc mô tả ngắn về định dạng).
+(The placeholder attribute specifies a hint that describes the expected value of an input field (a sample value or a short description of the format).)
+
+Gợi ý được hiển thị trong trường đầu vào trước khi người dùng nhập một giá trị.
+(The hint is displayed in the input field before the user enters a value.)
+
+Thuộc tính giữ chỗ hoạt động với các loại đầu vào sau: văn bản, tìm kiếm, url, tel, email và mật khẩu.
+(The placeholder attribute works with the following input types: text, search, url, tel, email, and password.)
+
+Ví dụ: (Example)
+
+thay vì ghi firstname rồi thẻ input thì h đây first name nằm trong thẻ input vs tư cách gợi ý.
+
+
+6.16.Thuộc tính bắt buộc (The required Attribute)
+
+Thuộc tính bắt buộc chỉ định rằng một trường đầu vào phải được điền trước khi gửi biểu mẫu.
+(The required attribute specifies that an input field must be filled out before submitting the form.)
+
+Thuộc tính bắt buộc hoạt động với các loại đầu vào sau: văn bản, tìm kiếm, url, tel, email, mật khẩu, bộ chọn ngày, số, hộp kiểm, radio và tệp.
+(The required attribute works with the following input types: text, search, url, tel, email, password, date pickers, number, checkbox, radio, and file.)
+
+Ví dụ: (Example)
+
+
+6.17.Bước thuộc tính (The step Attribute)
+
+Thuộc tính bước chỉ định các khoảng số hợp pháp cho phần tử <input>.
+(The step attribute specifies the legal number intervals for an <input> element.)
+
+Ví dụ: nếu step = "3", các số hợp pháp có thể là -3, 0, 3, 6, v.v.
+(Example: if step="3", legal numbers could be -3, 0, 3, 6, etc.)
+
+Mẹo: Thuộc tính bước có thể được sử dụng cùng với các thuộc tính tối đa và tối thiểu để tạo một phạm vi các giá trị pháp lý.
+(Tip: The step attribute can be used together with the max and min attributes to create a range of legal values.)
+
+Thuộc tính bước hoạt động với các loại đầu vào sau: số, phạm vi, ngày, datetime-local, tháng, thời gian và tuần.
+(The step attribute works with the following input types: number, range, date, datetime-local, month, time and week.)
+
+Ví dụ: (Example)
+

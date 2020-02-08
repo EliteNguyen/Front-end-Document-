@@ -1,0 +1,87 @@
+Bạn có thể dạy các trình duyệt cũ hơn để xử lý HTML5 một cách chính xác.
+(You can teach older browsers to handle HTML5 correctly.)
+
+
+1.Hỗ trợ trình duyệt HTML5 (HTML5 Browser Support)
+
+HTML5 được hỗ trợ trong tất cả các trình duyệt hiện đại.
+(HTML5 is supported in all modern browsers.)
+
+Ngoài ra, tất cả các trình duyệt, cũ và mới, tự động xử lý các phần tử không được nhận dạng dưới dạng phần tử nội tuyến.
+(In addition, all browsers, old and new, automatically handle unrecognized elements as inline elements.)
+
+Do đó, bạn có thể "dạy" các trình duyệt cũ hơn để xử lý các phần tử HTML "không xác định".
+(Because of this, you can "teach" older browsers to handle "unknown" HTML elements.)
+
+Bạn thậm chí có thể dạy IE6 (Windows XP 2001) cách xử lý các phần tử HTML không xác định.
+(You can even teach IE6 (Windows XP 2001) how to handle unknown HTML elements.)
+
+
+2.Xác định các phần tử ngữ nghĩa là các phần tử khối (Define Semantic Elements as Block Elements)
+
+HTML5 định nghĩa tám yếu tố ngữ nghĩa mới. Tất cả đều là các yếu tố cấp khối.
+(HTML5 defines eight new semantic elements. All these are block-level elements.)
+
+Để bảo đảm hành vi chính xác trong các trình duyệt cũ hơn, bạn có thể đặt thuộc tính hiển thị CSS cho các thành phần HTML này thành chặn:
+(To secure correct behavior in older browsers, you can set the CSS display property for these HTML elements to block:)
+
+Hình (Image)
+
+Để các trình duyệt cũ hiểu các thẻ mới thì: đặt thuộc tính Display của CSS cho các thẻ mới này với giá trị là block.
+
+
+3.Thêm các yếu tố mới vào HTML (Add New Elements to HTML)
+
+Bạn cũng có thể thêm các yếu tố mới vào trang HTML bằng thủ thuật trình duyệt.
+(You can also add new elements to an HTML page with a browser trick.)
+
+Ví dụ này thêm một yếu tố mới gọi là <myHero> vào trang HTML và xác định kiểu cho nó:
+(This example adds a new element called <myHero> to an HTML page, and defines a style for it:)
+
+
+Câu lệnh JavaScript document.createEuity ("myHero") là cần thiết để tạo một phần tử mới trong IE 9 và trước đó.
+(The JavaScript statement document.createElement("myHero") is needed to create a new element in IE 9, and earlier.)
+
+
+4.Sự cố với Internet Explorer 8 (Problem With Internet Explorer 8)
+
+Bạn có thể sử dụng giải pháp được mô tả ở trên cho tất cả các yếu tố HTML5 mới.
+(You could use the solution described above for all new HTML5 elements.)
+
+Tuy nhiên, IE8 (và trước đó) không cho phép tạo kiểu cho các phần tử chưa biết!
+(However, IE8 (and earlier) does not allow styling of unknown elements!)
+
+Rất may, Sjoerd Visscher đã tạo ra HTML5Shiv! HTML5Shiv là một giải pháp thay thế JavaScript để cho phép tạo kiểu các phần tử HTML5 trong các phiên bản Internet Explorer trước phiên bản 9.
+(Thankfully, Sjoerd Visscher created the HTML5Shiv! The HTML5Shiv is a JavaScript workaround to enable styling of HTML5 elements in versions of Internet Explorer prior to version 9.)
+
+Bạn sẽ yêu cầu HTML5Shiv cung cấp khả năng tương thích cho các Trình duyệt IE cũ hơn IE 9.
+(You will require the HTML5Shiv to provide compatibility for IE Browsers older than IE 9.)
+
+
+5.Cú pháp cho HTML5Shiv (Syntax For HTML5Shiv)
+
+HTML5Shiv được đặt trong thẻ <head>.
+(The HTML5Shiv is placed within the <head> tag.)
+
+HTML5Shiv là một tệp javascript được tham chiếu trong thẻ <script>.
+(The HTML5Shiv is a javascript file that is referenced in a <script> tag.)
+
+Bạn nên sử dụng HTML5Shiv khi bạn đang sử dụng các yếu tố HTML5 mới, chẳng hạn như: <article>, <part>, <sid>, <nav>, <footer>.
+(You should use the HTML5Shiv when you are using the new HTML5 elements such as: <article>, <section>, <aside>, <nav>, <footer>.)
+
+Bạn có thể tải xuống phiên bản HTML5shiv mới nhất từ ​​github hoặc tham khảo phiên bản CDN tại https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js
+(You can download the latest version of HTML5shiv from github or reference the CDN version at https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js)
+
+Hình (Image)
+
+
+6.Ví dụ HTML5Shiv (HTML5Shiv Example)
+
+Nếu bạn không muốn tải xuống và lưu trữ HTML5Shiv trên trang web của mình, bạn có thể tham khảo phiên bản được tìm thấy trên trang web CDN.
+(If you do not want to download and store the HTML5Shiv on your site, you could reference the version found on the CDN site.)
+
+Tập lệnh HTML5Shiv phải được đặt trong phần tử <head>, sau bất kỳ biểu định kiểu nào:
+(The HTML5Shiv script must be placed in the <head> element, after any stylesheets:)
+
+Ví dụ: (Example)
+

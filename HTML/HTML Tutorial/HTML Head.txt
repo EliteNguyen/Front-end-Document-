@@ -1,0 +1,90 @@
+1.Đầu HTML (HTML Head)
+
+Phần tử <head> HTML (The HTML <head> Element)
+Phần tử <head> là một thùng chứa siêu dữ liệu (dữ liệu về dữ liệu) và được đặt giữa thẻ <html> và thẻ <body>. (The <head> element is a container for metadata (data about data) and is placed between the <html> tag and the <body> tag.)
+Siêu dữ liệu HTML là dữ liệu về tài liệu HTML. Siêu dữ liệu không được hiển thị. (HTML metadata is data about the HTML document. Metadata is not displayed.)
+Siêu dữ liệu thường xác định tiêu đề tài liệu, bộ ký tự, kiểu, tập lệnh và thông tin meta khác. (Metadata typically define the document title, character set, styles, scripts, and other meta information.)
+Các thẻ sau mô tả siêu dữ liệu: <title>, <style>, <meta>, <link>, <script> và <base>. (The following tags describe metadata: <title>, <style>, <meta>, <link>, <script>, and <base>.)
+
+2.Phần tử <title> HTML (The HTML <title> Element)
+
+Phần tử <title> xác định tiêu đề của tài liệu và được yêu cầu trong tất cả các tài liệu HTML. (The <title> element defines the title of the document, and is required in all HTML documents.)
+Phần tử <title>: (The <title> element:)
+
+định nghĩa một tiêu đề trong tab trình duyệt (defines a title in the browser tab)
+cung cấp một tiêu đề cho trang khi nó được thêm vào mục yêu thích (provides a title for the page when it is added to favorites)
+hiển thị tiêu đề cho trang trong kết quả của công cụ tìm kiếm (displays a title for the page in search engine results)
+Một tài liệu HTML đơn giản: (A simple HTML document:)
+
+Ví dụ: (Example)
+
+3.Phần tử <style> HTML (The HTML <style> Element)
+
+Phần tử <style> được sử dụng để xác định thông tin kiểu cho một trang HTML: (The <style> element is used to define style information for a single HTML page:)
+Thẻ <style> được dùng để làm thùng chứa cho các đoạn mã CSS.
+Thẻ <style> có thể được đặt ở bất kỳ vị trí nào trong trang web. Tuy nhiên, nó thường được đặt bên trong phần tử <head>
+Trong một trang web có thể có nhiều thẻ <style>
+
+Ví dụ: (Example)
+
+4.Phần tử <link> HTML (The HTML <link> Element)
+
+Phần tử <link> được sử dụng để liên kết với các biểu định kiểu bên ngoài: (The <link> element is used to link to external style sheets:)
+Tag <link /> xác định mối quan hệ giữa một tài liệu HTML và các tài nguyên bên ngoài.
+Tag <link /> được dùng phổ biến nhất là link tới tài liệu css.
+Tag <link /> được viết bên trong tag <head>
+
+Mẹo: Để tìm hiểu tất cả về CSS, hãy truy cập Hướng dẫn CSS của chúng tôi. (Tip: To learn all about CSS, visit our CSS Tutorial.)
+
+5.Phần tử <meta> HTML (The HTML <meta> Element)
+
+Phần tử <meta> được sử dụng để chỉ định bộ ký tự nào được sử dụng, mô tả trang, từ khóa, tác giả và siêu dữ liệu khác. (The <meta> element is used to specify which character set is used, page description, keywords, author, and other metadata.)
+Siêu dữ liệu được sử dụng bởi các trình duyệt (cách hiển thị nội dung), bởi các công cụ tìm kiếm (từ khóa) và các dịch vụ web khác. (Metadata is used by browsers (how to display content), by search engines (keywords), and other web services.)
+
+Xác định bộ ký tự được sử dụng: (Define the character set used:)
+
+Xác định mô tả về trang web của bạn: (Define a description of your web page:) 
+
+Xác định từ khóa cho công cụ tìm kiếm: (Define keywords for search engines:)
+
+Xác định tác giả của một trang: (Define the author of a page:)
+
+Làm mới tài liệu cứ sau 30 giây: (Refresh document every 30 seconds:)
+
+Ví dụ về thẻ <meta>: (Example of <meta> tags:)
+
+Tag <meta /> cung cấp thông tin dữ liệu về văn bản HTML, thông tin dữ liệu sẽ không được hiển thị trên trình duyệt.
+Tag <meta /> thường được sử dụng để xác định mô tả trang (description), từ khóa (keywords), tác giả của văn bản (author), sửa đổi lần cuối (last modified), và thông tin dữ liệu khác.
+Tag <meta /> có thể được sử dụng bởi các trình duyệt (hiển thị nội dung hoặc tải lại trang), công cụ tìm kiếm (từ khoá), hoặc các dịch vụ web khác.
+Tag <meta /> luôn truyền dưới dạng các cặp tên và giá trị.
+
+6.Đặt Chế độ xem (Setting The Viewport)
+
+HTML5 đã giới thiệu một phương pháp để cho phép các nhà thiết kế web kiểm soát chế độ xem, thông qua thẻ <meta>. (HTML5 introduced a method to let web designers take control over the viewport, through the <meta> tag.)
+Khung nhìn là khu vực hiển thị của người dùng trên trang web. Nó thay đổi theo thiết bị và sẽ nhỏ hơn trên điện thoại di động so với trên màn hình máy tính. (The viewport is the user's visible area of a web page. It varies with the device, and will be smaller on a mobile phone than on a computer screen.)
+Bạn nên bao gồm yếu tố chế độ xem <meta> sau trong tất cả các trang web của mình: (You should include the following <meta> viewport element in all your web pages:)
+
+Ví dụ: (Example)
+
+7.Phần tử <script> HTML
+
+Phần tử <script> được sử dụng để xác định JavaScripts phía máy khách. (The <script> element is used to define client-side JavaScripts.)
+JavaScript này viết "Xin chào JavaScript!" thành một phần tử HTML với id = "demo": (This JavaScript writes "Hello JavaScript!" into an HTML element with id="demo":)
+
+Ví dụ: (Example)
+
+Mẹo: Để tìm hiểu tất cả về JavaScript, hãy truy cập Hướng dẫn JavaScript của chúng tôi. (Tip: To learn all about JavaScript, visit our JavaScript Tutorial.)
+
+8.Phần tử <base> HTML (The HTML <base> Element)
+
+Phần tử <base> chỉ định URL cơ sở và mục tiêu cơ sở cho tất cả các URL tương đối trong một trang: (The <base> element specifies the base URL and base target for all relative URLs in a page:)
+
+Ví dụ: (Example)
+
+9.Bỏ qua <html>, <head> và <body>? (Omitting <html>, <head> and <body>?)
+
+Theo tiêu chuẩn HTML5; thẻ <html>, <body> và thẻ <head> có thể được bỏ qua. (According to the HTML5 standard; the <html>, the <body>, and the <head> tag can be omitted.)
+Đoạn mã sau sẽ xác thực là HTML5: (The following code will validate as HTML5:)
+
+Ví dụ: (Example)
+

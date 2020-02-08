@@ -1,0 +1,94 @@
+1.Thiết kế web đáp ứng HTML (HTML Responsive Web Design)
+
+1.Thiết kế Web đáp ứng là gì? (What is Responsive Web Design?)
+
+Responsive Web Design là về việc sử dụng HTML và CSS để tự động thay đổi kích thước, ẩn, thu nhỏ hoặc phóng to trang web, để làm cho nó trông đẹp hơn trên tất cả các thiết bị (máy tính để bàn, máy tính bảng và điện thoại): (Responsive Web Design is about using HTML and CSS to automatically resize, hide, shrink, or enlarge, a website, to make it look good on all devices (desktops, tablets, and phones):)
+
+Ví dụ: (Example)
+
+Lưu ý: Một trang web sẽ trông tốt trên mọi thiết bị! (Note: A web page should look good on any device!)
+
+2.Đặt Chế độ xem (Setting The Viewport)
+
+Khi tạo các trang web phản hồi, hãy thêm phần tử <meta> sau vào tất cả các trang web của bạn: (When making responsive web pages, add the following <meta> element in all your web pages:)
+
+Điều này sẽ đặt chế độ xem của trang của bạn, sẽ cung cấp cho hướng dẫn trình duyệt về cách kiểm soát kích thước và tỷ lệ của trang. (This will set the viewport of your page, which will give the browser instructions on how to control the page's dimensions and scaling.)
+Dưới đây là ví dụ về một trang web không có thẻ meta chế độ xem và cùng một trang web có thẻ meta chế độ xem: (Here is an example of a web page without the viewport meta tag, and the same web page with the viewport meta tag:)
+
+Ví dụ: (Example)
+
+meta viewport nghĩa là một thẻ thiết lập cho trình duyệt hiển thị tương ứng với kích thước màn hình. Chẳng hạn như ví dụ trên, có nghĩa là bạn sẽ thiết lập trình duyệt hiển thị cố định và tương ứng trên tất cả các thiết bị dựa vào chiều rộng của thiết bị (device-width) và không cho phép người dùng phóng to (thiết lập initial-scale với giá trị cố định là 1). Đây là thẻ mình khuyến khích bạn sử dụng cho toàn bộ các dự án Responsive.
+
+3.Hình ảnh phản hồi (Responsive Images)
+
+Hình ảnh phản hồi là hình ảnh có tỷ lệ độc đáo để phù hợp với mọi kích thước trình duyệt. (Responsive images are images that scale nicely to fit any browser size.)
+
+4.Sử dụng thuộc tính chiều rộng (Using the width Property)
+
+Nếu thuộc tính chiều rộng CSS được đặt thành 100%, hình ảnh sẽ phản hồi và tăng tỷ lệ lên xuống: (If the CSS width property is set to 100%, the image will be responsive and scale up and down:)
+
+Ví dụ: (Example)
+
+
+Lưu ý rằng trong ví dụ trên, hình ảnh có thể được thu nhỏ lại lớn hơn kích thước ban đầu của nó. Một giải pháp tốt hơn, trong nhiều trường hợp, sẽ là sử dụng thuộc tính chiều rộng tối đa thay thế. (Notice that in the example above, the image can be scaled up to be larger than its original size. A better solution, in many cases, will be to use the max-width property instead.)
+
+5.Sử dụng thuộc tính chiều rộng tối đa (Using the max-width Property)
+
+Nếu thuộc tính độ rộng tối đa được đặt thành 100%, hình ảnh sẽ thu nhỏ lại nếu phải, nhưng không bao giờ tăng tỷ lệ lớn hơn kích thước ban đầu của nó: (If the max-width property is set to 100%, the image will scale down if it has to, but never scale up to be larger than its original size:)
+
+Ví dụ: (Example)
+
+Thuộc tính max-width thiết lập chiều rộng tối đa cho thành phần.
+
+6.Hiển thị hình ảnh khác nhau tùy thuộc vào chiều rộng trình duyệt (Show Different Images Depending on Browser Width)
+
+Phần tử <hình ảnh HTML cho phép bạn xác định các hình ảnh khác nhau cho các kích thước cửa sổ trình duyệt khác nhau. (The HTML <picture> element allows you to define different images for different browser window sizes.)
+Thay đổi kích thước cửa sổ trình duyệt để xem hình ảnh bên dưới thay đổi như thế nào tùy thuộc vào chiều rộng: (Resize the browser window to see how the image below change depending on the width:)
+
+Ví dụ: (Example)
+
+7.Kích thước văn bản đáp ứng (Responsive Text Size)
+
+Kích thước văn bản có thể được đặt bằng một đơn vị "vw", có nghĩa là "chiều rộng khung nhìn". (The text size can be set with a "vw" unit, which means the "viewport width".)
+Bằng cách đó, kích thước văn bản sẽ theo kích thước của cửa sổ trình duyệt: (That way the text size will follow the size of the browser window:)
+
+Ví dụ: (Example)
+
+Viewport là kích thước cửa sổ trình duyệt. 1vw = 1% chiều rộng khung nhìn. Nếu khung nhìn rộng 50 cm thì 1vw là 0,5cm. (Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.)
+
+8.Truy vấn phương tiện truyền thông (Media Queries)
+
+Ngoài việc thay đổi kích thước văn bản và hình ảnh, người ta cũng thường sử dụng các truy vấn phương tiện trong các trang web phản hồi. (In addition to resize text and images, it is also common to use media queries in responsive web pages.)
+Với các truy vấn phương tiện, bạn có thể xác định các kiểu hoàn toàn khác nhau cho các kích thước trình duyệt khác nhau. (With media queries you can define completely different styles for different browser sizes.)
+Ví dụ: thay đổi kích thước cửa sổ trình duyệt để thấy rằng ba phần tử div bên dưới sẽ hiển thị theo chiều ngang trên màn hình lớn và được xếp theo chiều dọc trên màn hình nhỏ: (Example: resize the browser window to see that the three div elements below will display horizontally on large screens and stacked vertically on small screens:)
+
+Ví dụ: (Example)
+
+Mẹo: Để tìm hiểu thêm về Truy vấn truyền thông và Thiết kế web đáp ứng, hãy đọc Hướng dẫn RWD của chúng tôi.\
+
+
+9.Trang web đáp ứng - Ví dụ đầy đủ (Responsive Web Page - Full Example)
+
+Một trang web phản hồi sẽ trông tốt trên màn hình lớn và trên điện thoại di động nhỏ. (A responsive web page should look good on large desktop screens and on small mobile phones.)
+
+10.Thiết kế Web đáp ứng - Khung (Responsive Web Design - Frameworks)
+
+Có nhiều Khung CSS hiện có cung cấp Thiết kế đáp ứng. (There are many existing CSS Frameworks that offer Responsive Design.)
+Chúng là miễn phí, và dễ sử dụng. (They are free, and easy to use.)
+
+Ví dụ: (Example)
+
+11.Sử dụng W3.CSS (Using W3.CSS)
+
+Một cách tuyệt vời để tạo ra một thiết kế đáp ứng, là sử dụng biểu định kiểu đáp ứng, như W3.CSS (A great way to create a responsive design, is to use a responsive style sheet, like W3.CSS)
+W3.CSS giúp dễ dàng phát triển các trang web trông đẹp ở mọi kích thước; máy tính để bàn, máy tính xách tay, máy tính bảng hoặc điện thoại: (W3.CSS makes it easy to develop sites that look nice at any size; desktop, laptop, tablet, or phone:)
+
+Ví dụ: (Example)
+
+
+12.Bootstrap
+
+Một khung công tác phổ biến khác là Bootstrap, nó sử dụng HTML, CSS và jQuery để tạo các trang web đáp ứng. (Another popular framework is Bootstrap, it uses HTML, CSS and jQuery to make responsive web pages.)
+
+Ví dụ: (Example)
+
